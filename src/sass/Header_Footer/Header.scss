@@ -1,0 +1,106 @@
+.closed {
+    // bottom: 1px;
+    // top:500px;
+    // background-color: $white-color !important;
+    // color: $text-black-color !important;
+    box-shadow: none !important;
+    .headerContent {
+        display: flex;
+        // align-items: left  !important;
+        .headerButton {
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: .1rem;
+            font-size: 16px;
+            // color: $white-color;
+        }
+    }
+    .menuContainer1{
+        position:relative;
+        align-self: center;
+        // background-color: chartreuse;
+    }
+    .menuContainer1::after{
+        position:absolute;
+        content: "";
+        background-color:#FFD741;
+        height: 3px;
+        width: 0;
+        bottom: -26px;
+        transition: 0.3s;
+    }
+    .menuContainer1:hover::after{
+        width: 100%;
+
+    }
+    // .lineGrid{
+    //     position:relative;
+    //     content: "";
+    //     background-color:white;
+    //     box-shadow: white;
+    //     height: 10%;
+    //     width: 100%;
+    //     top:0%;
+    // }
+    // .lineGrid::after{
+    //     position:absolute;
+    //     content: "";
+    //     background-color:white;
+    //     height: 5px;
+    //     width: 100%;
+    // }
+    
+}
+
+
+.expand {
+    // background-color: $white-color !important;
+    // color: $text-black-color !important;
+    box-shadow: none !important;
+    .headerContent {
+        display: flex;
+        // align-items: left  !important;
+        .headerButton {
+            font-weight: 600;
+            text-transform: capitalize;
+            letter-spacing: .1rem;
+            font-size: 16px;
+            // color: $white-color;
+        }
+    }
+    .menuContainer1{
+        position:relative;
+        align-self: center;
+        // background-color: chartreuse;
+    }
+    .menuContainer1::after{
+        position:absolute;
+        content: "";
+        background-color:#FFD741
+        ;
+        height: 3px;
+        width: 0;
+        bottom: -26px;
+        transition: 0.3s;
+    }
+    .menuContainer1:hover::after{
+        width: 100%;
+
+    }
+    // .lineGrid{
+    //     position:relative;
+    //     content: "";
+    //     background-color:white;
+    //     box-shadow: white;
+    //     height: 5%;
+    //     width: 100%;
+    //     top:0%;
+    // }
+    // .lineGrid::after{
+    //     position:absolute;
+    //     content: "";
+    //     background-color:white;
+    //     height: 5px;
+    //     width: 100%;
+    // }
+}

@@ -1,0 +1,76 @@
+.aboutContainer{
+    color: black;
+    width: 100%;
+    @media only screen and (max-width: 600px) {
+        padding-left: 2%;
+    }
+
+    .abotTitle{
+        padding-right: 12%;
+    }
+    .aboutDropDown_heading{
+    
+    }
+    .aboutDropDown_subContent{
+        padding:4px;
+        font-size: 14px;
+    }
+    .programTypeButton{
+        position:relative;
+        align-self: center;
+        // background-color: chartreuse;
+    }
+    .programTypeButton::after{
+        position:absolute;
+        content: "";
+        background-color:white;
+        height: 5px;
+        width: 18%;
+        // bottom: -26px;
+        left:100%;
+        @media only screen and (max-width: 600px) {
+            height: 0;
+            width: 0;
+        }
+    }
+    .programTypeButton1{
+        position:relative;
+        align-self: center;
+        // background-color: chartreuse;
+    }
+    .programTypeButton1::after{
+        position:absolute;
+        content: "";
+        background-color:#FFD741;
+        height: 5px;
+        width: 18%;
+        // bottom: -26px;
+        left:100%;
+        @media only screen and (max-width: 600px) {
+            height: 0;
+            width: 0;
+        }
+    }
+    padding-bottom: 10px;
+}
+.aboutTitleContainer{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.aboutTitleContainer::after{
+    position:absolute;
+    content: "";
+    background-color:white;
+    box-shadow: white;
+    height: 98%;
+    width: 0.3%;
+    // top:1%;
+    // bottom: 5%;
+    left:32%;
+    // transition: 0.3s;
+    @media only screen and (max-width: 600px) {
+        height: 0;
+        width: 0;
+    }
+}

@@ -1,0 +1,50 @@
+.mainViewContainer{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 2%;
+    background-color: #fffaf3;
+    // .imageSideText1{
+    //     padding-top:45% ;
+    //     padding-left: 3%;
+    //     font-size: 16px;
+    //     text-transform: uppercase;
+    // }
+    // .title{
+    //     padding-left: 2%;
+    //     font-size: 14px;
+    //     text-transform: uppercase;
+    // }
+    // .content1{
+    //     padding-left: 2%;
+    //     font-size: 27px;
+    // }
+    // .content2{
+    //     padding-left: 2%;
+    //     font-size: 14px;
+    // }
+    // a{
+    //     padding-left: 15px;
+    //     padding-top: 2%;
+    // }
+    .overView{
+        padding:3%;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: underline black;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    .overViewConetnt{
+        padding-left:20%;
+        padding-right:20%;
+        font-size: 24px;
+        @media only screen and (max-width: 600px) {
+            padding-left:0%;
+            padding-right:0%;
+            font-size: 14px;
+        }
+    }
+}
