@@ -2,7 +2,8 @@ import React from "react";
 import { Switch, Route, BrowserRouter} from "react-router-dom";
 
 // import PrivateRoute from "./PrivateRoute";
-
+import './assets/css/main.css';
+import './assets/js/main.js'
 import Layout from "./Layout";
 
 import Header from "./headerBar";
