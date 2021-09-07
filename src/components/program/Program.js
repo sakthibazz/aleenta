@@ -201,10 +201,10 @@ const Program = () => {
                     {programType === 'corporatePrograms'
                     ?
                         <Grid container>
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={what} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                 	Mangallam
                                 </Typography>
@@ -217,10 +217,10 @@ const Program = () => {
                                 </Typography>
                             </Grid>
                             
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={why} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Happiness coaching  
                                 </Typography>
@@ -234,10 +234,10 @@ const Program = () => {
                                 </Typography>
                             </Grid>
 
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={who} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Meditation sessions 
                                 </Typography>
@@ -246,10 +246,10 @@ const Program = () => {
                                     Upto 50 people in a batch.  (12/24 hours – Annual calendar program) 
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={theCoach} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Personal Coaching 
                                 </Typography>

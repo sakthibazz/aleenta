@@ -47,6 +47,10 @@ import clsx from "clsx";
 // import Header from "./components/Header_Footer/Header";
 
 const useStyles = makeStyles((theme) => ({
+  leftLogo: {
+    display: "flex",
+    alignItems: "center"
+  },
   grow: {
     flexGrow: 1, 
   },
@@ -61,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
-
+  
   },
   title: {
     fontSize: 16,
@@ -193,6 +197,26 @@ const [appTitle, setAppTitle] = useState("");
         <AppBar className={appClassName} style={{backgroundColor:"#fbf2de"}}>
           <Toolbar>
             <Grid container>
+              <div className={`${classes.menuCollapseContaier} ${classes.leftLogo}`}>
+              
+              
+                <IconButton edge="start" onClick={handleMobileMenu}>
+                  <MenuIcon />
+                  
+                </IconButton>
+                <Link
+                to="/"
+                
+                // className={
+                //   pathname === "/"
+                //   ? clsx(classes.title, classes.titleActive)
+                //   : classes.title
+                // }
+              >
+                <img src={Logo} width="60px" height="50px" style={{ paddingTop: 0, alignSelf: "center"}} />
+              </Link>
+              </div>
+              
             <Grid item xs={12} md={12}>
             <Container maxWidth="lg" className="headerContent">
               <Link
@@ -203,7 +227,7 @@ const [appTitle, setAppTitle] = useState("");
                   : classes.title
                 }
               >
-                <img src={Logo} width="100%" height="80px" />
+                <img src={Logo} width="120px" height="80px" />
               </Link>
               
               <div className={classes.grow} />
@@ -337,9 +361,7 @@ const [appTitle, setAppTitle] = useState("");
 
 
                   <div className={classes.menuCollapseContaier}>
-                    <IconButton onClick={handleMobileMenu}>
-                      <MoreIcon />
-                    </IconButton>
+                    
                     <Menu
                       id="menu-appbar"
                       anchorEl={mobileAnchorEl}
