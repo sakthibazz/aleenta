@@ -114,7 +114,7 @@ const Welcome = ({
             <Grid container className={classes.imageGridContainer} >
                 <Grid item xs={12} md={12} >
                     {/* <Carousel items={items} /> */}
-                    <Grid id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style={{paddingTop:"15px",marginTop:'0px'}}>
+                    <Grid id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" style={{paddingTop:"15px",marginTop:'-15px'}}>
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -173,7 +173,7 @@ const Welcome = ({
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"  style={{backgroundColor:"gray",borderRadius:"50px"}}></span>
                                     <span class="sr-only"></span>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
