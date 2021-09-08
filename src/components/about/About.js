@@ -11,7 +11,7 @@ import theCoach from '../../images/dropDown/theCoach.png'
 const About = () => {
     return ( 
         <>
-        <hr></hr>
+        <hr style={{color:"white",height:"3px",paddingTop:"-20px"}}/>
         <Grid container className="aboutContainer aboutTitleContainer" spacing={2}>
             <Grid item xs={12} md={4}>
                 <Typography className='abotTitle'>

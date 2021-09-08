@@ -59,7 +59,7 @@ const Contact = () => {
                         </Grid>
                         <Grid item xs={12} md={4} align='center'>
                             <Typography className="contactContent" align='center'>
-                                Email: Wellbeingcoach@aleenta.in
+                                Email:programs@aleenta.in
                             </Typography>
                         </Grid>
                     </Grid>
