@@ -84,10 +84,14 @@ const Program = () => {
                                 >
                                     <Grid container>
                                         <Grid item xs={12} md={12}>
-                                            Corporate Programs 
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                Corporate Programs 
+                                            </Typography>
                                         </Grid>
                                         <Grid item xs={12} md={12}>
-                                            (For Teams and Employees)
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                (For Teams and Employees)
+                                            </Typography>
                                         </Grid>
                                     </Grid>
                                 </Button>
@@ -99,10 +103,14 @@ const Program = () => {
                                     >
                                         <Grid container>
                                         <Grid item xs={12} md={12}>
-                                            Corporate Programs 
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                Corporate Programs
+                                             </Typography>
                                         </Grid>
                                         <Grid item xs={12} md={12}>
-                                            (For Teams and Employees)
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                (For Teams and Employees)
+                                            </Typography>
                                         </Grid>
                                     </Grid>
                                 </Button>
@@ -118,10 +126,14 @@ const Program = () => {
                                 >
                                     <Grid container>
                                         <Grid item xs={12} md={12}>
-                                            Individual Coaching  
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                Individual Coaching  
+                                            </Typography>
                                         </Grid>
                                         <Grid item xs={12} md={12}>
-                                            (For You, Your Friends and Family)
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                (For You, Your Friends and Family)
+                                            </Typography>
                                         </Grid>
                                     </Grid>  
                                 </Button>
@@ -133,10 +145,14 @@ const Program = () => {
                                 >
                                     <Grid container>
                                         <Grid item xs={12} md={12}>
-                                            Individual Coaching  
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                Individual Coaching  
+                                            </Typography>
                                         </Grid>
                                         <Grid item xs={12} md={12}>
-                                            (For You, Your Friends and Family)
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                (For You, Your Friends and Family)
+                                            </Typography>
                                         </Grid>
                                     </Grid>  
                                 </Button>
@@ -154,10 +170,14 @@ const Program = () => {
                                 >
                                     <Grid container>
                                         <Grid item xs={12} md={12}>
-                                            Group Coachingg  
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                Group Coaching 
+                                            </Typography>
                                         </Grid>
                                         <Grid item xs={12} md={12}>
-                                            (For Friends and Family)
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                (For Friends and Family)
+                                            </Typography>
                                         </Grid>
                                     </Grid> 
                                 </Button>
@@ -170,10 +190,14 @@ const Program = () => {
                                 >
                                     <Grid container>
                                         <Grid item xs={12} md={12}>
-                                            Group Coachingg  
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                Group Coaching
+                                            </Typography>
                                         </Grid>
                                         <Grid item xs={12} md={12}>
-                                            (For Friends and Family)
+                                            <Typography style={{textTransform:"capitalize"}}>
+                                                (For Friends and Family)
+                                            </Typography>
                                         </Grid>
                                     </Grid> 
                                 </Button>
@@ -265,10 +289,10 @@ const Program = () => {
                     {programType === 'individualCoaching'
                     ?
                         <Grid container>
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={what} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Nature coaching 
                                 </Typography>
@@ -281,10 +305,10 @@ const Program = () => {
                                 </Typography>
                             </Grid>
                             
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={theCoach} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Time Management  
                                 </Typography>
@@ -295,10 +319,10 @@ const Program = () => {
                                 </Typography>
                             </Grid>
 
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={who} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                 	Adolescent coaching (ages 12 to 20)
                                 </Typography>
@@ -310,10 +334,10 @@ const Program = () => {
                                     Adolescent coaching is the right program for you/your child! 
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={theCoach} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Social Inhibitions 
                                 </Typography>
@@ -327,10 +351,10 @@ const Program = () => {
                                 </Typography>
                             </Grid>
 
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={who} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Self expression  
                                 </Typography>
@@ -342,10 +366,10 @@ const Program = () => {
                                 </Typography>
                             </Grid>
 
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={why} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Creative coaching 
                                 </Typography>
@@ -366,10 +390,10 @@ const Program = () => {
                     {programType === 'groupCoaching'
                     ?
                         <Grid container spacing={1}>
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={what} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Happiness coaching 
                                 </Typography>
@@ -381,10 +405,10 @@ const Program = () => {
                                 </Typography>
                             </Grid>
                             
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={theCoach} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Spiritual coaching   
                                 </Typography>
@@ -398,10 +422,10 @@ const Program = () => {
                                 </Typography>
                             </Grid>
 
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={who} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Relationship coaching  
                                 </Typography>
@@ -414,10 +438,10 @@ const Program = () => {
                                     better Self to maintain healthy relationships.  
                                 </Typography>
                             </Grid>
-                            <Grid item xs={12} md={1}>
+                            <Grid item xs={2} md={1}>
                                 <img src={theCoach} />
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={10} md={5}>
                                 <Typography className="aboutDropDown_heading" variant='h6'>
                                     Wellness coaching 
                                 </Typography>

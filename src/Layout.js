@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(10),
 
   },
   menuCollapseContaier: {
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: 16,
-    fontWeight: 600,
+    // fontWeight: 600,
     textDecoration: "none",
     color: "#000000",
     cursor: "pointer",
@@ -213,7 +213,7 @@ const [appTitle, setAppTitle] = useState("");
                 //   : classes.title
                 // }
               >
-                <img src={Logo} width="60px" height="50px" style={{ paddingTop: 0, alignSelf: "center"}} />
+                <img src={Logo} width="60px" height="50px" style={{ paddingTop: "0", alignSelf: "center"}} />
               </Link>
               </div>
               
@@ -227,7 +227,7 @@ const [appTitle, setAppTitle] = useState("");
                   : classes.title
                 }
               >
-                <img src={Logo} width="120px" height="80px" />
+                <img src={Logo} width="100px" height="80px" style={{paddingTop:"5px"}} />
               </Link>
               
               <div className={classes.grow} />

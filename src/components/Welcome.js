@@ -7,6 +7,11 @@ import Divider from '@material-ui/core/Divider';
 import { makeStyles } from "@material-ui/core/styles";
 
 
+
+// import '../../node_modules/bootstrap/dist/css/bootstrap.css'
+
+
+
 //------------Carousel reusable component-------------------------
 import Carousel from '../reusableComponents/Carousel';
 
@@ -33,6 +38,8 @@ const useStyles = makeStyles(theme => ({
         paddingLeft: "0%",
         paddingTop:"0%",
         paddingRight:"0%",
+        paddingBottom:"0",
+        marginBottom:"0",
         "& .MuiContainer-root": {
             paddingLeft: "0%",
         }, 
@@ -40,6 +47,21 @@ const useStyles = makeStyles(theme => ({
             maxWidth: "100%",
         },
     },
+    imageGridContainer:{
+         margin:"0",
+        maxWidth: "100%",
+        paddingLeft: "0",
+        paddingTop:"0%",
+        paddingRight:"0%",
+        "& .MuiContainer-root": {
+            paddingLeft: "0%",
+            paddingTop:'0',
+            marginTop:'0',
+        }, 
+        "& .MuiContainer-maxWidthLg": {
+            maxWidth: "100%",
+        },
+    }
 }));
 
 
@@ -88,10 +110,79 @@ const Welcome = ({
     return (
         // <Container maxWidth="lg" className="mainViewContainer">
         <Container maxWidth="lg" className={`${classes.mainViewContainer} mainViewContainer`}>
-            <hr/>
-            <Grid container >
+            {/* <hr/> */}
+            <Grid container className={classes.imageGridContainer} >
                 <Grid item xs={12} md={12} >
-                    <Carousel items={items} />
+                    {/* <Carousel items={items} /> */}
+                    <Grid id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style={{paddingTop:"15px",marginTop:'0px'}}>
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                            <div class="carousel-inner" >
+                                    <div class="carousel-item active">
+                                        <Grid container>
+                                            <Grid item xs={12} md={8}>
+                                                <img class="d-block w-60 carouselImage" src={image1}  alt="First slide"/>
+                                            </Grid>
+                                            <Grid item xs={12} md={4}>
+                                                <Typography className="imageSideText2">
+                                                    see what you don't see
+                                                </Typography> 
+                                            </Grid>
+                                        </Grid>
+                                    
+                                    </div>
+                                    <div class="carousel-item">
+                                    <Grid container>
+                                            <Grid item xs={12} md={8}>
+                                                <img class="d-block w-60 carouselImage" src={image2} alt="First slide"/>
+                                            </Grid>
+                                            <Grid item xs={12} md={4}>
+                                                <Typography className="imageSideText2">
+                                                    FIND THE KEY TO YOUR WELLBEING
+                                                </Typography> 
+                                            </Grid>
+                                        </Grid>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <Grid container>
+                                            <Grid item xs={12} md={8}>
+                                                <img class="d-block w-60 carouselImage" src={image3}  alt="First slide"/>
+                                            </Grid>
+                                            <Grid item xs={12} md={4}>
+                                                <Typography className="imageSideText2">
+                                                    TAP INTO YOUR CREATIVE POTENTIAL
+                                                </Typography> 
+                                            </Grid>
+                                        </Grid>
+                                    </div>
+                                    <div class="carousel-item">
+                                    <Grid container>
+                                            <Grid item xs={12} md={8}>
+                                                <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
+                                            </Grid>
+                                            <Grid item xs={12} md={4}>
+                                                <Typography className="imageSideText2">
+                                                    UP YOUR HAPPINESS QUOTIENT
+                                                </Typography> 
+                                            </Grid>
+                                        </Grid>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true" style={{backgroundColor:"gray",borderRadius:"50px"}} ></span>
+                                    <span class="sr-only"></span>
+                                </a>
+                                </Grid>
+
+
                   </Grid>
             </Grid>
                  

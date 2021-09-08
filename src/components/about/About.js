@@ -23,10 +23,10 @@ const About = () => {
             </Grid>
             <Grid item xs={12} md={8}>
                 <Grid container  spacing={0}>
-                    <Grid item xs={12} md={1}>
+                    <Grid item xs={2} md={1}>
                         <img src={what} />
                     </Grid>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={10} md={5}>
                         <Typography className="aboutDropDown_heading" variant='h6'>
                             What is Well-being 
                         </Typography>
@@ -40,10 +40,10 @@ const About = () => {
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={12} md={1}>
+                    <Grid item xs={2} md={1}>
                         <img src={why} />
                     </Grid>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={10} md={5}>
                         <Typography className="aboutDropDown_heading" variant='h6'>
                         	Why Aleenta
                         </Typography>
@@ -57,10 +57,10 @@ const About = () => {
                         </Typography>
                     </Grid>
                     
-                    <Grid item xs={12} md={1}>
+                    <Grid item xs={2} md={1}>
                         <img src={who} />
                     </Grid>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={10} md={5}>
                         <Typography className="aboutDropDown_heading" variant='h6'>
                         	Who needs Well-being 
                         </Typography>
@@ -82,10 +82,10 @@ const About = () => {
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={12} md={1}>
+                    <Grid item xs={2} md={1}>
                         <img src={theCoach} />
                     </Grid>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={10} md={5}>
                         <Typography className="aboutDropDown_heading" variant='h6'>
                             The coach
                         </Typography>
