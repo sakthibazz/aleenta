@@ -28,7 +28,7 @@ const About = () => {
                     </Grid>
                     <Grid item xs={10} md={5}>
                         <Typography className="aboutDropDown_heading" variant='h6'>
-                            What is Well-being 
+                            What is Well-being ?
                         </Typography>
                         <Typography className="aboutDropDown_subContent" >
                             According to Oxford dictionary Well-being means – 
@@ -45,7 +45,7 @@ const About = () => {
                     </Grid>
                     <Grid item xs={10} md={5}>
                         <Typography className="aboutDropDown_heading" variant='h6'>
-                        	Why Aleenta
+                        	Why Aleenta ?
                         </Typography>
                         <Typography className="aboutDropDown_subContent">
                             We follow a natural, friendly approach that 
@@ -62,7 +62,7 @@ const About = () => {
                     </Grid>
                     <Grid item xs={10} md={5}>
                         <Typography className="aboutDropDown_heading" variant='h6'>
-                        	Who needs Well-being 
+                        	Who needs Well-being ?
                         </Typography>
                         <Typography className="aboutDropDown_subContent" >
                         	Wants to seek Awareness on overall wellbeing to 

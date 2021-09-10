@@ -13,6 +13,9 @@ import About from "./components/about/About";
 import Blogs from "./components/Blogs/Blogs";
 import Program from "./components/program/Program";
 import Contact from "./components/Contact/Contact"
+import CorporatePrograms from "./components/program/corporatePrograms"
+import IndividualPrograms from "./components/program/individualPrograms"
+import GroupPrograms from "./components/program/GroupPrograms"
 
 // import Explore from "./components/SignIn_SignUp/Explore";
 // import SignIn from "./components/SignIn_SignUp/SignIn";
@@ -41,10 +44,10 @@ const App = () => {
         <Route path="/blogs" component={Blogs} />
         <Route path="/program" component={Program} />
         <Route path="/contact" component={Contact} />
-        {/* <Route path="/sign-up" component={SignUp} />
-        <Route path="/forgot-password" component={ForgotPassword} />
-        <Route path="/password-reset/:token" component={PasswordReset} />
-        <PrivateRoute path="/dashboard" component={Dashboard} />
+        <Route path="/corporatePrograms" component={CorporatePrograms} />
+        <Route path="/individualPrograms" component={IndividualPrograms} />
+        <Route path="/groupPrograms" component={GroupPrograms} />
+        {/*<PrivateRoute path="/dashboard" component={Dashboard} />
         <Route path="/paymentProcess/:programId" component={PaymentProcess} /> */}
       </Layout>
       {/* </Header> */}

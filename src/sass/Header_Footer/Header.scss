@@ -87,6 +87,27 @@
         width: 100%;
 
     }
+    .aboutTitleContainer{
+        position:relative;
+        align-self: center;
+        // background-color: chartreuse;
+    }
+    .aboutTitleContainer::after{
+        position:absolute;
+        content: "";
+        background-color:white;
+        box-shadow: white;
+        height: 98%;
+        width: 0.3%;
+        // top:1%;
+        // bottom: 5%;
+        left:32%;
+        // transition: 0.3s;
+        @media only screen and (max-width: 600px) {
+            height: 0;
+            width: 0;
+        }
+    }
     // .lineGrid{
     //     position:relative;
     //     content: "";

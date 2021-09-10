@@ -1,0 +1,64 @@
+.corporateContainer{
+    margin-left: 0%;
+    margin-right: 0%;
+    // margin-top: 1000px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 2%;
+    // padding-top: 1000px;
+    background-color: #fffaf3;
+
+    .topText{
+        padding:3%;
+        font-size: medium;
+        padding-bottom: 2%;
+    }
+    
+    .programsHeading{
+        align-items: center;
+        font-size: 30px;
+        padding-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        letter-spacing: 1px;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            font-size: 15px;
+        }
+        // text-transform: uppercase;
+    }
+    .mangallamImg{
+        width: 60%;
+        padding-top: 1%;
+    }
+    .corporateProDiv{
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-top: 3%;
+        content: "";
+        background-color: #FFD741;
+        height: 4px;
+        width: 100%;
+    }
+    .programsTitle{
+        padding-top: 1%;
+        padding-left: 16%;
+        padding-right: 16%;
+        font-size: 20px;
+        font-weight: 600px;
+        // text-transform: capitalize;
+    }
+    .programscontent1{
+        padding-top: 2%;
+        padding-left: 16%;
+        padding-right: 16%;
+        // font-weight: 60;
+        @media only screen and (max-width: 600px) {
+            font-size: 8px;
+        }
+    }
+    .dividerImgCoroProgram{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}

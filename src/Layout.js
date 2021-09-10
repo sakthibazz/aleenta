@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import { connect } from "react-redux";
 import PropTypes from "prop-types";
 
@@ -59,7 +59,6 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
     marginRight: theme.spacing(10),
-
   },
   menuCollapseContaier: {
     [theme.breakpoints.up("sm")]: {
@@ -68,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
   
   },
   title: {
-    fontSize: 16,
+    fontSize: "16px",
     // fontWeight: 600,
     textDecoration: "none",
     color: "#000000",
@@ -154,7 +153,7 @@ const useStyles = makeStyles((theme) => ({
 // };
 
 
-const Layout = (props) => {
+const Layout = (props,history) => {
   const classes = useStyles();
 
   const [anchorEl, setAnchorEl] = useState(null);
@@ -166,13 +165,34 @@ const Layout = (props) => {
 
 const [appClassName, setAppClassName] = useState("closed");
 const [appTitle, setAppTitle] = useState("");
+const [open, setOpen] = useState(false);
 
 
+useEffect(()=>{
+  console.log(open)
+  if (open == true ){
+    setAppClassName("closed")
+    setAppTitle("")
+  }
+  console.log(appClassName)
+  console.log(appTitle)
+},[open])
 
-  const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
+
+const closeMenu = ()=>{
+  if (open){
+    setAppClassName("closed")
+  }
+}
+
+  const handleprogram = (event) => {
+    setAppTitle("program")
+    setOpen(false)
   };
-
+  const handleabout =(event) => {
+    setAppTitle("about")
+    setOpen(false)
+  }
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -227,7 +247,7 @@ const [appTitle, setAppTitle] = useState("");
                   : classes.title
                 }
               >
-                <img src={Logo} width="100px" height="80px" style={{paddingTop:"5px"}} />
+                <img src={Logo} width="90px" height="80px" style={{paddingTop:"2px"}} />
               </Link>
               
               <div className={classes.grow} />
@@ -242,7 +262,7 @@ const [appTitle, setAppTitle] = useState("");
                                     
                                     appTitle==='about'
                                     ?setAppTitle("")
-                                    :setAppTitle("about")
+                                    :handleabout()
                                   } 
                                 }
                     >
@@ -267,7 +287,7 @@ const [appTitle, setAppTitle] = useState("");
 
                                     appTitle==='program'
                                     ?setAppTitle("")
-                                    :setAppTitle("program")
+                                    :handleprogram()
                                   } 
                                 }
                     >
@@ -294,28 +314,31 @@ const [appTitle, setAppTitle] = useState("");
                     
                     </Typography>
                   </div> */}
-                  <div className={`${classes.menuContainer} menuContainer1`}>
-                    <Typography variant="h5" noWrap
-                      className={classes.title}
-                      onClick={()=>{
-                                    // appClassName==='closed'
-                                    // ?setAppClassName("expand")
-                                    // :setAppClassName("closed")
+                 
+                 <div className={`${classes.menuContainer} menuContainer1`}>
+                  <Link to='/blogs' className={classes.title}>
+                    <Typography variant="h5"  noWrap 
+                    className={classes.title}
+                    onClick={()=>{appClassName==='closed'
+                                  ?setAppClassName("expand")
+                                  :setAppClassName("closed")
 
-                                    appTitle==='blog'
-                                    ?setAppTitle("")
-                                    :setAppTitle("blog")
-                                  } 
-                                }
-                    >
-                      <Link to='/blogs' className={classes.title}>
-                        Blog 
-                        {appTitle === "blog"?<ArrowDropUpIcon/>:<ArrowDropDownIcon/>}
-                      </Link>
+                                  appTitle==='blogs'
+                                  ?setAppTitle("")
+                                  :setAppTitle("blogs")
+                                } 
+                              }>
+                      
+                        Blogs 
+                        {appTitle === "blogs"?<ArrowDropUpIcon/>:<ArrowDropDownIcon/>} 
+                      
+                      
                     </Typography>
+                    </Link>
                   </div>
 
                   <div className={`${classes.menuContainer} menuContainer1`}>
+                  <Link to='/contact' className={classes.title}>
                     <Typography variant="h5"  noWrap 
                     className={classes.title}
                     onClick={()=>{appClassName==='closed'
@@ -327,12 +350,13 @@ const [appTitle, setAppTitle] = useState("");
                                   :setAppTitle("contact")
                                 } 
                               }>
-                      <Link to='/contact' className={classes.title}>
+                      
                         Contact 
                         {appTitle === "contact"?<ArrowDropUpIcon/>:<ArrowDropDownIcon/>} 
-                      </Link>
+                      
                       
                     </Typography>
+                    </Link>
                   </div>
 
                   {/* <div className={classes.menuContainer}>
@@ -528,7 +552,7 @@ const [appTitle, setAppTitle] = useState("");
 
             <Grid item xs={12} md={12}>
               {appTitle==="program"
-                ?<Program/>
+                ?<Program setOpen={setOpen} open={open}/>
                 :null
               }
             </Grid>

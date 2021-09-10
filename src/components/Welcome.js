@@ -103,7 +103,7 @@ const Welcome = ({
         {
             name: 'Image_4',
             image:image4,
-            title:"UP YOUR HAPPINESS QUOTIENT",
+            title:"INCREASE YOUR HAPPINESS QUOTIENT",
         }
     ]
 
@@ -188,9 +188,17 @@ const Welcome = ({
                  
             <Grid container>
                 <Grid item xs={12} md={12} >
+
+                    <Typography  varient="h3" align='center' style={{fontSize:"24px",padding:"10%",paddingBottom:"0",fontStyle:"italic"}}>
+                        “Health is a state of complete harmony of the body, mind, and spirit. When one is free from physical 
+                        disabilities and mental distractions, the gates of the soul open.” ― BKS Iyengar
+                    </Typography>
+
                     <Typography className="overView" varient="h3" align='center'>
                         Overview
                     </Typography> 
+
+                    
                     <Typography className="overViewConetnt" varient="h3" align='center'>
                         Aleenta is an ancient Sanskrit word which means 
                         “A rewarding life”. At Aleenta, we design programs 

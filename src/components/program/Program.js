@@ -2,6 +2,8 @@ import React, { Component, useState } from 'react';
 
 import { Grid, Typography, Button  } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
+import { withRouter, Link } from "react-router-dom";
+
 
 //-----------------------Icons-----------------------
 import what from '../../images/dropDown/what.png'
@@ -56,8 +58,9 @@ const useStyles = makeStyles((theme) => ({
       },
 }));
 
-const Program = () => {
+const Program = ({history,setOpen,open}) => {
 
+   { console.log(setOpen,open);}
   const classes = useStyles();
 
   const [programType, setProgramType] = useState('corporatePrograms');
@@ -225,29 +228,46 @@ const Program = () => {
                     {programType === 'corporatePrograms'
                     ?
                         <Grid container>
-                            <Grid item xs={2} md={1}>
-                                <img src={what} />
+
+                            <Grid item xs={12} md={6}>
+                                <Grid container>
+                                    <Grid item xs={2} md={2}>
+                                        <img src={what} />
+                                    </Grid>
+                                    <Grid item xs={10} md={10}>
+                                    <Link to='/corporatePrograms#mangallam'
+                                    style={{textDecoration: "none",color: "#000000",}}>
+                                        <Typography className="aboutDropDown_heading"
+                                            // onClick={()=>
+                                            // setOpen(true)}
+                                         variant='h6'>
+                                            Mangallam
+                                        </Typography>
+                                    </Link>
+                                        <Typography className="aboutDropDown_subContent">
+                                            A package of Wellness coaching program which consists of 
+                                            group coaching for all levels of employees in an Organisation 
+                                            on how to stay positive and healthy – in body and in mind. 
+                                            The outcome of this program include increased levels of mindfulness, 
+                                            empathy, higher performance and team dynamics. 
+                                        </Typography>
+                                    </Grid>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
-                                	Mangallam
-                                </Typography>
-                                <Typography className="aboutDropDown_subContent">
-                                    A package of Wellness coaching program which consists of 
-                                    group coaching for all levels of employees in an Organisation 
-                                    on how to stay positive and healthy – in body and in mind. 
-                                    The outcome of this program include increased levels of mindfulness, 
-                                    empathy, higher performance and team dynamics. 
-                                </Typography>
-                            </Grid>
+
                             
                             <Grid item xs={2} md={1}>
                                 <img src={why} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/corporatePrograms#happiness' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading" variant='h6'
+                                    onClick={()=>
+                                        setOpen(true)}
+                                >
                                     Happiness coaching  
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     One has to find his/her true sources of 
                                     happiness in order to live a happy and successful life. 
@@ -262,9 +282,14 @@ const Program = () => {
                                 <img src={who} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/corporatePrograms#meditation' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading" variant='h6'
+                                    onClick={()=>
+                                        setOpen(true)}
+                                >
                                     Meditation sessions 
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     To improve Focus and Concentration –  
                                     Upto 50 people in a batch.  (12/24 hours – Annual calendar program) 
@@ -274,9 +299,15 @@ const Program = () => {
                                 <img src={theCoach} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/corporatePrograms#personal' style={{textDecoration: "none",color: "#000000",}}>
+
+                                <Typography className="aboutDropDown_heading" variant='h6'
+                                    onClick={()=>
+                                        setOpen(true)}
+                                >
                                     Personal Coaching 
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     Sponsor your employee for one-on-one coaching in any area of development. 
                                     Ex: Time Management, Optimism, Positive Attitude, 
@@ -285,7 +316,9 @@ const Program = () => {
                             </Grid>
                         </Grid>  
                     :null}
-
+{/* -------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------ */}
                     {programType === 'individualCoaching'
                     ?
                         <Grid container>
@@ -293,9 +326,14 @@ const Program = () => {
                                 <img src={what} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/individualPrograms#nature' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading" variant='h6'
+                                    onClick={()=>
+                                        setOpen(true)}
+                                >
                                     Nature coaching 
                                 </Typography>
+                                </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     In this one-on-one coaching program, the client will discover 
                                     his/her true nature with an organic approach. 
@@ -309,9 +347,14 @@ const Program = () => {
                                 <img src={theCoach} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/individualPrograms#timeManage' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading"
+                                onClick={()=>
+                                    setOpen(true)}
+                                     variant='h6'>
                                     Time Management  
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     This program is ideal for students and people 
                                     who are juggling with work, home and social environments and are 
@@ -323,7 +366,11 @@ const Program = () => {
                                 <img src={who} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/individualPrograms#adolescent' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading"
+                                onClick={()=>
+                                    setOpen(true)}
+                                     variant='h6'>
                                 	Adolescent coaching (ages 12 to 20)
                                 </Typography>
                                 <Typography className="aboutDropDown_subContent">
@@ -333,14 +380,20 @@ const Program = () => {
                                     Self-esteem and high Self-confidence in personal/ academic/ social environments? Aleenta's 
                                     Adolescent coaching is the right program for you/your child! 
                                 </Typography>
+                                </Link>
                             </Grid>
                             <Grid item xs={2} md={1}>
                                 <img src={theCoach} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/individualPrograms#social' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading" 
+                                onClick={()=>
+                                    setOpen(true)}
+                                     variant='h6'>
                                     Social Inhibitions 
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     This program is ideal for individuals who are active on 
                                     social media but not the same when they encounter 
@@ -355,9 +408,14 @@ const Program = () => {
                                 <img src={who} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/individualPrograms#selfExpression' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading"
+                                onClick={()=>
+                                    setOpen(true)}
+                                     variant='h6'>
                                     Self expression  
                                 </Typography>
+                                </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     This program is ideal for adolescents and youth who are 
                                     continuously engaged in their studies and 
@@ -370,9 +428,14 @@ const Program = () => {
                                 <img src={why} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/individualPrograms#creative' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading" 
+                                onClick={()=>
+                                    setOpen(true)}
+                                     variant='h6'>
                                     Creative coaching 
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     Tapping into the client's creative potential is a 
                                     fun and creative process that Aleenta offers. 
@@ -387,6 +450,12 @@ const Program = () => {
                         </Grid>  
                     :null}
 
+
+{/* ------------------------------------------------------------------------------------------------------------------
+====================================================================================================================
+====================================================================================================================== */}
+
+
                     {programType === 'groupCoaching'
                     ?
                         <Grid container spacing={1}>
@@ -394,9 +463,16 @@ const Program = () => {
                                 <img src={what} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            
+                        <Link to='/GroupPrograms#happiness' style={{textDecoration: "none",color: "#000000",}}>
+
+                                <Typography className="aboutDropDown_heading" 
+                                onClick={()=>
+                                    setOpen(true)}
+                                     variant='h6'>
                                     Happiness coaching 
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     Discover the happiness that is within you! One has to find 
                                     his/her true sources of happiness in order to live a happy and successful life. 
@@ -409,9 +485,14 @@ const Program = () => {
                                 <img src={theCoach} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/GroupPrograms#spritual' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading" 
+                                onClick={()=>
+                                    setOpen(true)}
+                                     variant='h6'>
                                     Spiritual coaching   
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     Every human has a Spiritual quotient – which some have discovered, 
                                     some in the path of discovering and few, are yet to discover. 
@@ -426,9 +507,14 @@ const Program = () => {
                                 <img src={who} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/GroupPrograms#relation' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading" 
+                                onClick={()=>
+                                    setOpen(true)}
+                                     variant='h6'>
                                     Relationship coaching  
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     Life is all about relationships, where one can not not relate to anybody! 
                                     Relationship coaching creates ideas and insights on how to maintain existing 
@@ -442,9 +528,14 @@ const Program = () => {
                                 <img src={theCoach} />
                             </Grid>
                             <Grid item xs={10} md={5}>
-                                <Typography className="aboutDropDown_heading" variant='h6'>
+                            <Link to='/GroupPrograms#wellness' style={{textDecoration: "none",color: "#000000",}}>
+                                <Typography className="aboutDropDown_heading"
+                                onClick={()=>
+                                    setOpen(true)}
+                                     variant='h6'>
                                     Wellness coaching 
                                 </Typography>
+                            </Link>
                                 <Typography className="aboutDropDown_subContent">
                                     In this program, we offer group coaching (Organisations/Institutions/Schools) 
                                     for all individuals coming from different cultures, 
@@ -475,4 +566,4 @@ const Program = () => {
      );
 }
  
-export default Program;
+export default withRouter(Program);
