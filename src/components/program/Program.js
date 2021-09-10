@@ -238,8 +238,8 @@ const Program = ({history,setOpen,open}) => {
                                     <Link to='/corporatePrograms#mangallam'
                                     style={{textDecoration: "none",color: "#000000",}}>
                                         <Typography className="aboutDropDown_heading"
-                                            // onClick={()=>
-                                            // setOpen(true)}
+                                            onClick={()=>
+                                            setOpen(true)}
                                          variant='h6'>
                                             Mangallam
                                         </Typography>
