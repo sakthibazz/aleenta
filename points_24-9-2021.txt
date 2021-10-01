@@ -1,0 +1,13 @@
+1.put divider in between programs.(Done)
+3.give padding on left and right side of programs content(Done)
+5.reduce the size of heading in additional services(Done)
+7.padding before and after the yellow line should be same(Done)
+4.padding for images in additional service.(Done)
+10.Remove "Article" in additional service dropDown and path(Done)
+2.change the colour in the band.(Done)
+6.change the images in programs.(Done)
+9.icons in drop downs.(Done)
+
+
+
+-------------20/9/2021--------

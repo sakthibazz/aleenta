@@ -10,13 +10,15 @@
     
     .blogTitle{
         align-items: center;
-        font-size: 40px;
+        font-size: 26px;
         padding-top: 3%;
-        padding-left: 26%;
-        padding-right: 26%;
-        font-family: 'Tenor Sans', sans-serif !important;
+        padding-left: 32%;
+        padding-right: 32%;
+        // font-family: 'Tenor Sans', sans-serif !important;
         @media only screen and (max-width: 600px) {
-            font-size: 15px;
+            padding-left: 18%;
+            padding-right: 18%;
+            font-size: 16px;
         }
     }
     .blog1Image1{
@@ -25,44 +27,49 @@
         width: 100%;
     }
     .blogDiv{
-        margin-right: 16%;
-        margin-left: 16%;
-        margin-top: 4%;
+        margin-right:10%;
+        margin-left: 10%;
+        margin-top: 3%;
         content: "";
         background-color: #FFD741;
-        height: 4px;
-        width: 100%;
+        height: 2px;
+        width:100%;
+        @media only screen and (max-width: 600px) {
+            height: 1px;
+        }
     }
     .blogcontent1{
         padding-top: 2%;
-        padding-left: 16%;
-        padding-right: 16%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 18px;
         // font-weight: 60;
-        font-family: 'Tenor Sans', sans-serif !important;
+        // font-family: 'Tenor Sans', sans-serif !important;
         @media only screen and (max-width: 600px) {
-            font-size: 8px;
+            font-size: 12px;
         }
     }
     .blog1Image2{
         padding-top: 2%;
-        padding-left: 38%;
-        padding-right: 16%;
+        padding-left: 43%;
+        padding-right: 45%;
+        height: 100px;
         // width: 100%;
         @media only screen and (max-width: 600px) {
-            height: 40PX;
-            padding-left: 40%;
+            height: 24PX;
+            padding-left: 42%;
         }
     }
     .blog1Image3{
         height: 100%;
         width: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
     .blog1Image4{
         padding-top: 2%;
-        padding-left: 16%;
-        padding-right: 16%;
+        padding-left: 10%;
+        padding-right: 10%;
         width: 100%;
     }
 }

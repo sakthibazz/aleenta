@@ -5,6 +5,7 @@ import { Switch, Route, BrowserRouter} from "react-router-dom";
 // import './assets/css/main.css';
 // import './assets/js/main.js'
 import Layout from "./Layout";
+import Footer from "./components/footer";
 
 // import Header from "./headerBar";
 
@@ -16,6 +17,13 @@ import Contact from "./components/Contact/Contact"
 import CorporatePrograms from "./components/program/corporatePrograms"
 import IndividualPrograms from "./components/program/individualPrograms"
 import GroupPrograms from "./components/program/GroupPrograms"
+
+//------------------ Addition Services--------------------------
+import AdditionalServices from "./components/AdditionalServices/AdditionalServices";
+import AdditionMeditation from "./components/AdditionalServices/meditation";
+import AdditionArtTherapy from "./components/AdditionalServices/ArtTherapy";
+import AdditionSelfHealing from "./components/AdditionalServices/SelfHealing";
+import AdditionCounseling from "./components/AdditionalServices/counseling"
 
 // import Explore from "./components/SignIn_SignUp/Explore";
 // import SignIn from "./components/SignIn_SignUp/SignIn";
@@ -39,16 +47,31 @@ const App = () => {
       {/* <PrivateRoute path="/admin" component={AdminRoutes} /> */}
       <Layout>
       {/* <Header> */}
+        {/* --------------------Drop downs------------------ */}
         <Route exact path="/" component={Welcome} />
         <Route path="/about-us" component={About} />
         <Route path="/blogs" component={Blogs} />
         <Route path="/program" component={Program} />
         <Route path="/contact" component={Contact} />
+        <Route path="/additionalServices" component={AdditionalServices} />
+
+        {/* --------------------Programs------------------ */}
         <Route path="/corporatePrograms" component={CorporatePrograms} />
         <Route path="/individualPrograms" component={IndividualPrograms} />
         <Route path="/groupPrograms" component={GroupPrograms} />
-        {/*<PrivateRoute path="/dashboard" component={Dashboard} />
-        <Route path="/paymentProcess/:programId" component={PaymentProcess} /> */}
+
+        {/* --------------------Addition Services-------------------------- */}
+        <Route path="/additionMeditation" component={AdditionMeditation} />
+        <Route path="/additionArtTherapy" component={AdditionArtTherapy} />
+        <Route path="/additionSelfHealing" component={AdditionSelfHealing} />
+        <Route path="/additionCounseling" component={AdditionCounseling} />
+
+
+
+        {/* ------------------Footer---------------------------------------- */}
+        <Route path="/footer" component={Footer} />
+
+        {/*<Route path="/paymentProcess/:programId" component={PaymentProcess} /> */}
       </Layout>
       {/* </Header> */}
     </Switch>

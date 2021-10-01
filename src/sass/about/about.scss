@@ -1,3 +1,12 @@
+
+.hrTag{
+    padding: 2px;
+    background-color: white;
+    // height:"3px";
+    // opacity: 1;
+    // color: white;
+}
+
 .aboutContainer{
     color: black;
     width: 100%;
@@ -6,13 +15,48 @@
     }
 
     .abotTitle{
-        padding-right: 12%;
+        padding-right: 10%;
+        padding-left: 5%;
+    }
+    .dropDownIcons{
+        height:30px;
+        width: 30px;
     }
     .aboutDropDown_heading{
+        position:relative;
+        align-self: center;
+        display: inline-block;
+        color: black;
+    }
+    .aboutDropDown_heading::after{
+        position:absolute;
+        content: "";
+        background-color:#FFE481;
+        height: 3px;
+        width: 0;
+        left: 0%;
+        bottom: -2px;
+        transition: 0.3s;
+    }
+    .aboutDropDown_heading:hover::after{
+        width: 100%;
+        color: #FFE481;
     
     }
+    .aboutDropDown_heading {
+        // margin-top: 35px;
+        // box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    }
+        
+    .aboutDropDown_heading:hover{
+        // margin-top: 35px;
+        transform: scale(1.05);
+        // color: #FFE481;
+        // box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
     .aboutDropDown_subContent{
-        padding:4px;
+        padding:2px;
         font-size: 14px;
     }
     .programTypeButton{
@@ -28,7 +72,11 @@
         width: 18%;
         // bottom: -26px;
         left:100%;
-        @media only screen and (max-width: 800px) {
+        @media  screen and (max-width: 600px) {
+            height: 0;
+            width: 0;
+        }
+        @media  screen and (max-width: 800px) {
             height: 0;
             width: 0;
         }
@@ -41,7 +89,7 @@
     .programTypeButton1::after{
         position:absolute;
         content: "";
-        background-color:#FFD741;
+        background-color:#FFE481;
         height: 5px;
         width: 18%;
         // bottom: -26px;
@@ -50,27 +98,60 @@
             height: 0;
             width: 0;
         }
+        @media only screen and (max-width: 800px) {
+            height: 0;
+            width: 0;
+        }
     }
     padding-bottom: 10px;
 }
-// .aboutTitleContainer{
-//     position:relative;
-//     align-self: center;
-//     // background-color: chartreuse;
-// }
-// .aboutTitleContainer::after{
-//     position:absolute;
-//     content: "";
-//     background-color:white;
-//     box-shadow: white;
-//     height: 98%;
-//     width: 0.3%;
-//     // top:1%;
-//     // bottom: 5%;
-//     left:32%;
-//     // transition: 0.3s;
-//     @media only screen and (max-width: 600px) {
-//         height: 0;
-//         width: 0;
-//     }
-// }
+.aboutTitleContainer{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.aboutTitleContainer::after{
+    position:absolute;
+    content: "";
+    background-color:white;
+    box-shadow: white;
+    height: 100%;
+    width: 0.3%;
+    top: -10px;
+    // bottom: 5%;
+    left:32%;
+    // transition: 0.3s;
+    @media only screen and (max-width: 600px) {
+        height: 0;
+        width: 0;
+    }
+    @media only screen and (max-width: 800px) {
+        height: 0;
+        width: 0;
+    }
+}
+.aboutTitleContainer1{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.aboutTitleContainer1::after{
+    position:absolute;
+    content: "";
+    background-color:white;
+    box-shadow: white;
+    height: 100%;
+    width: 0.3%;
+    top: -8px;
+    // bottom: 5%;
+    left:32%;
+    // transition: 0.3s;
+    @media only screen and (max-width: 600px) {
+        height: 0;
+        width: 0;
+    }
+    @media only screen and (max-width: 800px) {
+        height: 0;
+        width: 0;
+    }
+}

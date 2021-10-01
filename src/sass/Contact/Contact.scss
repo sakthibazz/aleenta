@@ -19,9 +19,11 @@
     .logoImg{
         padding-top: 2%;
         height: 350px;
+        width: 390px;
         // height: 60%;
         @media only screen and (max-width: 600px) {
             height: 200px;
+            width: 240px;
         }
     }
     .contactContent{

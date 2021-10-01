@@ -26,7 +26,8 @@ import CardContent from "@material-ui/core/CardContent";
 
 //------------------Created Componets----------------------//
 import About from './components/about/About';
-import Program from './components/program/Program'
+import Program from './components/program/Program';
+import AdditionalServices from "./components/AdditionalServices/AdditionalServices";
 
 import {
   Menu as MenuIcon,
@@ -35,6 +36,7 @@ import {
   ExpandMore as ExpandMoreIcon,
   ExpandLess as ExpandLessIcon,
   MoreVert as MoreIcon,
+  Opacity,
 } from "@material-ui/icons";
 // import { logoutUser } from "./redux/actions/authActions";
 import { makeStyles } from "@material-ui/core/styles";
@@ -58,13 +60,23 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       display: "none",
     },
-    marginRight: theme.spacing(10),
+    marginRight: theme.spacing(6),
   },
   menuCollapseContaier: {
     [theme.breakpoints.up("sm")]: {
       display: "none",
     },
   
+  },
+  toolBarContainer:{
+    margin:"0",
+    padding:'0',
+    "& .MuiContainer-root": {
+      paddingLeft: "0%",
+  }, 
+  "& .MuiContainer-maxWidthLg": {
+      maxWidth: "100%",
+  },
   },
   title: {
     fontSize: "16px",
@@ -82,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
     // color: "#008dd2",
   },
   mobileTitle: {
-    // color: "#666666",
+    color: "Black",
     textDecoration: "none",
     fontSize: 16,
     fontWeight: 600,
@@ -114,10 +126,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
   },
   profileDrop: {
-    marginTop: "45px",
-    "& .MuiList-root": {
-      // width: 130
-      // background: '#233044',
+    marginTop: "35px",
+    "&.MuiList-root": {
+      // backgroundColor: 'red',
     },
     "& .MuiButtonBase-root": {
       // color: '#F8F9F9',
@@ -125,9 +136,12 @@ const useStyles = makeStyles((theme) => ({
       //   background: '#1e293a'
       // }
     },
-    "& .MuiSvgIcon-root": {
-      marginRight: theme.spacing(1),
+    "& .MuiMenu-list":{
+      backgroundColor:"#FAECDD",
     },
+    // "& .MuiSvgIcon-root": {
+    //   marginRight: theme.spacing(1),
+    // },
   },
 }));
 
@@ -193,6 +207,11 @@ const closeMenu = ()=>{
     setAppTitle("about")
     setOpen(false)
   }
+  const handleAdditionalServices =(event) => {
+    setAppTitle("additionalServices")
+    setOpen(false)
+  }
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -215,7 +234,7 @@ const closeMenu = ()=>{
       <CssBaseline />
       {/* <ElevationScroll  {...props}> */}
         <AppBar className={appClassName} style={{backgroundColor:"#fbf2de"}}>
-          <Toolbar>
+          <Toolbar className={classes.toolBarContainer}>
             <Grid container>
               <div className={`${classes.menuCollapseContaier} ${classes.leftLogo}`}>
               
@@ -247,13 +266,21 @@ const closeMenu = ()=>{
                   : classes.title
                 }
               >
-                <img src={Logo} width="90px" height="80px" style={{paddingTop:"2px"}} />
+                <img src={Logo} width="110px" height="80px" style={{paddingTop:"2px",paddingLeft:"20px"}} />
               </Link>
               
               <div className={classes.grow} />
               <div className={classes.userDetails}>
 
-                  <div className={`${classes.menuContainer} menuContainer1`}>
+                  <div className={appTitle !='about'
+                                  ?`${classes.menuContainer} menuContainer1`
+                                  :`${classes.menuContainer} menuContainer2`
+                                }>
+                  {/* {`${classes.menuContainer} menuContainer1`}> */}
+                    {/* {appTitle==='about'
+                                  ?`${classes.menuContainer} menuContainer2`
+                                  :`${classes.menuContainer} menuContainer1`
+                                }> */}
                     <Typography variant="h5" noWrap
                       className={classes.title}
                       onClick={()=>{appClassName==='closed'
@@ -278,7 +305,10 @@ const closeMenu = ()=>{
                       {/* </Link> */}
                     </Typography>
                   </div>
-                  <div className={`${classes.menuContainer} menuContainer1`}>
+                  <div className={appTitle !='program'
+                                  ?`${classes.menuContainer} menuContainer1`
+                                  :`${classes.menuContainer} menuContainer2`
+                                }>
                     <Typography variant="h5" noWrap
                       className={classes.title}
                       onClick={()=>{appClassName==='closed'
@@ -296,6 +326,28 @@ const closeMenu = ()=>{
                      
                     </Typography>
                   </div>
+
+                <div className={appTitle !='additionalServices'
+                                  ?`${classes.menuContainer} menuContainer1`
+                                  :`${classes.menuContainer} menuContainer2`
+                                }>
+                    <Typography variant="h5" noWrap
+                      className={classes.title}
+                      onClick={()=>{appClassName==='closed'
+                                    ?setAppClassName("expand")
+                                    :setAppClassName("closed")
+
+                                    appTitle==='additionalServices'
+                                    ?setAppTitle("")
+                                    :handleAdditionalServices()
+                                  } 
+                                }
+                    >
+                    
+                        Additional Services {appTitle === "additionalServices"?<ArrowDropUpIcon/>:<ArrowDropDownIcon/>}
+                     
+                    </Typography>
+                  </div> 
                   {/* <div className={`${classes.menuContainer} menuContainer1`}>
                     <Typography variant="h5" noWrap
                       className={classes.title}
@@ -315,21 +367,22 @@ const closeMenu = ()=>{
                     </Typography>
                   </div> */}
                  
-                 <div className={`${classes.menuContainer} menuContainer1`}>
+                 <div className={appTitle !='blogs'
+                                  ?`${classes.menuContainer} menuContainer1`
+                                  :`${classes.menuContainer} menuContainer2`
+                                }>
                   <Link to='/blogs' className={classes.title}>
                     <Typography variant="h5"  noWrap 
                     className={classes.title}
-                    onClick={()=>{appClassName==='closed'
-                                  ?setAppClassName("expand")
-                                  :setAppClassName("closed")
-
+                    onClick={()=>{
+                                  setAppClassName("closed")
                                   appTitle==='blogs'
                                   ?setAppTitle("")
                                   :setAppTitle("blogs")
                                 } 
                               }>
                       
-                        Blogs 
+                        Blog
                         {appTitle === "blogs"?<ArrowDropUpIcon/>:<ArrowDropDownIcon/>} 
                       
                       
@@ -337,14 +390,16 @@ const closeMenu = ()=>{
                     </Link>
                   </div>
 
-                  <div className={`${classes.menuContainer} menuContainer1`}>
+                  <div className={appTitle !='contact'
+                                  ?`${classes.menuContainer} menuContainer1`
+                                  :`${classes.menuContainer} menuContainer2`
+                                }>
                   <Link to='/contact' className={classes.title}>
                     <Typography variant="h5"  noWrap 
                     className={classes.title}
-                    onClick={()=>{appClassName==='closed'
-                                  ?setAppClassName("expand")
-                                  :setAppClassName("closed")
-
+                    onClick={()=>{
+                                  setAppClassName("closed")
+                                  
                                   appTitle==='contact'
                                   ?setAppTitle("")
                                   :setAppTitle("contact")
@@ -384,9 +439,10 @@ const closeMenu = ()=>{
                   </div> */}
 
 
-                  <div className={classes.menuCollapseContaier}>
+                  <div className={classes.menuCollapseContaier} >
                     
                     <Menu
+                      className={classes.profileDrop}
                       id="menu-appbar"
                       anchorEl={mobileAnchorEl}
                       anchorOrigin={{
@@ -402,7 +458,7 @@ const closeMenu = ()=>{
                       onClose={handleMobileMenuClose}
                     >
 
-                      <MenuItem onClick={handleMobileMenuClose}>
+                      <MenuItem onClick={handleMobileMenuClose}  >
                         <Typography variant="h5" noWrap>
                           <Link
                             to="/"
@@ -417,7 +473,7 @@ const closeMenu = ()=>{
                         </Typography>
                       </MenuItem>
 
-                      <MenuItem onClick={handleMobileMenuClose}>
+                      <MenuItem onClick={handleMobileMenuClose} >
                         <Typography variant="h5" noWrap>
                           <Link
                             to="/about-us"
@@ -446,6 +502,20 @@ const closeMenu = ()=>{
                           </Link>
                         </Typography>
                       </MenuItem>
+                      <MenuItem onClick={handleMobileMenuClose} >
+                        <Typography variant="h5" noWrap >
+                          <Link
+                            to="/additionalServices"
+                            className={
+                              pathname === "/additionalServices"
+                                ? clsx(classes.mobileTitle, classes.titleActive)
+                                : classes.mobileTitle
+                            }
+                          >
+                            Additional Services
+                          </Link>
+                        </Typography>
+                      </MenuItem>
 
                       {/* <MenuItem onClick={handleMobileMenuClose}>
                         <Typography variant="h5" noWrap>
@@ -462,7 +532,7 @@ const closeMenu = ()=>{
                         </Typography>
                       </MenuItem> */}
 
-                      <MenuItem onClick={handleMobileMenuClose}>
+                      <MenuItem onClick={handleMobileMenuClose} >
                         <Typography variant="h5" noWrap>
                           <Link
                             to="/blogs"
@@ -477,7 +547,7 @@ const closeMenu = ()=>{
                         </Typography>
                       </MenuItem>
 
-                      <MenuItem onClick={handleMobileMenuClose}>
+                      <MenuItem onClick={handleMobileMenuClose} >
                         <Typography variant="h5" noWrap>
                           <Link
                             to="/contact"
@@ -491,7 +561,7 @@ const closeMenu = ()=>{
                           </Link>
                         </Typography>
                       </MenuItem>
-
+                     
                       {/* <MenuItem onClick={handleMobileMenuClose}>
                         <Typography variant="h5" noWrap>
                           <Link
@@ -557,12 +627,24 @@ const closeMenu = ()=>{
               }
             </Grid>
 
+            <Grid item xs={12} md={12}>
+              {appTitle==="additionalServices"
+                ?<AdditionalServices  setOpen={setOpen} open={open} />
+                :null
+              }
+            </Grid>
+
           </Grid>
           </Toolbar>
         </AppBar>
       {/* </ElevationScroll > */}
       <Toolbar />
+      {/* <Grid style={appClassName==='expand'
+                    ?{opacity:"0.2"}
+                  :null}
+      > */}
       {props.children}
+        {/* </Grid> */}
       {/* <Footer /> */}
       
     </>

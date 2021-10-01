@@ -6,6 +6,7 @@ import Divider from '@material-ui/core/Divider';
 
 import { makeStyles } from "@material-ui/core/styles";
 
+import Footer from './footer';
 
 
 // import '../../node_modules/bootstrap/dist/css/bootstrap.css'
@@ -111,10 +112,10 @@ const Welcome = ({
         // <Container maxWidth="lg" className="mainViewContainer">
         <Container maxWidth="lg" className={`${classes.mainViewContainer} mainViewContainer`}>
             {/* <hr/> */}
-            <Grid container className={classes.imageGridContainer} >
+           <Grid container className={classes.imageGridContainer} style={{backgroundColor:"#fbf2de"}}>
                 <Grid item xs={12} md={12} >
                     {/* <Carousel items={items} /> */}
-                    <Grid id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" style={{paddingTop:"15px",marginTop:'-15px'}}>
+                      <Grid id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" style={{paddingTop:"15px",marginTop:'-15px'}}> 
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -126,51 +127,68 @@ const Welcome = ({
                                         <Grid container>
                                             <Grid item xs={12} md={8}>
                                                 <img class="d-block w-60 carouselImage" src={image1}  alt="First slide"/>
+                                                <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
+                                                    Nature COACHING
+                                                </Typography> 
                                             </Grid>
                                             <Grid item xs={12} md={4}>
                                                 <Typography className="imageSideText2">
-                                                    see what you don't see
+                                                    See What You Don't See
                                                 </Typography> 
                                             </Grid>
                                         </Grid>
                                     
                                     </div>
+
+                                    <div class="carousel-item">
+                                    <Grid container>
+                                            <Grid item xs={12} md={8}>
+                                                <img class="d-block w-60 carouselImage" src={image3} alt="First slide"/>
+                                                <Typography className="imageSideText1"  align="center" style={{color:"#4B2F5E"}}>
+                                                    CREATIVE COACHING
+                                                </Typography> 
+                                            </Grid>
+                                            <Grid item xs={12} md={4}>
+                                                <Typography className="imageSideText2">
+                                                    Tap Into Your Creative Potential
+                                                </Typography> 
+                                            </Grid>
+                                        </Grid>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <Grid container>
+                                            <Grid item xs={12} md={8}>
+                                                <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
+                                                <Typography className="imageSideText1" align="center" style={{color:"#E5CF49"}}>
+                                                    HAPPINESS COACHING
+                                                </Typography> 
+                                            </Grid>
+                                            <Grid item xs={12} md={4}>
+                                                <Typography className="imageSideText2">
+                                                    Up Your Happiness Quotient
+                                                </Typography> 
+                                            </Grid>
+                                        </Grid>
+                                    </div>
+
+
                                     <div class="carousel-item">
                                     <Grid container>
                                             <Grid item xs={12} md={8}>
                                                 <img class="d-block w-60 carouselImage" src={image2} alt="First slide"/>
+                                                <Typography className="imageSideText1" align="center" style={{color:"#BA0110"}}>
+                                                    WELLBEING COACHING
+                                                </Typography> 
                                             </Grid>
                                             <Grid item xs={12} md={4}>
                                                 <Typography className="imageSideText2">
-                                                    FIND THE KEY TO YOUR WELLBEING
+                                                    Find The Key To Your Wellbeing
                                                 </Typography> 
                                             </Grid>
                                         </Grid>
                                     </div>
-                                    <div class="carousel-item">
-                                    <Grid container>
-                                            <Grid item xs={12} md={8}>
-                                                <img class="d-block w-60 carouselImage" src={image3}  alt="First slide"/>
-                                            </Grid>
-                                            <Grid item xs={12} md={4}>
-                                                <Typography className="imageSideText2">
-                                                    TAP INTO YOUR CREATIVE POTENTIAL
-                                                </Typography> 
-                                            </Grid>
-                                        </Grid>
-                                    </div>
-                                    <div class="carousel-item">
-                                    <Grid container>
-                                            <Grid item xs={12} md={8}>
-                                                <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
-                                            </Grid>
-                                            <Grid item xs={12} md={4}>
-                                                <Typography className="imageSideText2">
-                                                    UP YOUR HAPPINESS QUOTIENT
-                                                </Typography> 
-                                            </Grid>
-                                        </Grid>
-                                    </div>
+                                   
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"  style={{backgroundColor:"gray",borderRadius:"50px"}}></span>
@@ -183,13 +201,90 @@ const Welcome = ({
                                 </Grid>
 
 
-                  </Grid>
-            </Grid>
+                </Grid>
+            </Grid> 
+
+
+            {/* ==================================================================================================================================================
+            ===========================================================================================================================================================
+            =========================================================================================================================================================== */}
+         {/* <Grid container className={classes.imageGridContainer} style={{backgroundColor:"#fbf2de",marginTop:"20%"}}>
+                <Grid item xs={12} md={12} >
+            <div id="slider">
+                <ul class="slides">
+
+                    <li class="single-slide slide-2">
+                        <div class="slide-image animate">
+                        <img src={image1} class="from-left" alt="image-1" />     
+                        </div>
+                        <div class="slide-content">
+                            <div class="animate">
+                                <h2 class="from-bottom">
+                                    see what you don't see
+                                </h2>                   
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="single-slide slide-3">
+                        <div class="slide-image animate">
+                            <img src={image2} class="from-left" alt="image-2" />
+                        </div>    
+                        <div class="slide-content">
+                        <div class="animate">
+                                <h2 class="from-bottom">
+                                    FIND THE KEY TO YOUR WELLBEING
+                                </h2>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="single-slide slide-4">
+                        <div class="slide-image animate">
+                            <img src={image3} class="from-left" alt="image-3" />
+                        </div>
+                        <div class="slide-content">
+                        <div class="animate">
+                                <h2 class="from-bottom">
+                                    TAP INTO YOUR CREATIVE POTENTIAL
+                                </h2>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="single-slide slide-4">
+                        <div class="slide-image animate">
+                            <img src={image4} class="from-left" alt="image-3" />
+                        </div>
+                        <div class="slide-content">
+    
+                            </div>
+
+                            <div class="animate">
+                                <h2 class="from-bottom">
+                                UP YOUR HAPPINESS QUOTIENT
+                                </h2>
+                            </div>
+                    </li>
+                
+            </ul>
+        </div>
+        </Grid>
+        </Grid> */}
+       
+         {/* {{<script src="js/TweenMax.min.js"></script>    
+        <script src="js/jquery.js"></script>
+        <script src="js/main.js"></script>}}  */}
+
+    {/* ===========================================================================================================================================================================================
+    ==========================================================================================================================================================================================
+    ======================================================================================================================================================================================= */}
                  
             <Grid container>
                 <Grid item xs={12} md={12} >
 
-                    <Typography  varient="h3" align='center' style={{fontSize:"24px",padding:"10%",paddingBottom:"0",fontStyle:"italic"}}>
+                    <Typography  varient="h3" className="bKSIyengar" align='center'>
                         “Health is a state of complete harmony of the body, mind, and spirit. When one is free from physical 
                         disabilities and mental distractions, the gates of the soul open.” ― BKS Iyengar
                     </Typography>
@@ -199,7 +294,7 @@ const Welcome = ({
                     </Typography> 
 
                     
-                    <Typography className="overViewConetnt" varient="h3" align='center'>
+                    <Typography className="overViewConetnt" varient="h3" align='center' style={{paddingBottom:"2%"}}>
                         Aleenta is an ancient Sanskrit word which means 
                         “A rewarding life”. At Aleenta, we design programs 
                         with a holistic approach for an all-round well-being of our Clients. 
@@ -209,7 +304,7 @@ const Welcome = ({
                     </Typography> 
                 </Grid>
             </Grid>
-
+            <Footer />
         </Container>
 
     );

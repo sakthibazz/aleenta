@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Grid, Typography } from '@material-ui/core';
 
+import Footer from "../footer"
+
+
 
 import blog1Img1 from '../../images/blogs/blog1Img1.jpg'
 import upcircle from '../../images/blogs/upcircle.png'
@@ -138,13 +141,17 @@ const Blogs = () => {
                     />
                 </Grid>
 
+                <Grid item xs={12} md={12} className="blogDiv">
+                    
+                </Grid>
+
                 <Grid item xs={12} md={12} >
                     <Typography className="blogcontent1" align='Left'>
                         Life is something we take for granted. 
                         All the people, things, comforts, privileges, challenges we have in our realm of Life, 
                         are channels of Self-empowerment through which we can achieve our highest purpose in life. 
                     </Typography>
-                    <Typography className="blogcontent1" align='Left'>
+                    <Typography className="blogcontent1" align='Left' style={{fontWeight:"600",fontStyle: "italic"}}>
                         Gratitude set in. Humility followed. Faith in Self and the higher Self strengthened. 
                         Attachments ceased to exist, Love became constant. 
                     </Typography>
@@ -200,6 +207,7 @@ const Blogs = () => {
                 </Grid>
                
             </Grid>
+            <Footer />
         </Container>
      );
 }
