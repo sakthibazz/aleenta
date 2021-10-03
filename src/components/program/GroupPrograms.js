@@ -8,12 +8,12 @@ import Footer from "../footer"
 
 // -------------Images----------------------------
 
-import relationshipsGroup from "../../images/programs/groupPrograms/relationshipsGroup.jpg"
-import spirituality from "../../images/programs/groupPrograms/spirituality.jpg"
-import wellnessGroup from "../../images/programs/groupPrograms/wellnessGroup.jpg"
-import happinessGroup from "../../images/programs/groupPrograms/happinessGroup.jpg"
+import relationshipsGroup from "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/relationshipsGroup.jpg"
+import spirituality from "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/spirituality.jpg"
+import wellnessGroup from "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/wellnessGroup.jpg"
+import happinessGroup from "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/happinessGroup.jpg"
 
-import divider from "../../images/programs/corporatePrograms/divider1.png"
+import divider from "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png"
 
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';

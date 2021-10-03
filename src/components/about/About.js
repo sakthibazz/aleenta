@@ -7,10 +7,10 @@ import { Grid, Typography,  } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 
 //-----------------------Icons-----------------------
-import icon13 from '../../images/dropDown/icon13.png'
-import icon15 from '../../images/dropDown/icon15.png'
-import icon12 from '../../images/dropDown/icon12.png'
-import icon1 from '../../images/dropDown/icon1.png'
+import icon13 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon13.png'
+import icon15 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon15.png'
+import icon12 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon12.png'
+import icon1 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
 
 
 

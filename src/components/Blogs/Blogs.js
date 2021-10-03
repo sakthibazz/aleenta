@@ -5,10 +5,10 @@ import Footer from "../footer"
 
 
 
-import blog1Img1 from '../../images/blogs/blog1Img1.jpg'
-import upcircle from '../../images/blogs/upcircle.png'
-import blog1Img2 from '../../images/blogs/blog1Img2.jpg'
-import downcircle from '../../images/blogs/downcircle.png'
+import blog1Img1 from 'https://dec4365vfd8ox.cloudfront.net/images/blogs/blog1Img1.jpg'
+import upcircle from 'https://dec4365vfd8ox.cloudfront.net/images/blogs/upcircle.png'
+import blog1Img2 from 'https://dec4365vfd8ox.cloudfront.net/images/blogs/blog1Img2.jpg'
+import downcircle from 'https://dec4365vfd8ox.cloudfront.net/images/blogs/downcircle.png'
 
 import { makeStyles } from "@material-ui/core/styles";
 

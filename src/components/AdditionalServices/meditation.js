@@ -7,16 +7,16 @@ import { withRouter, Link } from "react-router-dom";
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 //-----------------------Icons-----------------------
-import additionMeditationImg2 from '../../images/additionalServices/meditation2.jpg'
-import additionMeditationImg3 from '../../images/additionalServices/meditation3.jpg'
+import additionMeditationImg2 from 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/meditation2.jpg'
+import additionMeditationImg3 from 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/meditation3.jpg'
 
-import divider from "../../images/programs/corporatePrograms/divider.png"
+import divider from "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider.png"
 
-import cardImg1 from '../../images/additionalServices/cardImg1.jpg'
-import cardImg2 from '../../images/additionalServices/cardImg2.jpg'
-import cardImg3 from '../../images/additionalServices/cardImg3.jpg'
-import cardImg4 from '../../images/additionalServices/cardImg4.jpg'
-import icon1 from '../../images/dropDown/icon1.png'
+import cardImg1 from 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg1.jpg'
+import cardImg2 from 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg2.jpg'
+import cardImg3 from 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg3.jpg'
+import cardImg4 from 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg4.jpg'
+// import icon1 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
 
 
 const AdditionMeditation = () => {

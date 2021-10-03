@@ -5,30 +5,30 @@ import { makeStyles } from "@material-ui/core/styles";
 import { withRouter, Link } from "react-router-dom";
 
 
-import icon18 from '../../images/dropDown/icon18.png'
-import icon19 from '../../images/dropDown/icon19.png'
-import icon17 from '../../images/dropDown/icon17.png'
+import icon18 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon18.png'
+import icon19 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon19.png'
+import icon17 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon17.png'
 
 
 //-----------------------CorpPrograms Icons-----------------------
-import icon2 from '../../images/dropDown/icon2.png'
-import icon3 from '../../images/dropDown/icon3.png'
-import icon14 from '../../images/dropDown/icon14.png'
-import icon1 from '../../images/dropDown/icon1.png'
+import icon2 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon2.png'
+import icon3 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon3.png'
+import icon14 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon14.png'
+import icon1 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
 
 //-----------------------IndiPrograms Icons-----------------------
-import icon4 from '../../images/dropDown/icon4.png'
-import icon7 from '../../images/dropDown/icon7.png'
-import icon5 from '../../images/dropDown/icon5.png'
-import icon8 from '../../images/dropDown/icon8.png'
-import icon6 from '../../images/dropDown/icon6.png'
-import icon9 from '../../images/dropDown/icon9.png'
+import icon4 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon4.png'
+import icon7 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon7.png'
+import icon5 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon5.png'
+import icon8 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon8.png'
+import icon6 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon6.png'
+import icon9 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon9.png'
 
 //-----------------------GroupPrograms Icons-----------------------
-// import icon2 from '../../images/dropDown/icon2.png'
-// import icon3 from '../../images/dropDown/icon3.png'
-import icon10 from '../../images/dropDown/icon10.png'
-import icon11 from '../../images/dropDown/icon11.png'
+// import icon2 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon2.png'
+// import icon3 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon3.png'
+import icon10 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon10.png'
+import icon11 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon11.png'
 
 //-----------------------use-Style------------------------
 

@@ -8,10 +8,10 @@ import CopyrightIcon from '@material-ui/icons/Copyright';
 import logo from "../images/logo/aleenta.png"
 
 // --------------Icons-------------------------
-import youtube from "../images/socoalMediaIcons/youtube.png"
-import linkedin from "../images/socoalMediaIcons/linkedin.png"
-import whatsapp from "../images/socoalMediaIcons/whatsapp.png"
-import instagram from "../images/socoalMediaIcons/instagram.png"
+import youtube from "https://dec4365vfd8ox.cloudfront.net/images/socoalMediaIcons/youtube.png"
+import linkedin from "https://dec4365vfd8ox.cloudfront.net/images/socoalMediaIcons/linkedin.png"
+import whatsapp from "https://dec4365vfd8ox.cloudfront.net/images/socoalMediaIcons/whatsapp.png"
+import instagram from "https://dec4365vfd8ox.cloudfront.net/images/socoalMediaIcons/instagram.png"
 
 const Footer = () => {
     return ( 

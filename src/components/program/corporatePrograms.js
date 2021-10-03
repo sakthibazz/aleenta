@@ -8,12 +8,12 @@ import Footer from "../footer"
 
 // -------------Images----------------------------
 
-import MANGALLAM from "../../images/programs/corporatePrograms/mangallam.jpeg"
-import happinessIndividual from "../../images/programs/corporatePrograms/happinessIndividual.jpg"
-import meditation from "../../images/programs/corporatePrograms/meditation.jpg"
-import PersonalCorporate from "../../images/programs/corporatePrograms/PersonalCorporate.jpg"
+import MANGALLAM from "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/mangallam.jpeg"
+import happinessIndividual from "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/happinessIndividual.jpg"
+import meditation from "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/meditation.jpg"
+import PersonalCorporate from "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/PersonalCorporate.jpg"
 
-import divider from "../../images/programs/corporatePrograms/divider1.png"
+import divider from "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png"
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 

@@ -7,14 +7,14 @@ import Footer from "../footer"
 
 // -------------Images----------------------------
 
-import adolescent from "../../images/programs/individualPrograms/adolescent.jpg"
-import selfExpression from "../../images/programs/individualPrograms/selfExpression.jpg"
-import socialInhibitions from "../../images/programs/individualPrograms/socialInhibitions.jpg"
-import timeManagement from "../../images/programs/individualPrograms/timeManagement.jpg"
-import creativeCoaching from "../../images/programs/individualPrograms/creativeCoaching.jpg"
-import natureCoaching from "../../images/programs/individualPrograms/natureCoaching.jpg"
+import adolescent from "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/adolescent.jpg"
+import selfExpression from "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/selfExpression.jpg"
+import socialInhibitions from "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/socialInhibitions.jpg"
+import timeManagement from "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/timeManagement.jpg"
+import creativeCoaching from "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/creativeCoaching.jpg"
+import natureCoaching from "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/natureCoaching.jpg"
 
-import divider from "../../images/programs/corporatePrograms/divider1.png"
+import divider from "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png"
 
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';

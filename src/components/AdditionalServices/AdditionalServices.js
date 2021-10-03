@@ -6,10 +6,10 @@ import { withRouter, Link } from "react-router-dom";
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 //-----------------------Icons-----------------------
-import cardImg1 from '../../images/additionalServices/cardImg1.jpg'
-import cardImg2 from '../../images/additionalServices/cardImg2.jpg'
-import cardImg3 from '../../images/additionalServices/cardImg3.jpg'
-import icon1 from '../../images/dropDown/icon1.png'
+import cardImg1 from 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg1.jpg'
+import cardImg2 from 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg2.jpg'
+import cardImg3 from '.https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg3.jpg'
+// import icon1 from '../../images/dropDown/icon1.png'
 
 
 
