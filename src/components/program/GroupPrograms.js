@@ -2,21 +2,21 @@ import React, { Component, useEffect } from 'react';
 
 import { Container, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-import Footer from "../footer"
+import Footer from "../footer";
 
 
 // -------------Images----------------------------
 
-let relationshipsGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/relationshipsGroup.jpg"
-let spirituality = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/spirituality.jpg"
-let wellnessGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/wellnessGroup.jpg"
-let happinessGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/happinessGroup.jpg"
+let relationshipsGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/relationshipsGroup.jpg";
+let spirituality = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/spirituality.jpg";
+let wellnessGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/wellnessGroup.jpg";
+let happinessGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/happinessGroup.jpg";
+let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png";
 
-let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png"
 
 
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 const useStyles = makeStyles(theme => ({
     mainViewContainer: {

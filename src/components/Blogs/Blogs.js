@@ -1,18 +1,13 @@
 import React, { Component } from 'react';
 import { Container, Grid, Typography } from '@material-ui/core';
 
-import Footer from "../footer"
-
-
-
-let blog1Img1 = 'https://dec4365vfd8ox.cloudfront.net/images/blogs/blog1Img1.jpg'
-let upcircle = 'https://dec4365vfd8ox.cloudfront.net/images/blogs/upcircle.png'
-let blog1Img2 = 'https://dec4365vfd8ox.cloudfront.net/images/blogs/blog1Img2.jpg'
-let downcircle = 'https://dec4365vfd8ox.cloudfront.net/images/blogs/downcircle.png'
-
 import { makeStyles } from "@material-ui/core/styles";
+import Footer from "../footer";
 
-
+let blog1Img1 = 'https://dec4365vfd8ox.cloudfront.net/images/blogs/blog1Img1.jpg';
+let upcircle = 'https://dec4365vfd8ox.cloudfront.net/images/blogs/upcircle.png';
+let blog1Img2 = 'https://dec4365vfd8ox.cloudfront.net/images/blogs/blog1Img2.jpg';
+let downcircle = 'https://dec4365vfd8ox.cloudfront.net/images/blogs/downcircle.png';
 
 
 const useStyles = makeStyles(theme => ({

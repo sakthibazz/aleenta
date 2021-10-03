@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Grid, Typography } from '@material-ui/core';
-
-let logoImg = "https://dec4365vfd8ox.cloudfront.net/images/logo/aleenta.png"
 import { makeStyles } from "@material-ui/core/styles";
 
+let logoImg = "https://dec4365vfd8ox.cloudfront.net/images/logo/aleenta.png";
 
 const useStyles = makeStyles(theme => ({
     mainViewContainer: {

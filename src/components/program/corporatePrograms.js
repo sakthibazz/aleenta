@@ -2,21 +2,18 @@ import React, { Component, useEffect } from 'react';
 
 import { Container, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-import Footer from "../footer"
+import Footer from "../footer";
 
 
 // -------------Images----------------------------
 
-let MANGALLAM = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/mangallam.jpeg"
-let happinessIndividual = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/happinessIndividual.jpg"
-let meditation = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/meditation.jpg"
-let PersonalCorporate = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/PersonalCorporate.jpg"
-
-let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png"
-
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-
+let MANGALLAM = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/mangallam.jpeg";
+let happinessIndividual = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/happinessIndividual.jpg";
+let meditation = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/meditation.jpg";
+let PersonalCorporate = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/PersonalCorporate.jpg";
+let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png";
 
 const useStyles = makeStyles(theme => ({
     mainViewContainer: {

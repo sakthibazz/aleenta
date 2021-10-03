@@ -5,7 +5,7 @@ import { Grid, Typography } from '@material-ui/core';
 import CopyrightIcon from '@material-ui/icons/Copyright';
 
 
-import logo from "../images/logo/aleenta.png"
+let logo = "https://dec4365vfd8ox.cloudfront.net/images/logo/aleenta.png"
 
 // --------------Icons-------------------------
 let youtube = "https://dec4365vfd8ox.cloudfront.net/images/socoalMediaIcons/youtube.png"

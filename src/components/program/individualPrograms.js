@@ -2,25 +2,19 @@ import React, { Component, useEffect } from 'react';
 
 import { Container, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-import Footer from "../footer"
+import Footer from "../footer";
 
 // -------------Images----------------------------
 
-let adolescent = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/adolescent.jpg"
-let selfExpression = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/selfExpression.jpg"
-let socialInhibitions = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/socialInhibitions.jpg"
-let timeManagement = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/timeManagement.jpg"
-let creativeCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/creativeCoaching.jpg"
-let natureCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/natureCoaching.jpg"
-
-let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png"
-
-
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-
-
-
+let adolescent = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/adolescent.jpg";
+let selfExpression = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/selfExpression.jpg";
+let socialInhibitions = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/socialInhibitions.jpg";
+let timeManagement = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/timeManagement.jpg";
+let creativeCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/creativeCoaching.jpg";
+let natureCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/natureCoaching.jpg";
+let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png";
 
 
 const useStyles = makeStyles(theme => ({
