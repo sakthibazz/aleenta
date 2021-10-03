@@ -8,12 +8,12 @@ import Footer from "../footer"
 
 // -------------Images----------------------------
 
-import relationshipsGroup from "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/relationshipsGroup.jpg"
-import spirituality from "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/spirituality.jpg"
-import wellnessGroup from "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/wellnessGroup.jpg"
-import happinessGroup from "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/happinessGroup.jpg"
+let relationshipsGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/relationshipsGroup.jpg"
+let spirituality = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/spirituality.jpg"
+let wellnessGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/wellnessGroup.jpg"
+let happinessGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/happinessGroup.jpg"
 
-import divider from "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png"
+let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png"
 
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';

@@ -23,10 +23,16 @@ import CardContent from '@material-ui/core/CardContent';
 
 import Avatar from '@material-ui/core/Avatar';
 
-import image1 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image1.jpg'
-import image2 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image2.jpg'
-import image3 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image3.jpg'
-import image4 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image4.jpg'
+
+// import image1 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image1.jpg'
+// import image2 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image2.jpg'
+// import image3 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image3.jpg'
+// import image4 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image4.jpg'
+
+let image1 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image1.jpg'
+let image2 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image2.jpg'
+let image3 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image3.jpg'
+let image4 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image4.jpg'
 
 // import Aman from '../../images/About_Us/Aman.jpg'
 // import Mahesh from '../../images/About_Us/Mahesh.jpg'

@@ -5,30 +5,30 @@ import { makeStyles } from "@material-ui/core/styles";
 import { withRouter, Link } from "react-router-dom";
 
 
-import icon18 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon18.png'
-import icon19 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon19.png'
-import icon17 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon17.png'
+let icon18 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon18.png'
+let icon19 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon19.png'
+let icon17 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon17.png'
 
 
 //-----------------------CorpPrograms Icons-----------------------
-import icon2 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon2.png'
-import icon3 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon3.png'
-import icon14 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon14.png'
-import icon1 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
+let icon2 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon2.png'
+let icon3 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon3.png'
+let icon14 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon14.png'
+let icon1 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
 
 //-----------------------IndiPrograms Icons-----------------------
-import icon4 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon4.png'
-import icon7 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon7.png'
-import icon5 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon5.png'
-import icon8 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon8.png'
-import icon6 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon6.png'
-import icon9 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon9.png'
+let icon4 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon4.png'
+let icon7 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon7.png'
+let icon5 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon5.png'
+let icon8 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon8.png'
+let icon6 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon6.png'
+let icon9 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon9.png'
 
 //-----------------------GroupPrograms Icons-----------------------
 // import icon2 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon2.png'
 // import icon3 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon3.png'
-import icon10 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon10.png'
-import icon11 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon11.png'
+let icon10 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon10.png'
+let icon11 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon11.png'
 
 //-----------------------use-Style------------------------
 
