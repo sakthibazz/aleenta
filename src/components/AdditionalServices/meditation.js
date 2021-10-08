@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 
 import { Grid, Typography,Card  } from '@material-ui/core';
 import { withRouter, Link } from "react-router-dom";
@@ -19,7 +19,17 @@ let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/c
 // import icon1 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
 
 
-const AdditionMeditation = () => {
+const AdditionMeditation = ({history}) => {
+
+    useEffect(() => {
+        const unlisten = history.listen(() => {
+          window.scrollTo(0, 0);
+        });
+        return () => {
+          unlisten();
+        }
+      }, []);
+
     return ( 
         <>
             <Grid container  className= "additionalMeditationContainer">
@@ -160,7 +170,7 @@ const AdditionMeditation = () => {
                         <Typography className="meditationContent2" align='Left'>
                             This practice is about becoming more conscious of the present moment. 
                             It also involves focusing on the ideas crossing one’s mind and watching without 
-                            judgement. This practice enables one to realise and focus on patterns that occur 
+                            judgement. This practice enables one to realise and focus on patterns that occur, 
                             with a high level of awareness. It is also useful in directing attention to an 
                             object or to one’s breathing while monitoring ideas, emotions, and/or bodily sensations. 
                             Its techniques, which stem from Buddhist teachings, help to control the emotions, relieve stress, 
@@ -168,11 +178,11 @@ const AdditionMeditation = () => {
                             According to a study by Harvard University in the US, mindfulness is capable of altering 
                             depressed individuals’ brains.
                         </Typography>
-                        <Typography className="meditationContent2" align='Left'>
+                        {/* <Typography className="meditationContent2" align='Left'>
                             Experience the ultimate satisfaction of every meal you have. 
                             Seeing and recognising the nutrients, savouring the taste, 
                             experiencing the freshness of the food you’re eating.   
-                        </Typography>
+                        </Typography> */}
 
                         <Grid item xs={12} md={12}>
                             <img className="dividerImgCorpProgram"src={divider} />

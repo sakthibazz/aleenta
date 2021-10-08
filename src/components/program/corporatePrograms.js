@@ -1,4 +1,6 @@
 import React, { Component, useEffect } from 'react';
+import { withRouter, Link } from "react-router-dom";
+
 
 import { Container, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
@@ -220,10 +222,15 @@ const AdditionalServices = ({history}) => {
                             
                             <Grid item xs={12} md={12}>
                                 <Typography className="programscontent1" align='Left'>
-                                    Meditation is an approach is a set of techniques practiced to 
+                                    Meditation is an approach that consists of a set of techniques practiced to 
                                     understand the emotions and behaviour of Self and others. 
                                     {/* (Add the Link for meditation in additional services) */}
                                 </Typography>
+                                <Link to="/additionMeditation" style={{textDecoration:"none",color:"black"}}>
+                                    <Typography className="programscontent1" align='Left'>
+                                        Click to Know more about Meditation
+                                    </Typography>
+                                </Link>
 
                                 {/* <Typography className="programscontent1" align='Left'>
                                     A specially designed program that improves the Emotional 
@@ -283,6 +290,11 @@ const AdditionalServices = ({history}) => {
                             </Grid>
                             
                             <Grid item xs={12} md={12}>
+
+                                <Typography className="programscontent1" align='Left'>
+                                    Sponsor your employee for one-on-one coaching in any area of development. 
+                                </Typography>
+
                                 <Typography className="programscontent1" align='Left'>
                                     Areas include: Time Management, Optimism, Positive Attitude, Diversity and Inclusion, Passion, 
                                     Clarity and Direction, Self-management, Wellness, Trust and Honesty.  

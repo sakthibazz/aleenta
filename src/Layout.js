@@ -239,7 +239,7 @@ const closeMenu = ()=>{
               <div className={`${classes.menuCollapseContaier} ${classes.leftLogo}`}>
               
               
-                <IconButton edge="start" onClick={handleMobileMenu}>
+                <IconButton edge="start" style={{marginLeft:"2%"}} onClick={handleMobileMenu}>
                   <MenuIcon />
                   
                 </IconButton>

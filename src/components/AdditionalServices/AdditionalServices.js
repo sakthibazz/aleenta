@@ -9,6 +9,8 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg1.jpg'
 let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg2.jpg'
 let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg3.jpg'
+let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg4.jpg'
+
 // import icon1 from '../../images/dropDown/icon1.png'
 
 
@@ -33,7 +35,7 @@ const AdditionalServices = ({history,setOpen,open}) => {
 {/* ----------------------------card-1----------------------------------- */}
                 <Grid item xs={12} md={12}>
                     <Grid container align="center">
-                        <Grid item xs={12} md={4} className="articalCardGrid">
+                        <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/additionMeditation" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}} 
                                     onClick={()=>
@@ -53,7 +55,7 @@ const AdditionalServices = ({history,setOpen,open}) => {
 
 {/* ----------------------------card-2----------------------------------- */}
 
-                        <Grid item xs={12} md={4} className="articalCardGrid">
+                        <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/additionArtTherapy" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}}
                                     onClick={()=>
@@ -72,7 +74,7 @@ const AdditionalServices = ({history,setOpen,open}) => {
                         </Grid>
 {/* ----------------------------card-3----------------------------------- */}
 
-                        <Grid item xs={12} md={4} className="articalCardGrid">
+                        <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/additionSelfHealing" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}} 
                                     onClick={()=>
@@ -84,6 +86,26 @@ const AdditionalServices = ({history,setOpen,open}) => {
                                     <Card container  style={{height:"20%"}}>
                                         <Typography className="additionalDrop_articles">
                                             SELF-HEALING TECHNIQUES
+                                        </Typography>
+                                    </Card>
+                                </Card>
+                            </Link>
+                        </Grid>
+
+{/* ----------------------------card-4----------------------------------- */}
+
+                        <Grid item xs={12} md={3} className="articalCardGrid">
+                            <Link to="/additionCounseling" style={{textDecoration:"none"}}>
+                                <Card className="articalCard" style={{width:"90%",height:"80%"}} 
+                                    onClick={()=>
+                                        setOpen(true)}
+                                >
+                                    <Card container className="articalCard1"  style={{height:"80%"}} >
+                                        <img src={cardImg4}  style={{width:"100%"}}/>
+                                    </Card>
+                                    <Card container  style={{height:"20%"}}>
+                                        <Typography className="additionalDrop_articles">
+                                            COUNSELING
                                         </Typography>
                                     </Card>
                                 </Card>

@@ -31,6 +31,7 @@ const Blogs = () => {
     const classes = useStyles();
 
     return ( 
+        <>
         <Container maxWidth="lg" className={`${classes.mainViewContainer} mainViewContainerBlog`}>
             <Grid container>
                 <Grid item xs={12} md={12}  className={classes.mainGridContainer}>
@@ -202,8 +203,9 @@ const Blogs = () => {
                 </Grid>
                
             </Grid>
-            <Footer />
         </Container>
+        <Footer />
+        </>
      );
 }
  

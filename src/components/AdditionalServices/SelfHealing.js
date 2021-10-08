@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 
 import { Grid, Typography,Card  } from '@material-ui/core';
 import { withRouter, Link } from "react-router-dom";
@@ -19,7 +19,17 @@ let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/c
 let icon1 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
 
 
-const AdditionSelfHealing = () => {
+const AdditionSelfHealing = ({history}) => {
+
+    useEffect(() => {
+        const unlisten = history.listen(() => {
+          window.scrollTo(0, 0);
+        });
+        return () => {
+          unlisten();
+        }
+      }, []);
+
     return ( 
         <>
             <Grid container  className= "additionalMeditationContainer">

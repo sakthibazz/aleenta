@@ -166,13 +166,13 @@ const Welcome = ({
                                         <Grid container>
                                             <Grid item xs={12} md={8}>
                                                 <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
-                                                <Typography className="imageSideText1" align="center" style={{color:"#E5CF49"}}>
+                                                <Typography className="imageSideText1" align="center" style={{color:"#C99C1A"}}>
                                                     HAPPINESS COACHING
                                                 </Typography> 
                                             </Grid>
                                             <Grid item xs={12} md={4}>
                                                 <Typography className="imageSideText2">
-                                                    Up Your Happiness Quotient
+                                                    Increase Your Happiness Quotient
                                                 </Typography> 
                                             </Grid>
                                         </Grid>

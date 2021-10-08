@@ -4,6 +4,9 @@ import { Container, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
+
+
+
 import Footer from "../footer";
 
 // -------------Images----------------------------
@@ -15,6 +18,8 @@ let timeManagement = "https://dec4365vfd8ox.cloudfront.net/images/programs/indiv
 let creativeCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/creativeCoaching.jpg";
 let natureCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/natureCoaching.jpg";
 let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png";
+let timeManagement1 = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/timeManagement1.jpg";
+let natureCoaching1 = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/natureCoaching1.jpg";
 
 
 const useStyles = makeStyles(theme => ({
@@ -69,7 +74,7 @@ const IndividualPrograms = ({history}) => {
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
-                            src={natureCoaching}
+                            src={natureCoaching1}
                         />
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -270,7 +275,7 @@ const IndividualPrograms = ({history}) => {
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
-                            src={timeManagement}
+                            src={timeManagement1}
                         />
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -287,7 +292,7 @@ const IndividualPrograms = ({history}) => {
                             
                             <Grid item xs={12} md={12}>
                                 <Typography className="programscontent1" align='Left'>
-                                    When one feels overloaded, trapped, irritable, incompetent, drained and harassed, that is when you know that you need to mangae your time and prioritize. Bad planning, faulty estimation of time, ignoring facts and being addicted to the challenge of crises are few reasons why we end up feeling all the above.
+                                    When one feels overloaded, trapped, irritable, incompetent, drained and harassed, that is when you know that you need to manage your time and prioritize. Bad planning, faulty estimation of time, ignoring facts and being addicted to the challenge of crises are few reasons why we end up feeling all the above.
                                     Aleenta's Time Management program offers personalised designs to plan, prioritize and execute your work on a daily/ weekly/monthly basis. 
 
                                 </Typography>

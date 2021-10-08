@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 
 import { Grid, Typography,Card  } from '@material-ui/core';
 import { withRouter, Link } from "react-router-dom";
@@ -21,7 +21,20 @@ let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/c
 // import icon1 from '../../images/dropDown/icon1.png'
 
 
-const AdditionCounseling = () => {
+
+
+
+const AdditionCounseling = ({history}) => {
+
+    useEffect(() => {
+        const unlisten = history.listen(() => {
+          window.scrollTo(0, 0);
+        });
+        return () => {
+          unlisten();
+        }
+      }, []);
+
     return ( 
         <>
             <Grid container  className= "additionalMeditationContainer">
@@ -55,30 +68,13 @@ const AdditionCounseling = () => {
                             ideas as to what is good for the client and what is not. 
                             One of them is when and how to say NO.
                         </Typography>
-                        
-                    </Grid>
-                    <Grid item xs={12} md={12}>
-                        <img className="dividerImgCorpProgram"src={divider} />
-                    </Grid>
-
-                    {/* ======================================================================================================================== */}
-
-                   
-                    <Grid container style={{backgroundColor:"white"}}>
-                        <Grid item xs={12} md={12}>
-                            <img className="additionMeditationImg1" src={counseling2} />
-                        </Grid>
-                        <Grid item xs={12} md={12} className="meditationDiv">
-                            
-                        </Grid>
-                        <Grid item xs={12} md={12} className="bellowMeditationDiv" >
-                            <Typography className="meditationContent1" align='Left'>
+                        <Typography className="meditationContent1" align='Left'>
                                 Client's happiness is our utmost priority, we thrive to bring back the smiles 
                                 and the joy of living in our client's life
                             </Typography>
                             <Typography className="meditationContent4" align='Left'>
                                 Identifying the client's inner strength and how to use it to bring about 
-                                solutions is a part of main focus.
+                                solutions, is a part of our main focus.
                             </Typography>
                             <Typography className="meditationContent4" align='Left'>
                                 We work with a highly professional approach where utmost 
@@ -93,13 +89,31 @@ const AdditionCounseling = () => {
                                 Get in touch with us at www.additionalservices@aleenta.in 
                                 to avail our counselling sessions.
                             </Typography>
+                        
+                    </Grid>
+                    <Grid item xs={12} md={12}>
+                        <img className="dividerImgCorpProgram"src={divider} />
+                    </Grid>
+
+                    {/* ======================================================================================================================== */}
+
+{/*                    
+                    <Grid container style={{backgroundColor:"white"}}>
+                        <Grid item xs={12} md={12}>
+                            <img className="additionMeditationImg1" src={counseling2} />
+                        </Grid>
+                        <Grid item xs={12} md={12} className="meditationDiv">
+                            
+                        </Grid>
+                        <Grid item xs={12} md={12} className="bellowMeditationDiv" >
+                           
                             <Grid item xs={12} md={12}>
                                 <img className="dividerImgCorpProgram"src={divider} />
                             </Grid>
                            
                         </Grid>
                     </Grid>
-                    
+                     */}
 
                     {/* ======================================================================================================================================= */}
                    

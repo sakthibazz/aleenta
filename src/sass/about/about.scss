@@ -17,6 +17,10 @@
     .abotTitle{
         padding-right: 10%;
         padding-left: 5%;
+        @media  screen and (max-width: 600px) {
+            padding-right: 10%;
+            font-size: 14px;
+        }
     }
     .dropDownIcons{
         height:30px;
@@ -58,6 +62,10 @@
     .aboutDropDown_subContent{
         padding:2px;
         font-size: 14px;
+        @media  screen and (max-width: 600px) {
+            padding-right: 15%;
+            font-size: 12px;
+        }
     }
     .programTypeButton{
         position:relative;

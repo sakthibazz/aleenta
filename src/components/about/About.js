@@ -93,18 +93,18 @@ const About = () => {
                         	Who needs Well-being ?
                         </Typography>
                         <Typography className="aboutDropDown_subContent" >
-                            {bull} anyone : Wants to seek Awareness on overall wellbeing to 
+                            {bull} Anyone who : Wants to seek Awareness on overall wellbeing to 
                             become a Healthy, Happy and a Successful person. 
                         </Typography>
                         <Typography className="aboutDropDown_subContent" >
-                            {bull} anyone : Wishes to make lifestyle changes to become 
+                            {bull} Anyone who : Wishes to make lifestyle changes to become 
                             their best Self to lead a Happy, Healthy and a fulfilling Life. 
                         </Typography>
                         <Typography className="aboutDropDown_subContent">
-                            {bull} anyone : Is thriving to adapt a positive Mindset 
+                            {bull} Anyone who : Is thriving to adapt a positive Mindset 
                         </Typography>
                         <Typography className="aboutDropDown_subContent">
-                            {bull} anyone : Wants to work on their Time management, 
+                            {bull} Anyone who : Wants to work on their Time management, 
                             Self confidence and Self esteem to strike a balance between personal, 
                             professional and social aspects of their lives.   
                         </Typography>

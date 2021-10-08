@@ -1,34 +1,81 @@
 .footerContainer{
+    margin-top: 2%;
     background-color: #e2f2e4;
+    margin-bottom: 0%;
+}
+.footerLogoImgContainer{
+    padding-top: 1%;
 }
 .footerLogoImg{
-    padding-top: 1%;
-    height: 160px;
-    width: 160px;
+    // padding-top: 1%;
+    height: 90%;
+    width: 55%;
     @media only screen and (max-width: 600px) {
         padding-top: 2%;
-        height:160px;
-        width: 170px;
+        height:80px;
+        width: 80px;
     }
 }
-.footersocoalMediaIcons{
-    padding-top: 1%;
-    height: 100%;
-    width: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
+.footersocoalMediaIconsContainer{
+    padding-top: 6%;
+    padding-bottom: 1%;
     @media only screen and (max-width: 600px) {
         padding-top: 2%;
-        height:100%;
-        width: 12%;
+        padding-bottom: 2%;
+    }
+}
+// .footersocoalMediaIcons{
+//     // padding: 0% 2%;
+//     margin-left: 5%;
+//     margin-right: 5%;
+//     height: 70%;
+//     width: 15%;
+//     @media only screen and (max-width: 600px) {
+//         padding-top: 2%;
+//         height:100%;
+//         width: 12%;
+//         padding-left: 2%;
+//         padding-right: 2%;
+//     }
+// }
+.footersocoalMediaIcons1{
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 15%;
+    height: auto;
+    @media only screen and (max-width: 600px) {
+        padding-top: 2%;
+        max-width: 15%;
+        height: auto;
         padding-left: 2%;
         padding-right: 2%;
     }
 }
-.footerContent{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    font-size: 18px;
+// .footersocoalMediaIcons{
+//     padding-top: 0%;
+//     height: 30%;
+//     width: 20%;
+//     padding-left: 1%;
+//     padding-right: 1%;
+    // @media only screen and (max-width: 600px) {
+    //     padding-top: 2%;
+    //     height:100%;
+    //     width: 12%;
+    //     padding-left: 2%;
+    //     padding-right: 2%;
+    // }
+// }
+// .footerContentContainer{
+//     padding-top: 1%;
+// }
+.footerContent1{
+    // padding-top: 9%;
+    font-size: 16px;
+    font-weight: 600;    
+    @media only screen and (max-width: 600px) {
+        padding-top: 2%;
+        font-size: 12px;
+    }
 }
 .footersocoalMediaIcons {
     // margin-top: 35px;
