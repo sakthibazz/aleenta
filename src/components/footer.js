@@ -100,7 +100,9 @@ const Footer = () => {
                     <a href="https://www.instagram.com/invites/contact/?i=vyvw7tgs0jxi&utm_content=mkpdld81" target="_blank">
                         <img src={instagram} className="footersocoalMediaIcons footersocoalMediaIcons1" />
                     </a>
-                    <img src={whatsapp} className="footersocoalMediaIcons footersocoalMediaIcons1" />
+                    <a href="https://wa.me/916362925160" target="_blank">
+                        <img src={whatsapp} className="footersocoalMediaIcons footersocoalMediaIcons1" />
+                    </a>
                 </Grid>
                 <Grid item xs={12} md={12} className="footerContentContainer"  align="center">
                     {/* <Typography className="footerContent1" style={{fontWeight:"600",}}> */}

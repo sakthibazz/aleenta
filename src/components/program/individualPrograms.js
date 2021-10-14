@@ -18,7 +18,7 @@ let timeManagement = "https://dec4365vfd8ox.cloudfront.net/images/programs/indiv
 let creativeCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/creativeCoaching.jpg";
 let natureCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/natureCoaching.jpg";
 let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png";
-let timeManagement1 = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/timeManagement1.jpg";
+let timeManagement1 = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/timeManagementNew.jpg";
 let natureCoaching1 = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/natureCoaching1.jpg";
 
 
@@ -104,7 +104,7 @@ const IndividualPrograms = ({history}) => {
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
-                                    Contact us with your requirements at programs@aleenta.in to know more.
+                                    Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
                             {/* <Grid item xs={12} md={12} >
@@ -168,7 +168,7 @@ const IndividualPrograms = ({history}) => {
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
-                                    Contact us with your requirements at programs@aleenta.in to know more.
+                                    Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
                             {/* <Grid item xs={12} md={12} >
@@ -254,7 +254,7 @@ const IndividualPrograms = ({history}) => {
                         </Typography>
 
                         <Typography className="programscontent" align='Left'>
-                            Contact us with your requirements at programs@aleenta.in to know more.
+                            Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                         </Typography>
                             
                         <img 
@@ -325,7 +325,7 @@ const IndividualPrograms = ({history}) => {
                         </Typography>
 
                         <Typography className="programscontent" align='Left'>
-                            Contact us with your requirements at programs@aleenta.in to know more.
+                            Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                         </Typography>
 
                         <img 
@@ -388,7 +388,7 @@ const IndividualPrograms = ({history}) => {
                         </Typography>
 
                     <Typography className="programscontent" align='Left'>
-                        Contact us with your requirements at programs@aleenta.in to know more.
+                        Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                     </Typography>
                             </Grid>
                             {/* <Grid item xs={12} md={12} >
@@ -462,7 +462,7 @@ const IndividualPrograms = ({history}) => {
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
-                                    Contact us with your requirements at programs@aleenta.in to know more.
+                                    Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
                             {/* <Grid item xs={12} md={12} >

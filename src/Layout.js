@@ -639,10 +639,16 @@ const closeMenu = ()=>{
         </AppBar>
       {/* </ElevationScroll > */}
       <Toolbar />
-      {/* <Grid style={appClassName==='expand'
-                    ?{opacity:"0.2"}
-                  :null}
-      > */}
+      {/* {appClassName !='closed'
+        ?<Grid style={{filter:" brightness(20%)"}} >
+            {console.log(appClassName)}
+           {props.children}
+          </Grid>
+        :<Grid>
+          {console.log(appClassName)}
+           {props.children}
+        </Grid>
+      } */}
       {props.children}
         {/* </Grid> */}
       {/* <Footer /> */}

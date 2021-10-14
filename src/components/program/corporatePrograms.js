@@ -87,7 +87,7 @@ const AdditionalServices = ({history}) => {
                                 
                                 <Typography className="programscontent1" align='Left' style={{fontStyle:"italic",fontWeight:"600"}}>
                                     Health is not just the absence of a disease. It is an inner 
-                                    joyfulness that should be ours all the time; a state of positive well-being. ---Deepak Chopra
+                                    joyfulness that should be ours all the time; a state of positive well-being. -- Deepak Chopra
                                 </Typography>
                                 <Typography className="programscontent1" align='Left'>
                                     In this program, employees learn techniques on how to 
@@ -109,7 +109,7 @@ const AdditionalServices = ({history}) => {
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
-                                    Contact us with your requirements at programs@aleenta.in to know more.
+                                    Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
                             {/* <Grid item xs={12} md={12}>
@@ -151,7 +151,7 @@ const AdditionalServices = ({history}) => {
                             
                             <Grid item xs={12} md={12}>
 
-                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic"}}>
+                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic",fontWeight:"600"}}>
                                     Happiness is when what you think, what you say, and what you do are in harmony. -- Mahatma Gandhi
                                 </Typography>
 
@@ -176,7 +176,7 @@ const AdditionalServices = ({history}) => {
                                 </Typography> */}
 
                                 <Typography className="programscontent" align='Left'>
-                                    Contact us with your requirements at programs@aleenta.in to know more.
+                                    Contact us with your requirements at  <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
                             {/* <Grid item xs={12} md={12}>
@@ -226,11 +226,11 @@ const AdditionalServices = ({history}) => {
                                     understand the emotions and behaviour of Self and others. 
                                     {/* (Add the Link for meditation in additional services) */}
                                 </Typography>
-                                <Link to="/additionMeditation" style={{textDecoration:"none",color:"black"}}>
+                                
                                     <Typography className="programscontent1" align='Left'>
-                                        Click to Know more about Meditation
+                                        Click <Link to="/additionMeditation" style={{textDecoration:"none",color:"black",fontWeight:"600"}}>here </Link> to Know more about Meditation
                                     </Typography>
-                                </Link>
+                                
 
                                 {/* <Typography className="programscontent1" align='Left'>
                                     A specially designed program that improves the Emotional 
@@ -245,7 +245,7 @@ const AdditionalServices = ({history}) => {
                                 </Typography> */}
 
                                 <Typography className="programscontent" align='Left'>
-                                    Contact us with your requirements at programs@aleenta.in to know more.
+                                    Contact us with your requirements at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
                             {/* <Grid item xs={12} md={12} >
@@ -314,7 +314,7 @@ const AdditionalServices = ({history}) => {
                                 </Typography> */}
 
                                 <Typography className="programscontent" align='Left'>
-                                    Contact us with your requirements at programs@aleenta.in to know more.
+                                    Contact us with your requirements at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
                             {/* <Grid item xs={12} md={12}>

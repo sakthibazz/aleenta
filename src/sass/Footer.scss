@@ -8,12 +8,16 @@
 }
 .footerLogoImg{
     // padding-top: 1%;
-    height: 90%;
-    width: 55%;
+    // height: 90%;
+    // width: 55%;
+    max-width: 55%;
+    height: auto;
     @media only screen and (max-width: 600px) {
         padding-top: 2%;
-        height:80px;
-        width: 80px;
+        // height:80px;
+        // width: 90px;
+        max-width: 40%;
+        height: auto;
     }
 }
 .footersocoalMediaIconsContainer{

@@ -30,6 +30,7 @@ const AdditionMeditation = ({history}) => {
         }
       }, []);
 
+
     return ( 
         <>
             <Grid container  className= "additionalMeditationContainer">

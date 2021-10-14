@@ -13,11 +13,11 @@
         font-size: medium;
         padding-top: 3%;
         padding-bottom: 2%;
-        // font-size: 22px;
         background-color: white;
-        border-bottom: #C8E6CC solid 3px;
+        border-bottom: #C8E6CC solid 2px;
+        // font-size: 22px;
         @media only screen and (max-width: 600px) {
-            font-size: 12px;
+            font-size: 14px;
             border-bottom: #C8E6CC solid 2px;
         }
     }
