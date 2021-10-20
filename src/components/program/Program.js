@@ -82,7 +82,11 @@ const useStyles = makeStyles((theme) => ({
       },
 }));
 
-const Program = ({history,setOpen,open}) => {
+function noop(val=true){
+}
+
+
+const Program = ({history,setOpen=noop,open}) => {
 
    { console.log(setOpen,open);}
   const classes = useStyles();

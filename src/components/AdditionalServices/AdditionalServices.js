@@ -18,9 +18,10 @@ let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/a
 
 // import icon1 from '../../images/dropDown/icon1.png'
 
+function noop(val=true){
+}
 
-
-const AdditionalServices = ({history,setOpen,open}) => {
+const AdditionalServices = ({history,setOpen=noop,open}) => {
 
     return ( 
         <>

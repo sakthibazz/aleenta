@@ -258,16 +258,23 @@ const closeMenu = ()=>{
               
             <Grid item xs={12} md={12}>
             <Container maxWidth="lg" className="headerContent">
-              <Link
-                to="/"
-                className={
-                  pathname === "/"
-                  ? clsx(classes.title, classes.titleActive)
-                  : classes.title
-                }
-              >
-                <img src={Logo} width="110px" height="80px" style={{paddingTop:"2px",paddingLeft:"20px"}} />
-              </Link>
+              {/* <Grid container> */}
+                <Link
+                  // onClick={()=>{appClassName==='expand'
+                  //           ?setAppClassName("closed")
+                  //           // :null
+                  //           :null
+                  // }}
+                  to="/"
+                  className={
+                    pathname === "/"
+                    ? clsx(classes.title, classes.titleActive)
+                    : classes.title
+                  }
+                >
+                  <img src={Logo} width="110px" height="80px" style={{paddingTop:"2px",paddingLeft:"20px"}} />
+                </Link>
+              {/* </Grid> */}
               
               <div className={classes.grow} />
               <div className={classes.userDetails}>
