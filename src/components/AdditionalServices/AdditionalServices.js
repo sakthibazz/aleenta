@@ -11,10 +11,10 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 // let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg3.jpg'
 // let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg4.jpg'
 
-let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService1.jpg'
-let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService2.jpg'
-let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService3.jpg'
-let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService4.jpg'
+let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService01.jpg'
+let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService02.jpg'
+let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService03.jpg'
+let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService04.jpg'
 
 // import icon1 from '../../images/dropDown/icon1.png'
 
