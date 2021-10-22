@@ -6,6 +6,16 @@
     padding-right: 0%;
     padding-bottom: 2%;
     background-color: #fffaf3;
+    .arrow-icons{
+      background: #777;
+      border-radius: 50%;
+    }
+    .carousel-arrow-mobile-screen{
+      display: none;
+      @media only screen and (max-width: 767px){
+        display: block;
+      }
+    }
     // .imageSideText1{
     //     padding-top:45% ;
     //     padding-left: 3%;
@@ -74,8 +84,8 @@
     }
     .carouselImage {
       padding-top: 1%;
-      max-width: 100%;
-      height: auto;
+      height: 29rem;
+      width: 100%;
         @media only screen and (max-width: 600px) {
           max-width: 100%;
           height: auto;

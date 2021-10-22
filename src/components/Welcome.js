@@ -10,7 +10,8 @@ import Footer from './footer';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 import ProgressiveImage from 'react-progressive-image';
-
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight'
+import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft'
 
 // import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 
@@ -32,10 +33,10 @@ import Avatar from '@material-ui/core/Avatar';
 // import image3 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image3.jpg'
 // import image4 from 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image4.jpg'
 
-let image1 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image1.jpg'
-let image2 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image2.jpg'
-let image3 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image3.jpg'
-let image4 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/image4.jpg'
+let image1 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/33.jpg'
+let image2 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/8.jpg'
+let image3 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/63.jpg'
+let image4 = 'https://dec4365vfd8ox.cloudfront.net/images/welcome/4.jpg'
 
 // import Aman from '../../images/About_Us/Aman.jpg'
 // import Mahesh from '../../images/About_Us/Mahesh.jpg'
@@ -149,8 +150,12 @@ const Welcome = ({
                                             </Grid>
                                             <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
-                                                    Nature COACHING
+                                                    Nature COACHING 
                                                 </Typography> 
+                                                <div className="carousel-arrow-mobile-screen">
+                                                  <br/>
+                                                  <br/>
+                                                </div>
                                             </Grid>
                                             {/* <Grid item xs={12} md={8}>
                                                 <img class="d-block w-60 carouselImage" src={image1}  alt="First slide"/>
@@ -175,7 +180,7 @@ const Welcome = ({
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={12} md={12} align="center">
-                                                <img class="d-block w-60 carouselImage" src={image3} alt="First slide"/>
+                                                <img class="d-block w-60 carouselImage" src={image2} alt="First slide"/>
                                             </Grid>
                                             <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
@@ -204,7 +209,7 @@ const Welcome = ({
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={12} md={12} align="center">
-                                                <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
+                                                <img class="d-block w-60 carouselImage" src={image3} alt="First slide"/>
                                             </Grid>
                                             <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
@@ -234,7 +239,7 @@ const Welcome = ({
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={12} md={12} align="center">
-                                                <img class="d-block w-60 carouselImage" src={image2} alt="First slide"/>
+                                                <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
                                             </Grid>
                                             <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
@@ -257,12 +262,10 @@ const Welcome = ({
                                    
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"  style={{backgroundColor:"gray",borderRadius:"50px"}}></span>
-                                    <span class="sr-only"></span>
+                                  <KeyboardArrowLeftIcon className="arrow-icons"/>
                                 </a>
                                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true" style={{backgroundColor:"gray",borderRadius:"50px"}} ></span>
-                                    <span class="sr-only"></span>
+                                  <KeyboardArrowRightIcon className="arrow-icons"/>
                                 </a>
                                 </Grid>
 
