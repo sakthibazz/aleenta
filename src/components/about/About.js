@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import { Grid, Typography,  } from '@material-ui/core';
 
-import icon13 from "../../images/dropDown/aboutDD/What_is_wellbeing.png"
-import icon15 from "../../images/dropDown/aboutDD/Who_needs_wellbeing.png"
-import icon12 from "../../images/dropDown/aboutDD/Why_Aleenta.png"
-import icon1 from "../../images/dropDown/aboutDD/The_coach.png"
+// import icon13 from "../../images/dropDown/aboutDD/What_is_wellbeing.png"
+// import icon15 from "../../images/dropDown/aboutDD/Who_needs_wellbeing.png"
+// import icon12 from "../../images/dropDown/aboutDD/Why_Aleenta.png"
+// import icon1 from "../../images/dropDown/aboutDD/The_coach.png"
 
 
 
 import { makeStyles } from "@material-ui/core/styles";
 
 //-----------------------Icons-----------------------
-// let icon13 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDD/What_is_wellbeing.png'
-// let icon15 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDD/Who_needs_wellbeing.png'
-// let icon12 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDD/Why_Aleenta.png'
-// let icon4 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDD/The_coach.png'
+let icon13 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/aboutDD/What_is_wellbeing.png'
+let icon15 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/aboutDD/Who_needs_wellbeing.png'
+let icon12 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/aboutDD/Why_Aleenta.png'
+let icon1 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/aboutDD/The_coach.png'
 
 
 
