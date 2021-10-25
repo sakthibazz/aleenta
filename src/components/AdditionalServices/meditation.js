@@ -38,7 +38,7 @@ const AdditionMeditation = ({history}) => {
             <Grid container  className= "additionalMeditationContainer">
                 <Grid item xs={12} md={12}>
                     <Typography className="topText">
-                        Aleenta Additional Services <ArrowRightIcon/> Meditation
+                        Additional Services <ArrowRightIcon/> Meditation
                     </Typography>
                 </Grid>
                 <Grid container style={{backgroundColor:"#fbf2de"}} >

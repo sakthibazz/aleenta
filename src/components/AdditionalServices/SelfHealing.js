@@ -41,7 +41,7 @@ const AdditionSelfHealing = ({history}) => {
             <Grid container  className= "additionalMeditationContainer">
                 <Grid item xs={12} md={12}>
                     <Typography className="topText">
-                        Aleenta Additional Services <ArrowRightIcon/> Self-healing techniques
+                        Additional Services <ArrowRightIcon/> Self-healing techniques
                     </Typography>
                 </Grid>
                 <Grid container style={{backgroundColor:"#fbf2de"}} >

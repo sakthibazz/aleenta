@@ -27,12 +27,21 @@
 
     #mangallam{
         margin-top: 7%;
+        @media only screen and (max-width: 600px) {
+            margin-top: 40%;
+        }
     }
     #nature{
         margin-top: 10%;
+        @media only screen and (max-width: 600px) {
+            margin-top: 55%;
+        }
     }
     #happiness{
-        margin-top: 7%; 
+        margin-top: 7%;
+        @media only screen and (max-width: 600px) {
+            margin-top: 40%;
+        }
     }
 
     .dropDownIcons1{
@@ -44,6 +53,10 @@
     .programHeading1{
         padding-top: 5%;
         padding-left: 10%;
+        @media only screen and (max-width: 600px) {
+            padding-top: 1%;
+            padding-left: 10%;;
+        }
     }
     
     .programsHeading{
@@ -148,7 +161,9 @@
 }
 .programHeading1Grid:hover::after{
     width: 80%;
-
+    @media only screen and (max-width: 600px) {
+        width: 0%;
+    }
 }
 .programHeading1Grid2{
     position:relative;
@@ -165,6 +180,9 @@
     left:15px;
     transition: 0.1s;
     padding:0%;
+    @media only screen and (max-width: 600px) {
+        width: 0%;
+    }
 }
 
 
