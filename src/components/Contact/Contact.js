@@ -58,7 +58,7 @@ const Contact = () => {
                         </Grid>
                         <Grid item xs={12} md={4} align='center'>
                             <Typography className="contactContent" align='center'>
-                                Email:programs@aleenta.in
+                            <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a>
                             </Typography>
                         </Grid>
                     </Grid>

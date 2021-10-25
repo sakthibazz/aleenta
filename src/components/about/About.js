@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import { Grid, Typography,  } from '@material-ui/core';
 
+import icon13 from "../../images/dropDown/aboutDD/What_is_wellbeing.png"
+import icon15 from "../../images/dropDown/aboutDD/Who_needs_wellbeing.png"
+import icon12 from "../../images/dropDown/aboutDD/Why_Aleenta.png"
+import icon1 from "../../images/dropDown/aboutDD/The_coach.png"
 
 
 
 import { makeStyles } from "@material-ui/core/styles";
 
 //-----------------------Icons-----------------------
-let icon13 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon13.png'
-let icon15 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon15.png'
-let icon12 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon12.png'
-let icon1 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
+// let icon13 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDD/What_is_wellbeing.png'
+// let icon15 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDD/Who_needs_wellbeing.png'
+// let icon12 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDD/Why_Aleenta.png'
+// let icon4 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDD/The_coach.png'
+
+
 
 
 
@@ -42,7 +48,7 @@ const About = () => {
         <Grid container className="aboutContainer aboutTitleContainer1" spacing={2}>
             <Grid item xs={12} md={4}>
                 <Typography className='abotTitle'>
-                    Aleenta  is an ancient Sanskrit word which means " A rewarding life".
+                    <span className="span1" style={{color:"#97581E",fontWeight:"600",fontStyle: "italic"}}>Aleenta</span > is an ancient Sanskrit word which means " A rewarding life".
                     At Aleenta, we design a personalised holistic approach for an all-round wellbeing of our Clients 
                     because every person is unique in his/her own way - in thought, emotion and in action.
                     The outcome of our programs are Self discovery and Self awareness in a healthy and successful way.
@@ -118,7 +124,8 @@ const About = () => {
                             The Coach
                         </Typography>
                         <Typography className="aboutDropDown_subContent">
-                            Mangala Narayan is a Certified Wellbeing Coach,
+                            <span className="span2" style={{color:"#97581E",fontWeight:"600",fontStyle: "italic"}}>
+                                Mangala Narayan</span> is a Certified Wellbeing Coach,
                             who has mastered coaching through her Life 
                             experiences with children and people who wished to 
                             achieve their goals of Life in their pursuit of fulfilment and happiness. 

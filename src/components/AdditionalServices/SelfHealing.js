@@ -6,17 +6,23 @@ import { withRouter, Link } from "react-router-dom";
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
+import divider from "../../images/divider2.png"
+
 //-----------------------Icons-----------------------
-let selfHealing2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/selfHealing2.jpg'
-// import artTherapyImg3 from 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/artTherapy3.jpg'
 
-let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider.png"
 
-let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg1.jpg'
-let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg2.jpg'
-let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg3.jpg'
-let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg4.jpg'
-let icon1 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
+// import selfHealing2 from "../../images/pgm_and_add_optimized_images/additionalServices/additionalService03.jpg"
+
+let selfHealing2 = 'https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/additionalServices/additionalService03.jpg'
+
+
+
+
+let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService01.jpg'
+let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService02.jpg'
+let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService03.jpg'
+let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService04.jpg'
+
 
 
 const AdditionSelfHealing = ({history}) => {
@@ -47,7 +53,7 @@ const AdditionSelfHealing = ({history}) => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}  style={{backgroundColor:"#fbf2de"}}>
-                        <img className="additionMeditationImg1" src={cardImg3} />
+                        <img className="additionMeditationImg1" src={selfHealing2} />
                     </Grid>
                     <Grid item xs={12} md={12} className="meditationDiv">
                         
@@ -73,6 +79,15 @@ const AdditionSelfHealing = ({history}) => {
                             by Dr. Joe Dispenza have been taken seriously by many, worldwide. 
                             These methodologies have worked for people who completely have faith in their thought power. 
                         </Typography>
+                        <Typography className="meditationContent1" align='Left'>
+                                Thought is the key here. Self-generated thoughts that are positive, 
+                                clear and crisp, communicate and gently command the cells of the pain area to self heal. 
+                                When one sees the progression and then the results, they are in awe of this 
+                                technique which they first thought may not completely produce required results. 
+                            </Typography>
+                            <Typography className="meditationContent1" align='Left'>
+                                Get in touch with us at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to avail our Self-healing sessions. 
+                            </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>
                         <img className="dividerImgCorpProgram"src={divider} />
@@ -81,7 +96,7 @@ const AdditionSelfHealing = ({history}) => {
                     {/* ======================================================================================================================== */}
 
                    
-                    <Grid container style={{backgroundColor:"white"}}>
+                    {/* <Grid container style={{backgroundColor:"white"}}>
                         <Grid item xs={12} md={12}>
                             <img className="additionMeditationImg1" src={selfHealing2} />
                         </Grid>
@@ -102,7 +117,7 @@ const AdditionSelfHealing = ({history}) => {
                                 <img className="dividerImgCorpProgram"src={divider} />
                             </Grid>
                         </Grid>
-                    </Grid>
+                    </Grid> */}
                     
 
                     {/* ======================================================================================================================================= */}

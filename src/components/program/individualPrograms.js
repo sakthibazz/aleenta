@@ -1,4 +1,5 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
+import { withRouter, Link } from "react-router-dom";
 
 import { Container, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
@@ -9,17 +10,41 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 import Footer from "../footer";
 
+// ------------------Icons------------------------
+
+// import Adolescent from "../../images/dropDown/individualPro/Adolescent.png"
+// import Creative_coaching from "../../images/dropDown/individualPro/Creative_coaching.png"
+// import Individual_natureCoaching from "../../images/dropDown/individualPro/Individual_natureCoaching.png"
+// import Self_expression from "../../images/dropDown/individualPro/Self_expression.png"
+// import Social_inhibitions from "../../images/dropDown/individualPro/Social_inhibitions.png"
+// import Time_management from "../../images/dropDown/individualPro/Time_management.png"
+
+let Adolescent = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/individualPro/Adolescent.png";
+let Creative_coaching = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/individualPro/Creative_coaching.png";
+let Individual_natureCoaching = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/individualPro/Individual_natureCoaching.png";
+let Self_expression = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/individualPro/Self_expression.png";
+let Social_inhibitions = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/individualPro/Social_inhibitions.png";
+let Time_management = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/individualPro/Time_management.png";
+
 // -------------Images----------------------------
 
-let adolescent = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/adolescent.jpg";
-let selfExpression = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/selfExpression.jpg";
-let socialInhibitions = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/socialInhibitions.jpg";
-let timeManagement = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/timeManagement.jpg";
-let creativeCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/creativeCoaching.jpg";
-let natureCoaching = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/natureCoaching.jpg";
+// import adolescent from "../../images/pgm_and_add_optimized_images/programs/individualPrograms/adolescent.jpg"
+// import selfExpression from "../../images/pgm_and_add_optimized_images/programs/individualPrograms/selfExpression.jpg"
+// import socialInhibitions from "../../images/pgm_and_add_optimized_images/programs/individualPrograms/socialInhibitions.jpg"
+// import creativeCoaching from "../../images/pgm_and_add_optimized_images/programs/individualPrograms/creativeCoaching.jpg"
+// import timeManagement1 from "../../images/pgm_and_add_optimized_images/programs/individualPrograms/timeManagementNew.jpg"
+// import natureCoaching1 from "../../images/pgm_and_add_optimized_images/programs/individualPrograms/Optimized_natureCoaching1.jpg"
+
+let adolescent = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/individualPrograms/adolescent.jpg";
+let selfExpression = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/individualPrograms/selfExpression.jpg";
+let socialInhibitions = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/individualPrograms/socialInhibitions.jpg";
+let creativeCoaching = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/individualPrograms/creativeCoaching.jpg";
+let timeManagement1 = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/individualPrograms/timeManagementNew.jpg";
+let natureCoaching1 = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/individualPrograms/Optimized_natureCoaching1.jpg";
+
+
+
 let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png";
-let timeManagement1 = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/timeManagementNew.jpg";
-let natureCoaching1 = "https://dec4365vfd8ox.cloudfront.net/images/programs/individualPrograms/natureCoaching1.jpg";
 
 
 const useStyles = makeStyles(theme => ({
@@ -46,6 +71,8 @@ const useStyles = makeStyles(theme => ({
 
 const IndividualPrograms = ({history}) => {
 
+    const [subHeading, setSubHeading] = useState(null);
+
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
 
@@ -62,9 +89,126 @@ const IndividualPrograms = ({history}) => {
             <Grid container className="corporateContainer  corporateTitleContainer">
                 
                 <Grid item xs={12} md={12}>
-                    <Typography className="topText">
-                    	Programs <ArrowRightIcon/> Individual Programs
-                    </Typography>
+                < Grid container className="topText" >
+                        <Grid item xs={2} md={1} >
+                            <img className="dropDownIcons1" src={Individual_natureCoaching} align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Nature'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#nature' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Nature")
+                                    } 
+                                }
+                            >
+                                Nature coaching
+                            </Typography>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} md={1}>
+                            <img src={Creative_coaching} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Creative'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#creative' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Creative")
+                                    } 
+                                }
+                            >
+                                Creative coaching
+                            </Typography>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} md={1}>
+                            <img src={Adolescent} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Adolescent'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#adolescent' style={{textDecoration: "none",color: "#000000",}}>
+                        
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Adolescent")
+                                    } 
+                                }
+                            >
+                                Adolescent coaching
+                            </Typography>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} md={1}>
+                            <img src={Time_management} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Time'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#timeManage' style={{textDecoration: "none",color: "#000000",}}>
+                        
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Time")
+                                    } 
+                                }
+                            >
+                                Time Management
+                            </Typography>
+                        </Link>
+                        </Grid>
+
+                        <Grid item xs={2} md={1}>
+                            <img src={Self_expression} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Self'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#selfExpression' style={{textDecoration: "none",color: "#000000",}}>
+                        
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Self")
+                                    } 
+                                }
+                            >
+                                Self-expression
+                            </Typography>
+                        </Link>
+                        </Grid>
+
+                        <Grid item xs={2} md={1}>
+                            <img src={Social_inhibitions} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Social'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#social' style={{textDecoration: "none",color: "#000000",}}>
+                        
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Social")
+                                    } 
+                                }
+                            >
+                                Social Inhibitionsg
+                            </Typography>
+                        </Link>
+                        </Grid>
+
+                       
+
+
+                    </Grid>
                 </Grid>
 
                 {/*------------------------ Nature ------------------------------ */}
@@ -115,12 +259,12 @@ const IndividualPrograms = ({history}) => {
                             </Grid> */}
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
 
                
@@ -179,12 +323,12 @@ const IndividualPrograms = ({history}) => {
                             </Grid> */}
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
                 
                 
@@ -256,11 +400,11 @@ const IndividualPrograms = ({history}) => {
                         <Typography className="programscontent" align='Left'>
                             Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                         </Typography>
-                            
+{/*                             
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
-                        />
+                        /> */}
                     </Grid>
                 </Grid>
                 
@@ -328,10 +472,10 @@ const IndividualPrograms = ({history}) => {
                             Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                         </Typography>
 
-                        <img 
+                        {/* <img 
                             className="dividerImgCorpProgram"
                             src={divider}
-                        />
+                        /> */}
                     </Grid>
                 </Grid>
                 
@@ -399,12 +543,12 @@ const IndividualPrograms = ({history}) => {
                             </Grid> */}
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
 
 
@@ -425,7 +569,7 @@ const IndividualPrograms = ({history}) => {
                         <Grid container>
                             <Grid item xs={12} md={12}>
                                 <Typography className="programsHeading shortContent">
-                                Social Inhibitions
+                                    Social Inhibitions
                                 </Typography>
                             </Grid>
 

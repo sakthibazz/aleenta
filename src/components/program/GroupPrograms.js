@@ -1,4 +1,5 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
+import { withRouter, Link } from "react-router-dom";
 
 import { Container, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
@@ -7,12 +8,34 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import Footer from "../footer";
 
 
+// ------------------Icons------------------------
+
+// import Group_happiness from "../../images/dropDown/groupPro/Group_happiness.png"
+// import Group_relationships from "../../images/dropDown/groupPro/Group_relationships.png"
+// import Group_spiritual from "../../images/dropDown/groupPro/Group_spiritual.png"
+// import Group_wellness from "../../images/dropDown/groupPro/Group_wellness.png"
+
+let Group_happiness = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/Group_happiness.png";
+let Group_relationships = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/Group_relationships.png";
+let Group_spiritual = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/Group_spiritual.png";
+let Group_wellness = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/Group_wellness.png";
+
+
+
 // -------------Images----------------------------
 
-let relationshipsGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/relationshipsGroup.jpg";
-let spirituality = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/spirituality.jpg";
-let wellnessGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/wellnessGroup.jpg";
-let happinessGroup = "https://dec4365vfd8ox.cloudfront.net/images/programs/groupPrograms/happinessGroup.jpg";
+// import relationshipsGroup from "../../images/pgm_and_add_optimized_images/programs/groupPrograms/Optimized_relationshipsGroup.jpg"
+// import spirituality from "../../images/pgm_and_add_optimized_images/programs/groupPrograms/Optimized_spirituality.jpg"
+// import wellnessGroup from "../../images/pgm_and_add_optimized_images/programs/groupPrograms/Optimized_wellnessGroup.jpg"
+// import happinessGroup from "../../images/pgm_and_add_optimized_images/programs/groupPrograms/Optimized_happinessGroup.jpg"
+
+let relationshipsGroup = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/groupPrograms/Optimized_relationshipsGroup.jpg";
+let spirituality = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/groupPrograms/Optimized_spirituality.jpg";
+let wellnessGroup = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/groupPrograms/Optimized_wellnessGroup.jpg";
+let happinessGroup = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/groupPrograms/Optimized_happinessGroup.jpg";
+
+
+
 let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png";
 
 
@@ -42,6 +65,8 @@ const useStyles = makeStyles(theme => ({
 
 const GroupPrograms = ({history}) => {
 
+    const [subHeading, setSubHeading] = useState(null);
+
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
 
@@ -58,9 +83,82 @@ const GroupPrograms = ({history}) => {
             <Grid container className="corporateContainer  corporateTitleContainer">
                 
                 <Grid item xs={12} md={12}>
-                    <Typography className="topText">
-                    	Programs <ArrowRightIcon/> Group Programs
-                    </Typography>
+                < Grid container className="topText" >
+                        <Grid item xs={2} md={1} >
+                            <img className="dropDownIcons1" src={Group_happiness} align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Happiness'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#happiness' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Happiness")
+                                    } 
+                                }
+                            >
+                                Happiness coaching
+                            </Typography>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} md={1}>
+                            <img src={Group_spiritual} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Spiritual'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#spritual' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Spiritual")
+                                    } 
+                                }
+                            >
+                                Spiritual coaching
+                            </Typography>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} md={1}>
+                            <img src={Group_relationships} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Relationship'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#relation' style={{textDecoration: "none",color: "#000000",}}>
+                        
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Relationship")
+                                    } 
+                                }
+                            >
+                                Relationship coaching
+                            </Typography>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} md={1}>
+                            <img src={Group_wellness} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Wellness'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#wellness' style={{textDecoration: "none",color: "#000000",}}>
+                        
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Wellness")
+                                    } 
+                                }
+                            >
+                                Wellness coaching
+                            </Typography>
+                        </Link>
+                        </Grid>
+                    </Grid>
                 </Grid>
 
                 {/*------------------------ Happiness coaching ------------------------------ */}
@@ -116,12 +214,12 @@ const GroupPrograms = ({history}) => {
                             </Grid> */}
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
 
 
@@ -182,12 +280,12 @@ const GroupPrograms = ({history}) => {
                             </Grid> */}
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
 
 
@@ -247,12 +345,12 @@ const GroupPrograms = ({history}) => {
                             </Grid> */}
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
                 
               

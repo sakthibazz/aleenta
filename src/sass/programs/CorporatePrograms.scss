@@ -9,10 +9,13 @@
     background-color: #fffaf3;
 
     .topText{
-        padding:3%;
-        font-size: medium;
-        padding-top: 3%;
-        padding-bottom: 2%;
+        position:fixed;
+        padding-top:2%;
+        padding-bottom: 1%;
+        font-size: 22px;
+        // margin-bottom: 100%;
+        // padding-top: 3%;
+        // padding-bottom: 2%;
         background-color: white;
         border-bottom: #C8E6CC solid 2px;
         // font-size: 22px;
@@ -20,6 +23,27 @@
             font-size: 14px;
             border-bottom: #C8E6CC solid 2px;
         }
+    }
+
+    #mangallam{
+        margin-top: 7%;
+    }
+    #nature{
+        margin-top: 10%;
+    }
+    #happiness{
+        margin-top: 7%; 
+    }
+
+    .dropDownIcons1{
+        padding-top: 5%;
+        padding-bottom: 1%;
+        height: auto;
+        width: 40%;
+    }
+    .programHeading1{
+        padding-top: 5%;
+        padding-left: 10%;
     }
     
     .programsHeading{
@@ -81,7 +105,8 @@
         }
     }
     .programscontent{
-        padding-top: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
         padding-left: 5%;
         padding-right: 5%;
         font-size: 18px;
@@ -97,7 +122,7 @@
         padding-left: 2%;
         padding-right: 2%;
         width: 100%;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
     }
 }
 
@@ -105,8 +130,56 @@
 
 
 
+.programHeading1Grid{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.programHeading1Grid::after{
+    position:absolute;
+    content: "";
+    background-color:#FFD741
+    ;
+    height: 3px;
+    width: 0;
+    bottom: -20px;
+    left:15px;
+    transition: 0.3s;
+}
+.programHeading1Grid:hover::after{
+    width: 80%;
+
+}
+.programHeading1Grid2{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.programHeading1Grid2::after{
+    position:absolute;
+    content: "";
+    background-color:#FFE481;
+    height: 3px;
+    width: 80%;
+    bottom: -22px;
+    left:15px;
+    transition: 0.1s;
+    padding:0%;
+}
 
 
+.programHeading1Grid {
+    // margin-top: 35px;
+    // box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+    
+.programHeading1Grid:hover{
+    // margin-top: 35px;
+    transform: scale(1.05);
+    // color: #FFE481;
+    // box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
 
 
 

@@ -3,20 +3,27 @@ import React, { Component, useEffect } from 'react';
 import { Grid, Typography,Card  } from '@material-ui/core';
 import { withRouter, Link } from "react-router-dom";
 
+import divider from "../../images/divider2.png"
+
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 //-----------------------Icons-----------------------
-let artTherapyImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/artTherapy2.jpg'
-let artTherapyImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/artTherapy3.jpg'
 
-let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider.png"
+// import artTherapyImg1 from "../../images/pgm_and_add_optimized_images/additionalServices/additionalService02.jpg"
+// import artTherapyImg2 from "../../images/pgm_and_add_optimized_images/additionalServices/artTherapy3.jpg"
 
-let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg1.jpg'
-let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg2.jpg'
-let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg3.jpg'
-let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg4.jpg'
-// import icon1 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
+let artTherapyImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/additionalServices/additionalService02.jpg'
+let artTherapyImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/additionalServices/artTherapy3.jpg'
+
+
+
+// let divider = "https://dec4365vfd8ox.cloudfront.net/images/divider2.png"
+
+let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService01.jpg'
+let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService02.jpg'
+let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService03.jpg'
+let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService04.jpg'
 
 
 const AdditionArtTherapy = ({history}) => {
@@ -47,7 +54,7 @@ const AdditionArtTherapy = ({history}) => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>
-                        <img className="additionMeditationImg1" src={cardImg2} />
+                        <img className="additionMeditationImg1" src={artTherapyImg1} />
                     </Grid>
                     <Grid item xs={12} md={12} className="meditationDiv">
                         
@@ -61,21 +68,27 @@ const AdditionArtTherapy = ({history}) => {
                             improved high Self esteem and high Self confidence that has been 
                             either hindered or even lost while growing up as a child. 
                         </Typography>
+                        <Typography className="meditationContent1" align='Left'>
+                                These sessions are designed based on participant's age, lifestyle and levels of Stress. 
+                                In my experience with creating Art for more than 20 years, 
+                                I believe and confirm that Art increases an individual's Happiness quotient resulting 
+                                in a stress free Life – be it in a child or an adult.
+                        </Typography>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img className="dividerImgCorpProgram"src={divider} />
-                    </Grid>
+                    </Grid> */}
 
                     {/* ======================================================================================================================== */}
 
                    
-                    <Grid container style={{backgroundColor:"white"}}>
+                    {/* <Grid container style={{backgroundColor:"white"}}>
                         <Grid item xs={12} md={12}>
                             <img className="additionMeditationImg1" src={artTherapyImg2} />
                         </Grid>
-                        <Grid item xs={12} md={12} className="meditationDiv">
+                        {/* <Grid item xs={12} md={12} className="meditationDiv">
                             
-                        </Grid>
+                        </Grid> 
                         <Grid item xs={12} md={12} className="bellowMeditationDiv">
                             <Typography className="meditationContent1" align='Left'>
                                 These sessions are designed based on participant's age, lifestyle and levels of Stress. 
@@ -87,18 +100,18 @@ const AdditionArtTherapy = ({history}) => {
                                 <img className="dividerImgCorpProgram"src={divider} />
                             </Grid>
                         </Grid>
-                    </Grid>
+                    </Grid> */}
                     
 
                     {/* ======================================================================================================================================= */}
                    
                     <Grid container style={{backgroundColor:"white"}}>
                         <Grid item xs={12} md={12}>
-                            <img className="additionMeditationImg1" src={artTherapyImg3} />
+                            <img className="additionMeditationImg1" src={artTherapyImg2} />
                         </Grid>
-                        <Grid item xs={12} md={12} className="meditationDiv">
+                        {/* <Grid item xs={12} md={12} className="meditationDiv">
                             
-                        </Grid>
+                        </Grid> */}
                         <Grid item xs={12} md={12} className="bellowMeditationDiv">
                             <Typography className="meditationContent1" align='Left'>
                                 Art is an improvised mode of expression used to release inhibitions and to express oneself, 
@@ -115,7 +128,7 @@ const AdditionArtTherapy = ({history}) => {
                                 – Albert Einstein 
                             </Typography>
                             <Typography className="meditationContent1" align='Left'>
-                                Get in touch with us at www.additionalservices@aleenta.in to avail our Art therapy sessions for 
+                                Get in touch with us at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to avail our Art therapy sessions for 
                                 all age groups starting from 5 years and above.
                             </Typography>
                             <Grid item xs={12} md={12}>

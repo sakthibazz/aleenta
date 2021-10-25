@@ -28,7 +28,7 @@ const AdditionalServices = ({history,setOpen=noop,open}) => {
         <Grid container  className= "additionalServicesContainer" style={{marginTop:"5px"}}>
             <Grid item xs={12} md={12}>
                 <Typography className="topText">
-                    Aleenta Additional Services
+                    Additional Services
                 </Typography>
             </Grid>  
             <Grid container style={{backgroundColor:"#fbf2de"}}>

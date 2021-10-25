@@ -2,23 +2,26 @@ import React, { Component, useEffect } from 'react';
 
 import { Grid, Typography,Card  } from '@material-ui/core';
 import { withRouter, Link } from "react-router-dom";
+import divider from "../../images/divider2.png"
 
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 //-----------------------Icons-----------------------
-let counseling2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/counseling2.jpg'
-// import counseling3 from '../../images/additionalServices/counseling3.jpg'
-// import counseling4 from '../../images/additionalServices/counseling4.jpg'
 
 
-let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider.png"
+// import counseling1 from "../../images/pgm_and_add_optimized_images/additionalServices/additionalService04.jpg"
 
-let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg1.jpg'
-let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg2.jpg'
-let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg3.jpg'
-let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg4.jpg'
-// import icon1 from '../../images/dropDown/icon1.png'
+let counseling1 = 'https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/additionalServices/additionalService04.jpg'
+
+
+
+
+let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService01.jpg'
+let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService02.jpg'
+let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService03.jpg'
+let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService04.jpg'
+
 
 
 
@@ -52,7 +55,7 @@ const AdditionCounseling = ({history}) => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>
-                        <img className="additionMeditationImg1" src={cardImg4} />
+                        <img className="additionMeditationImg1" src={counseling1} />
                     </Grid>
                     <Grid item xs={12} md={12} className="meditationDiv">
                         
@@ -86,7 +89,7 @@ const AdditionCounseling = ({history}) => {
                                 experienced specialists in our Bangalore (India) based network.  
                             </Typography>
                             <Typography className="meditationContent1" align='Left'>
-                                Get in touch with us at www.additionalservices@aleenta.in 
+                                Get in touch with us at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a>
                                 to avail our counselling sessions.
                             </Typography>
                         

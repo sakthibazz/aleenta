@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { withRouter, Link } from "react-router-dom";
 
 
@@ -8,13 +8,31 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
 import Footer from "../footer";
 
+// ------------------Icons------------------------
+
+    // import Mangallam from "../../images/dropDown/corporatePro/Mangallam.png"
+    // import Happiness from "../../images/dropDown/corporatePro/Happiness.png"
+    // import Meditation_sessions from "../../images/dropDown/corporatePro/Meditation_sessions.png"
+    // import Personal_coaching from "../../images/dropDown/corporatePro/Personal_coaching.png"
+
+    let Mangallam = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/corporatePro/Mangallam.png";
+    let Happiness = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/corporatePro/Happiness.png";
+    let Meditation_sessions = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/corporatePro/Meditation_sessions.png";
+    let Personal_coaching = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/corporatePro/Personal_coaching.png";
+
 
 // -------------Images----------------------------
 
-let MANGALLAM = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/mangallam.jpeg";
-let happinessIndividual = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/happinessIndividual.jpg";
-let meditation = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/meditation.jpg";
-let PersonalCorporate = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/PersonalCorporate.jpg";
+    // import MANGALLAM from "../../images/pgm_and_add_optimized_images/programs/corporatePrograms/Optimized_mangallam.jpeg"
+    // import happinessIndividual from "../../images/pgm_and_add_optimized_images/programs/corporatePrograms/Optimized_happinessIndividual.jpg"
+    // import meditation from "../../images/pgm_and_add_optimized_images/programs/corporatePrograms/Optimized_meditation.jpg"
+    // import PersonalCorporate from "../../images/pgm_and_add_optimized_images/programs/corporatePrograms/Optimized_PersonalCorporate.jpg"
+
+let MANGALLAM = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/corporatePrograms/Optimized_mangallam.jpeg";
+let happinessIndividual = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/corporatePrograms/Optimized_happinessIndividual.jpg";
+let meditation = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/corporatePrograms/Optimized_meditation.jpg";
+let PersonalCorporate = "https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/programs/corporatePrograms/Optimized_PersonalCorporate.jpg";
+
 let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider1.png";
 
 const useStyles = makeStyles(theme => ({
@@ -39,10 +57,13 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-const AdditionalServices = ({history}) => {
+const CorporatePrograms = ({history}) => {
 
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
+
+    const [subHeading, setSubHeading] = useState(null);
+
 
     useEffect(() => {
         const hash = history.location.hash
@@ -57,9 +78,82 @@ const AdditionalServices = ({history}) => {
             <Grid container className="corporateContainer  corporateTitleContainer">
                 
                 <Grid item xs={12} md={12}>
-                    <Typography className="topText">
-                    	Programs <ArrowRightIcon/> Corporate Programs
-                    </Typography>
+                    < Grid container className="topText" >
+                        <Grid item xs={2} md={1} >
+                            <img className="dropDownIcons1" src={Mangallam} align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Mangallam'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#mangallam' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Mangallam")
+                                    } 
+                                }
+                            >
+                                Mangallam
+                            </Typography>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} md={1}>
+                            <img src={Happiness} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Happiness'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#happiness' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Happiness")
+                                    } 
+                                }
+                            >
+                                Happiness coaching
+                            </Typography>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} md={1}>
+                            <img src={Meditation_sessions} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Meditation'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#meditation' style={{textDecoration: "none",color: "#000000",}}>
+                        
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Meditation")
+                                    } 
+                                }
+                            >
+                                Meditation sessions
+                            </Typography>
+                        </Link>
+                        </Grid>
+                        <Grid item xs={2} md={1}>
+                            <img src={Personal_coaching} className="dropDownIcons1" align="right" />
+                        </Grid>
+                        <Grid item xs={10} md={2} className={subHeading !='Personal'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <Link to='#personal' style={{textDecoration: "none",color: "#000000",}}>
+                        
+                            <Typography className="programHeading1"
+                                onClick={()=>{
+                                        setSubHeading("Personal")
+                                    } 
+                                }
+                            >
+                                Personal Coaching
+                            </Typography>
+                        </Link>
+                        </Grid>
+                    </Grid>
                 </Grid>
 
                 {/*------------------------ Mangalam------------------------------ */}
@@ -120,12 +214,12 @@ const AdditionalServices = ({history}) => {
                             </Grid> */}
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
 
                 {/*------------------------ 	Happiness coaching ------------------------------ */}
@@ -187,12 +281,12 @@ const AdditionalServices = ({history}) => {
                             </Grid> */}
                         </Grid>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
                 
                 
@@ -256,12 +350,12 @@ const AdditionalServices = ({history}) => {
                             </Grid> */}
                         </Grid> 
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img 
                             className="dividerImgCorpProgram"
                             src={divider}
                         />
-                    </Grid>
+                    </Grid> */}
                 </Grid>
                 
 
@@ -340,4 +434,4 @@ const AdditionalServices = ({history}) => {
      );
 }
  
-export default AdditionalServices;
+export default CorporatePrograms;

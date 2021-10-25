@@ -2,21 +2,23 @@ import React, { Component, useEffect } from 'react';
 
 import { Grid, Typography,Card  } from '@material-ui/core';
 import { withRouter, Link } from "react-router-dom";
-
+import divider from "../../images/divider2.png"
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-//-----------------------Icons-----------------------
-let additionMeditationImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/meditation2.jpg'
-let additionMeditationImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/meditation3.jpg'
+//-----------------------Images-----------------------
+// import additionMeditationImg1 from "../../images/pgm_and_add_optimized_images/additionalServices/additionalService01.jpg"
+// import additionMeditationImg2 from "../../images/pgm_and_add_optimized_images/additionalServices/meditation2.jpg"
 
-let divider = "https://dec4365vfd8ox.cloudfront.net/images/programs/corporatePrograms/divider.png"
+let additionMeditationImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/additionalServices/additionalService01.jpg'
+let additionMeditationImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/pgm_and_add_optimized_images/additionalServices/meditation2.jpg'
 
-let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg1.jpg'
-let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg2.jpg'
-let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg3.jpg'
-let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg4.jpg'
-// import icon1 from 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icon1.png'
+// let divider = "https://dec4365vfd8ox.cloudfront.net/images/divider2.png"
+
+let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService01.jpg'
+let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService02.jpg'
+let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService03.jpg'
+let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService04.jpg'
 
 
 const AdditionMeditation = ({history}) => {
@@ -46,7 +48,7 @@ const AdditionMeditation = ({history}) => {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>
-                        <img className="additionMeditationImg1" src={cardImg1} />
+                        <img className="additionMeditationImg1" src={additionMeditationImg1} />
                     </Grid>
                     <Grid item xs={12} md={12} className="meditationDiv">
                         
@@ -82,9 +84,9 @@ const AdditionMeditation = ({history}) => {
                             you for the rest of your life!
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+                    {/* <Grid item xs={12} md={12}>
                         <img className="dividerImgCorpProgram"src={divider} />
-                    </Grid>
+                    </Grid> */}
 
                     {/* ======================================================================================================================== */}
 
@@ -185,16 +187,59 @@ const AdditionMeditation = ({history}) => {
                             experiencing the freshness of the food you’re eating.   
                         </Typography> */}
 
-                        <Grid item xs={12} md={12}>
+                        {/* <Grid item xs={12} md={12}>
                             <img className="dividerImgCorpProgram"src={divider} />
-                        </Grid>
+                        </Grid> */}
+
+                        <Typography className="programsHeading">
+                                Benefits
+                            </Typography>
+                            <Typography className="meditationContent1" align='Left'>
+                                Practising meditation and mindfulness for six to eight weeks can alleviate stress, 
+                                enhance attention span, lower blood pressure, improve depressive symptoms, reduce cortisol levels, 
+                                improve emotional well-being, and treat inflammation and hypertension.
+                            </Typography>
+
+                            <Typography className="meditationContent1" align='Left'>
+                                Meditation practice increases one's Happiness quotient resulting in experiencing 
+                                Life to the fullest!   
+                            </Typography>
+                            <Typography className="meditationContent1" align='Left'>
+                                Get in touch with us at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a>to avail our one of a 
+                                kind Meditation sessions. 
+                            </Typography>
+                            <Grid item xs={12} md={12}>
+                                <img className="dividerImgCorpProgram"src={divider} />
+                            </Grid>
 
                     </Grid>
+                    {/* <Grid item xs={12} md={12} className="bellowMeditationDiv" >
+                            <Typography className="programsHeading">
+                                Benefits
+                            </Typography>
+                            <Typography className="meditationContent1" align='Left'>
+                                Practising meditation and mindfulness for six to eight weeks can alleviate stress, 
+                                enhance attention span, lower blood pressure, improve depressive symptoms, reduce cortisol levels, 
+                                improve emotional well-being, and treat inflammation and hypertension.
+                            </Typography>
+
+                            <Typography className="meditationContent1" align='Left'>
+                                Meditation practice increases one's Happiness quotient resulting in experiencing 
+                                Life to the fullest!   
+                            </Typography>
+                            <Typography className="meditationContent1" align='Left'>
+                                Get in touch with us at <a href="mailto:additionalservices@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> additionalservices@aleenta.in </a>to avail our one of a 
+                                kind Meditation sessions. 
+                            </Typography>
+                            <Grid item xs={12} md={12}>
+                                <img className="dividerImgCorpProgram"src={divider} />
+                            </Grid>
+                        </Grid> */}
 
 
                     {/* ======================================================================================================================================= */}
                    
-                    <Grid container style={{backgroundColor:"white"}}>
+                    {/* <Grid container style={{backgroundColor:"white"}}>
                         <Grid item xs={12} md={12}>
                             <img className="additionMeditationImg1" src={additionMeditationImg3} />
                         </Grid>
@@ -216,14 +261,14 @@ const AdditionMeditation = ({history}) => {
                                 Life to the fullest!   
                             </Typography>
                             <Typography className="meditationContent1" align='Left'>
-                                Get in touch with us at www.additionalservices@aleenta.in to avail our one of a 
+                                Get in touch with us at <a href="mailto:additionalservices@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> additionalservices@aleenta.in </a>to avail our one of a 
                                 kind Meditation sessions. 
                             </Typography>
                             <Grid item xs={12} md={12}>
                                 <img className="dividerImgCorpProgram"src={divider} />
                             </Grid>
                         </Grid>
-                    </Grid>
+                    </Grid> */}
                     
 
                     {/* ======================================================================================================================== */}
