@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import ClearIcon from '@material-ui/icons/Clear';
 
 import { withRouter, Link } from "react-router-dom";
 import {
@@ -14,11 +15,13 @@ import {
   CssBaseline,
   useScrollTrigger,
   Grid,
-  Slide,
   Menu,
   MenuItem,
   Button,
+  Drawer,
   IconButton,
+  List,
+  ListItem
 } from "@material-ui/core";
 
 import Card from "@material-ui/core/Card";
@@ -97,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
     color: "Black",
     textDecoration: "none",
     fontSize: 16,
-    fontWeight: 600,
+    fontWeight: 'bold'
   },
   profileIconButton: {
     marginLeft: "10px",
@@ -127,8 +130,14 @@ const useStyles = makeStyles((theme) => ({
   },
   profileDrop: {
     marginTop: "35px",
-    "&.MuiList-root": {
-      // backgroundColor: 'red',
+    "& .MuiPaper-root": {
+      top: '19px !important',
+      left: '0px !important',
+      width: '100%',
+      height: '100%',
+      maxHeight: 'fit-content',
+      maxWidth: 'inherit',
+      boxShadow: 'none'
     },
     "& .MuiButtonBase-root": {
       // color: '#F8F9F9',
@@ -137,12 +146,31 @@ const useStyles = makeStyles((theme) => ({
       // }
     },
     "& .MuiMenu-list":{
-      backgroundColor:"#FAECDD",
+      backgroundColor: "rgb(251, 242, 222)",
+      width: "100%",
+      height: "100%"
     },
     // "& .MuiSvgIcon-root": {
     //   marginRight: theme.spacing(1),
     // },
   },
+  paper: {
+    height: 'auto',
+    width: '300px',
+    top: '56px',
+    right: '0',
+    maxHeight: 'calc(100% - 20%)',
+    background: "#fffaf3",
+    "& .MuiList-padding": {
+      paddingTop: '0px',
+      paddingBottom: '0px'
+    }
+  },
+  modal: {
+    "& .MuiBackdrop-root": {
+      background: "transparent"
+    }
+  }
 }));
 
 
@@ -180,6 +208,7 @@ const Layout = (props,history) => {
 const [appClassName, setAppClassName] = useState("closed");
 const [appTitle, setAppTitle] = useState("");
 const [open, setOpen] = useState(false);
+const [mobileMenu, setMobileMenu] = useState(false)
 
 
 useEffect(()=>{
@@ -221,13 +250,13 @@ const closeMenu = ()=>{
   };
 
   const handleMobileMenu = (event) => {
-    console.log(event.currentTarget);
-    setMobileAnchorEl(event.currentTarget);
+    setMobileMenu(!mobileMenu)
   };
 
   const handleMobileMenuClose = () => {
-    setMobileAnchorEl(null);
+    setMobileMenu(!mobileMenu)
   };
+
 
   return (
     <>
@@ -236,24 +265,19 @@ const closeMenu = ()=>{
         <AppBar className={appClassName} style={{backgroundColor:"#fbf2de"}}>
           <Toolbar className={classes.toolBarContainer}>
             <Grid container>
-              <div className={`${classes.menuCollapseContaier} ${classes.leftLogo}`}>
+              <div style={{marginLeft:"7%", width: '100%', justifyContent: 'space-between'}} className={`${classes.menuCollapseContaier} ${classes.leftLogo}`}>
               
-              
-                <IconButton edge="start" style={{marginLeft:"2%"}} onClick={handleMobileMenu}>
-                  <MenuIcon />
-                  
-                </IconButton>
                 <Link
                 to="/"
-                
-                // className={
-                //   pathname === "/"
-                //   ? clsx(classes.title, classes.titleActive)
-                //   : classes.title
-                // }
               >
                 <img src={Logo} width="60px" height="50px" style={{ paddingTop: "0", alignSelf: "center"}} />
               </Link>
+              <IconButton edge="end" style={{marginRight: '1%'}} onClick={handleMobileMenu}>
+                {
+                  mobileMenu ? <ClearIcon className="animate__animated animate__fadeIn" /> : <MenuIcon className="animate__animated animate__fadeIn"/>
+                }  
+                  
+                </IconButton>
               </div>
               
             <Grid item xs={12} md={12}>
@@ -447,82 +471,55 @@ const closeMenu = ()=>{
 
 
                   <div className={classes.menuCollapseContaier} >
-                    
-                    <Menu
-                      className={classes.profileDrop}
-                      id="menu-appbar"
-                      anchorEl={mobileAnchorEl}
-                      anchorOrigin={{
-                        vertical: "top",
-                        horizontal: "right",
+                    <Drawer 
+                      open={mobileMenu}
+                      anchor='right'
+                      classes={{
+                        paper: classes.paper,
+                        modal: classes.modal
                       }}
-                      keepMounted
-                      transformOrigin={{
-                        vertical: "top",
-                        horizontal: "right",
-                      }}
-                      open={Boolean(mobileAnchorEl)}
                       onClose={handleMobileMenuClose}
-                    >
-
-                      <MenuItem onClick={handleMobileMenuClose}  >
-                        <Typography variant="h5" noWrap>
-                          <Link
-                            to="/"
-                            className={
+                      >
+                    
+                      <List>
+                      <ListItem onClick={handleMobileMenuClose} component={Link} to="/" className="mobile-link">
+                        <Typography variant="h5" noWrap className={
                               pathname === "/"
                                 ? clsx(classes.mobileTitle, classes.titleActive)
                                 : classes.mobileTitle
-                            }
-                          >
+                            }>
                             Home
-                          </Link>
                         </Typography>
-                      </MenuItem>
+                      </ListItem>
 
-                      <MenuItem onClick={handleMobileMenuClose} >
-                        <Typography variant="h5" noWrap>
-                          <Link
-                            to="/about-us"
-                            className={
+                      <ListItem onClick={handleMobileMenuClose} component={Link} to="/about-us" className="mobile-link">
+                        <Typography variant="h5" noWrap className={
                               pathname === "/about-us"
                                 ? clsx(classes.mobileTitle, classes.titleActive)
                                 : classes.mobileTitle
-                            }
-                          >
+                            }>
                             About
-                          </Link>
                         </Typography>
-                      </MenuItem>
+                      </ListItem>
 
-                      <MenuItem onClick={handleMobileMenuClose}>
-                        <Typography variant="h5" noWrap >
-                          <Link
-                            to="/program"
-                            className={
+                      <ListItem onClick={handleMobileMenuClose} component={Link} to="/program" className="mobile-link">
+                        <Typography variant="h5" noWrap className={
                               pathname === "/program"
                                 ? clsx(classes.mobileTitle, classes.titleActive)
                                 : classes.mobileTitle
-                            }
-                          >
+                            }>
                             Programs
-                          </Link>
                         </Typography>
-                      </MenuItem>
-                      <MenuItem onClick={handleMobileMenuClose} >
-                        <Typography variant="h5" noWrap >
-                          <Link
-                            to="/additionalServices"
-                            className={
+                      </ListItem>
+                      <ListItem onClick={handleMobileMenuClose} component={Link} to="/additionalServices" className="mobile-link">
+                        <Typography variant="h5" noWrap className={
                               pathname === "/additionalServices"
                                 ? clsx(classes.mobileTitle, classes.titleActive)
                                 : classes.mobileTitle
-                            }
-                          >
+                            }>
                             Additional Services
-                          </Link>
                         </Typography>
-                      </MenuItem>
+                      </ListItem>
 
                       {/* <MenuItem onClick={handleMobileMenuClose}>
                         <Typography variant="h5" noWrap>
@@ -539,35 +536,26 @@ const closeMenu = ()=>{
                         </Typography>
                       </MenuItem> */}
 
-                      <MenuItem onClick={handleMobileMenuClose} >
-                        <Typography variant="h5" noWrap>
-                          <Link
-                            to="/blogs"
-                            className={
+                      <ListItem onClick={handleMobileMenuClose} component={Link} to="/blogs" className="mobile-link">
+                        <Typography variant="h5" noWrap className={
                               pathname === "/blogs"
                                 ? clsx(classes.mobileTitle, classes.titleActive)
                                 : classes.mobileTitle
-                            }
-                          >
+                            }>
                             Blog
-                          </Link>
                         </Typography>
-                      </MenuItem>
+                      </ListItem>
 
-                      <MenuItem onClick={handleMobileMenuClose} >
-                        <Typography variant="h5" noWrap>
-                          <Link
-                            to="/contact"
-                            className={
+                      <ListItem onClick={handleMobileMenuClose} component={Link} to="/contact" className="mobile-link">
+                        <Typography variant="h5" noWrap className={
                               pathname === "/contact"
                                 ? clsx(classes.mobileTitle, classes.titleActive)
                                 : classes.mobileTitle
-                            }
-                          >
+                            }>
+
                             Contact
-                          </Link>
                         </Typography>
-                      </MenuItem>
+                      </ListItem>
                      
                       {/* <MenuItem onClick={handleMobileMenuClose}>
                         <Typography variant="h5" noWrap>
@@ -583,7 +571,8 @@ const closeMenu = ()=>{
                           </Link>
                         </Typography>
                       </MenuItem> */}
-                    </Menu>
+                      </List>
+                    </Drawer>
                   </div>
                   <Menu
                     className={classes.profileDrop}
