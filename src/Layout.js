@@ -611,7 +611,7 @@ const closeMenu = ()=>{
 
             <Grid item xs={12} md={12}>
               {appTitle==="about"
-                ? <About/>
+                ? <About desktop={true}/>
                 :null
               }
             </Grid>

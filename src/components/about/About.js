@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Grid, Typography,  } from '@material-ui/core';
+import React, { Component, useState } from 'react';
+import { AccordionDetails, AccordionSummary, Grid, Typography,  Accordion} from '@material-ui/core';
 
 // import icon13 from "../../images/dropDown/aboutDD/What_is_wellbeing.png"
 // import icon15 from "../../images/dropDown/aboutDD/Who_needs_wellbeing.png"
@@ -30,15 +30,198 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
+const WhatIsWB = () => {
+  return <>
+    <Typography className="aboutDropDown_subContent" >
+        According to Oxford dictionary Well-being means – 
+        A state of being comfortable, healthy, or happy. 
+        Our program fits every human being who wishes to 
+        be in charge of their lives, who wants to fulfil 
+        their major goals and have an awareness and an 
+        undertaking toward a state of overall wellbeing. 
+    </Typography>
+  </>
+}
+
+const WhyAleenta = () => {
+  return <>
+    <Typography className="aboutDropDown_subContent">
+        We follow a natural, friendly approach that 
+        consists of a co-creative relationship with the client/clients. 
+        At Aleenta, everything that is important to the client is captured 
+        to bring about excellent ways to Self discovery and move in the direction 
+        of achieving success in the 
+        Client's/Organisation's area of priority. We serve all genders of all age groups.
+    </Typography>
+  </>
+}
+
+const WhoNeedsWB = () => {
+  const classes = useStyles();
+  const bull = <span className={classes.bullet}>•</span>;
+  return <>
+    <Typography className="aboutDropDown_subContent" >
+        {bull} Anyone who : Wants to seek Awareness on overall wellbeing to 
+        become a Healthy, Happy and a Successful person. 
+    </Typography>
+    <Typography className="aboutDropDown_subContent" >
+        {bull} Anyone who : Wishes to make lifestyle changes to become 
+        their best Self to lead a Happy, Healthy and a fulfilling Life. 
+    </Typography>
+    <Typography className="aboutDropDown_subContent">
+        {bull} Anyone who : Is thriving to adapt a positive Mindset 
+    </Typography>
+    <Typography className="aboutDropDown_subContent">
+        {bull} Anyone who : Wants to work on their Time management, 
+        Self confidence and Self esteem to strike a balance between personal, 
+        professional and social aspects of their lives.   
+    </Typography>
+  </>
+}
+
+const Coach = () => {
+  return <>
+    <Typography className="aboutDropDown_subContent">
+        <span className="span2" style={{color:"#97581E",fontWeight:"600",fontStyle: "italic"}}>
+            Mangala Narayan</span> is a Certified Wellbeing Coach,
+        who has mastered coaching through her Life 
+        experiences with children and people who wished to 
+        achieve their goals of Life in their pursuit of fulfilment and happiness. 
+        She is an excellent motivator, a great listener who hand holds her clients 
+        and manoeuvres through a highly positive transformational process. 
+        She is also a Visual Artist and a Meditation Practitioner by profession. 
+        She has a natural ability to motivate, 
+        inspire and support clients in their paramount endeavours. 
+    </Typography>
+  </>
+}
+
+const whatIsWBTitle = <Typography className="aboutDropDown_heading1" variant='h6'>
+                            What is Well-being ?
+                        </Typography>
+const whyAleentaTitle = <Typography className="aboutDropDown_heading1" variant='h6'>
+                        Why Aleenta ?
+                      </Typography>
+
+const whoNeedsWBTitle = <Typography className="aboutDropDown_heading1" variant='h6'>
+                          Who needs Well-being ?
+                        </Typography>
+
+const coachTitle = <Typography className="aboutDropDown_heading1" variant='h6'>
+                    The Coach
+                  </Typography>
+
+const DesktopAbout = () => {
+  return <>
+        <Grid item xs={12} md={8}>
+                <Grid container  spacing={0}>
+                    <Grid item align="center" xs={2} md={1}>
+                        <img className="dropDownIcons" src={icon13} />
+                    </Grid>
+                    <Grid item xs={10} md={5}>
+                        {
+                          whatIsWBTitle
+                        }
+                        <WhatIsWB />
+                    </Grid>
+
+                    <Grid item align="center" xs={2} md={1}>
+                        <img className="dropDownIcons" src={icon15} />
+                    </Grid>
+                    <Grid item xs={10} md={5}>
+                        {
+                          whyAleentaTitle
+                        }
+                        <WhyAleenta />
+                    </Grid>
+                    
+                    <Grid item align="center" xs={2} md={1}>
+                        <img className="dropDownIcons" src={icon12} />
+                    </Grid>
+                    <Grid item xs={10} md={5}>
+                    
+                        {
+                          whoNeedsWBTitle
+                        }
+                        <WhoNeedsWB />
+                    </Grid>
+
+                    <Grid item align="center" xs={2} md={1}>
+                        <img className="dropDownIcons" src={icon1} />
+                    </Grid>
+                    <Grid item xs={10} md={5}>
+                        {
+                          coachTitle
+                        }
+                        <Coach />
+                    </Grid>
+                </Grid> 
+            </Grid>
+  </>
+}
+
+const MobileAbout = () => {
+  const [expanded, setExpanded] = useState('panel1')
+  
+  const handleAccordion = (panel) => (event, newExpanded) => {
+    setExpanded(newExpanded ? panel : false);
+  }
+  return <>
+    <Grid item xs={12} md={8}>
+      <Accordion expanded={expanded == 'panel1'} onChange={handleAccordion('panel1')}>
+        <AccordionSummary>
+          <img className="dropDownIcons" src={icon13} style={{marginRight: '10px'}} />
+          {
+            whatIsWBTitle
+          }
+        </AccordionSummary>
+        <AccordionDetails>
+          <WhatIsWB />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded == 'panel2'} onChange={handleAccordion('panel2')}>
+      <AccordionSummary>
+        <img className="dropDownIcons" src={icon15} style={{marginRight: '10px'}} />
+          {
+            whyAleentaTitle
+          }
+        </AccordionSummary>
+        <AccordionDetails>
+          <WhyAleenta />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded == 'panel3'} onChange={handleAccordion('panel3')}>
+      <AccordionSummary>
+        <img className="dropDownIcons" src={icon12} style={{marginRight: '10px'}} />
+          {
+            whoNeedsWBTitle
+          }
+        </AccordionSummary>
+        <AccordionDetails style={{flexDirection: 'column'}}>
+          <WhoNeedsWB />
+        </AccordionDetails>
+      </Accordion>
+      <Accordion expanded={expanded == 'panel4'} onChange={handleAccordion('panel4')}>
+      <AccordionSummary>
+        <img className="dropDownIcons" src={icon1} style={{marginRight: '10px'}}/>
+          {
+            coachTitle
+          }
+        </AccordionSummary>
+        <AccordionDetails>
+          <Coach />
+        </AccordionDetails>
+      </Accordion>
+    </Grid>
+  </>
+}
 
 
 
-
-const About = () => {
-
+const About = ({desktop = false}) => {
+    
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
-
 
     return ( 
         <>
@@ -54,90 +237,10 @@ const About = () => {
                     The outcome of our programs are Self discovery and Self awareness in a healthy and successful way.
                 </Typography>
             </Grid>
-            <Grid item xs={12} md={8}>
-                <Grid container  spacing={0}>
-                    <Grid item align="center" xs={2} md={1}>
-                        <img className="dropDownIcons" src={icon13} />
-                    </Grid>
-                    <Grid item xs={10} md={5}>
-                        <Typography className="aboutDropDown_heading1" variant='h6'>
-                            What is Well-being ?
-                        </Typography>
-                        <Typography className="aboutDropDown_subContent" >
-                            According to Oxford dictionary Well-being means – 
-                            A state of being comfortable, healthy, or happy. 
-                            Our program fits every human being who wishes to 
-                            be in charge of their lives, who wants to fulfil 
-                            their major goals and have an awareness and an 
-                            undertaking toward a state of overall wellbeing. 
-                        </Typography>
-                    </Grid>
-
-                    <Grid item align="center" xs={2} md={1}>
-                        <img className="dropDownIcons" src={icon15} />
-                    </Grid>
-                    <Grid item xs={10} md={5}>
-                        <Typography className="aboutDropDown_heading1" variant='h6'>
-                        	Why Aleenta ?
-                        </Typography>
-                        <Typography className="aboutDropDown_subContent">
-                            We follow a natural, friendly approach that 
-                            consists of a co-creative relationship with the client/clients. 
-                            At Aleenta, everything that is important to the client is captured 
-                            to bring about excellent ways to Self discovery and move in the direction 
-                            of achieving success in the 
-                            Client's/Organisation's area of priority. We serve all genders of all age groups.
-                        </Typography>
-                    </Grid>
-                    
-                    <Grid item align="center" xs={2} md={1}>
-                        <img className="dropDownIcons" src={icon12} />
-                    </Grid>
-                    <Grid item xs={10} md={5}>
-                    
-                        <Typography className="aboutDropDown_heading1" variant='h6'>
-                        	Who needs Well-being ?
-                        </Typography>
-                        <Typography className="aboutDropDown_subContent" >
-                            {bull} Anyone who : Wants to seek Awareness on overall wellbeing to 
-                            become a Healthy, Happy and a Successful person. 
-                        </Typography>
-                        <Typography className="aboutDropDown_subContent" >
-                            {bull} Anyone who : Wishes to make lifestyle changes to become 
-                            their best Self to lead a Happy, Healthy and a fulfilling Life. 
-                        </Typography>
-                        <Typography className="aboutDropDown_subContent">
-                            {bull} Anyone who : Is thriving to adapt a positive Mindset 
-                        </Typography>
-                        <Typography className="aboutDropDown_subContent">
-                            {bull} Anyone who : Wants to work on their Time management, 
-                            Self confidence and Self esteem to strike a balance between personal, 
-                            professional and social aspects of their lives.   
-                        </Typography>
-                    </Grid>
-
-                    <Grid item align="center" xs={2} md={1}>
-                        <img className="dropDownIcons" src={icon1} />
-                    </Grid>
-                    <Grid item xs={10} md={5}>
-                        <Typography className="aboutDropDown_heading1" variant='h6'>
-                            The Coach
-                        </Typography>
-                        <Typography className="aboutDropDown_subContent">
-                            <span className="span2" style={{color:"#97581E",fontWeight:"600",fontStyle: "italic"}}>
-                                Mangala Narayan</span> is a Certified Wellbeing Coach,
-                            who has mastered coaching through her Life 
-                            experiences with children and people who wished to 
-                            achieve their goals of Life in their pursuit of fulfilment and happiness. 
-                            She is an excellent motivator, a great listener who hand holds her clients 
-                            and manoeuvres through a highly positive transformational process. 
-                            She is also a Visual Artist and a Meditation Practitioner by profession. 
-                            She has a natural ability to motivate, 
-                            inspire and support clients in their paramount endeavours. 
-                        </Typography>
-                    </Grid>
-                </Grid> 
-            </Grid>
+            {
+              desktop ? <DesktopAbout /> : <MobileAbout />
+            }
+            
               
         </Grid>
         </>
