@@ -59,6 +59,15 @@ const useStyles = makeStyles(theme => ({
 
 const CorporatePrograms = ({history}) => {
 
+    useEffect(() => {
+        const unlisten = history.listen(() => {
+          window.scrollTo(0, 0);
+        });
+        return () => {
+          unlisten();
+        }
+      }, []);
+
     const classes = useStyles();
     const bull = <span className={classes.bullet}>•</span>;
 
@@ -78,8 +87,97 @@ const CorporatePrograms = ({history}) => {
             <Grid container className="corporateContainer  corporateTitleContainer">
                 
                 <Grid item xs={12} md={12}>
-                    < Grid container className="topText" >
-                        <Grid item xs={2} md={1} >
+                    < Grid container className="topText" style={{paddingLeft: '18px'}}>
+                       
+                       
+                       
+                       
+                    <Grid item xs={6} md={3} className={subHeading !='Mangallam'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <div className="tab1">
+                        <img className="img-class" src={Mangallam}/>
+                        <Link to='#mangallam' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="img-title"
+                                onClick={()=>{
+                                        setSubHeading("Mangallam")
+                                    } 
+                                }
+                            >
+                                Mangallam
+                            </Typography>
+                        </Link>
+                        </div>
+                        </Grid>
+
+                        <Grid item xs={6} md={3} className={subHeading !='Happiness'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <div className="tab1">
+                        <img className="img-class" src={Happiness}/>
+                        <Link to='#happiness' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="img-title"
+                                onClick={()=>{
+                                        setSubHeading("Happiness")
+                                    } 
+                                }
+                            >
+                                Happiness coaching
+                            </Typography>
+                        </Link>
+                        </div>
+                        </Grid>
+                       
+                        <Grid item xs={6} md={3} className={subHeading !='Meditation'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <div className="tab1">
+                        <img className="img-class" src={Meditation_sessions}/>
+                        <Link to='#meditation' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="img-title"
+                                onClick={()=>{
+                                        setSubHeading("Meditation")
+                                    } 
+                                }
+                            >
+                                Meditation sessions
+                            </Typography>
+                        </Link>
+                        </div>
+                        </Grid>
+                        
+
+                        <Grid item xs={6} md={3} className={subHeading !='Personal'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <div className="tab1">
+                        <img className="img-class" src={Personal_coaching}/>
+                        <Link to='#personal' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="img-title"
+                                onClick={()=>{
+                                        setSubHeading("Personal")
+                                    } 
+                                }
+                            >
+                                Personal Coaching
+                            </Typography>
+                        </Link>
+                        </div>
+                        </Grid>
+
+
+
+
+
+
+
+
+                       
+                        {/* <Grid item xs={2} md={1} >
                             <img className="dropDownIcons1" src={Mangallam} align="right" />
                         </Grid>
                         <Grid item xs={10} md={2} className={subHeading !='Mangallam'
@@ -152,7 +250,7 @@ const CorporatePrograms = ({history}) => {
                                 Personal Coaching
                             </Typography>
                         </Link>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Grid>
 

@@ -257,6 +257,13 @@ const closeMenu = ()=>{
     setMobileMenu(!mobileMenu)
   };
 
+  const closeOpenedMenu = () => {
+    console.log('closing');
+    if(appClassName==='expand'){
+      setAppTitle('')
+      setAppClassName("closed")
+    }
+  }
 
   return (
     <>
@@ -289,6 +296,7 @@ const closeMenu = ()=>{
                   //           // :null
                   //           :null
                   // }}
+                  // onClick={closeMenu}
                   to="/"
                   className={
                     pathname === "/"
@@ -296,7 +304,9 @@ const closeMenu = ()=>{
                     : classes.title
                   }
                 >
-                  <img src={Logo} width="110px" height="80px" style={{paddingTop:"2px",paddingLeft:"20px"}} />
+                  <img  
+                    onClick={closeOpenedMenu} 
+                    src={Logo} width="110px" height="80px" style={{paddingTop:"2px",paddingLeft:"20px"}} />
                 </Link>
               {/* </Grid> */}
               

@@ -21,10 +21,10 @@ import Footer from "../footer";
 
 let Adolescent = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/individualPro/Adolescent.png";
 let Creative_coaching = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/individualPro/Creative_coaching.png";
-let Individual_natureCoaching = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/individualPro/Individual_natureCoaching.png";
-let Self_expression = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/individualPro/Self_expression.png";
-let Social_inhibitions = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/individualPro/Social_inhibitions.png";
-let Time_management = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/individualPro/Time_management.png";
+let Individual_natureCoaching = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/individualPro/Individual_natureCoaching.png";
+let Self_expression = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/individualPro/Self_expression.png";
+let Social_inhibitions = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/individualPro/Social_inhibitions.png";
+let Time_management = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/individualPro/Time_management.png";
 
 // -------------Images----------------------------
 
@@ -71,6 +71,15 @@ const useStyles = makeStyles(theme => ({
 
 const IndividualPrograms = ({history}) => {
 
+    useEffect(() => {
+        const unlisten = history.listen(() => {
+          window.scrollTo(0, 0);
+        });
+        return () => {
+          unlisten();
+        }
+      }, []);
+
     const [subHeading, setSubHeading] = useState(null);
 
     const classes = useStyles();
@@ -89,16 +98,15 @@ const IndividualPrograms = ({history}) => {
             <Grid container className="corporateContainer  corporateTitleContainer">
                 
                 <Grid item xs={12} md={12}>
-                < Grid container className="topText" >
-                        <Grid item xs={2} md={1} >
-                            <img className="dropDownIcons1" src={Individual_natureCoaching} align="right" />
-                        </Grid>
-                        <Grid item xs={10} md={2} className={subHeading !='Nature'
-                                  ? "programHeading1Grid"
-                                  :"programHeading1Grid2"
-                                }> 
+                < Grid container className="topText" style={{paddingLeft: '18px'}} >
+                        <Grid item xs={6} md={2} className={subHeading !='Nature'
+                                  ? "programHeading1Grid1"
+                                  :"programHeading1Grid3"
+                                } > 
+                        <div className="tab">
+                        <img className="img-class" src={Individual_natureCoaching}/>
                         <Link to='#nature' style={{textDecoration: "none",color: "#000000",}}>
-                            <Typography className="programHeading1"
+                            <Typography className="img-title"
                                 onClick={()=>{
                                         setSubHeading("Nature")
                                     } 
@@ -107,16 +115,16 @@ const IndividualPrograms = ({history}) => {
                                 Nature coaching
                             </Typography>
                         </Link>
+                        </div>
                         </Grid>
-                        <Grid item xs={2} md={1}>
-                            <img src={Creative_coaching} className="dropDownIcons1" align="right" />
-                        </Grid>
-                        <Grid item xs={10} md={2} className={subHeading !='Creative'
-                                  ? "programHeading1Grid"
-                                  :"programHeading1Grid2"
-                                }> 
-                        <Link to='#creative' style={{textDecoration: "none",color: "#000000",}}>
-                            <Typography className="programHeading1"
+                        <Grid item xs={6} md={2} className={subHeading !='Creative'
+                                  ? "programHeading1Grid1"
+                                  :"programHeading1Grid3"
+                                } > 
+                        <div className="tab">
+                        <img src={Creative_coaching} className="img-class"/>
+                        <Link to='#creative' style={{textDecoration: "none",color: "#000000",}} >
+                            <Typography className="img-title"
                                 onClick={()=>{
                                         setSubHeading("Creative")
                                     } 
@@ -125,17 +133,17 @@ const IndividualPrograms = ({history}) => {
                                 Creative coaching
                             </Typography>
                         </Link>
+                        </div>
                         </Grid>
-                        <Grid item xs={2} md={1}>
-                            <img src={Adolescent} className="dropDownIcons1" align="right" />
-                        </Grid>
-                        <Grid item xs={10} md={2} className={subHeading !='Adolescent'
-                                  ? "programHeading1Grid"
-                                  :"programHeading1Grid2"
-                                }> 
-                        <Link to='#adolescent' style={{textDecoration: "none",color: "#000000",}}>
+                        <Grid item xs={6} md={2} className={subHeading !='Adolescent'
+                                  ? "programHeading1Grid1"
+                                  :"programHeading1Grid3"
+                                } > 
+                        <div className="tab">
+                        <img src={Adolescent} className="img-class"/>
+                        <Link to='#adolescent' style={{textDecoration: "none",color: "#000000",}} >
                         
-                            <Typography className="programHeading1"
+                            <Typography className="img-title"
                                 onClick={()=>{
                                         setSubHeading("Adolescent")
                                     } 
@@ -144,17 +152,17 @@ const IndividualPrograms = ({history}) => {
                                 Adolescent coaching
                             </Typography>
                         </Link>
+                        </div>
                         </Grid>
-                        <Grid item xs={2} md={1}>
-                            <img src={Time_management} className="dropDownIcons1" align="right" />
-                        </Grid>
-                        <Grid item xs={10} md={2} className={subHeading !='Time'
-                                  ? "programHeading1Grid"
-                                  :"programHeading1Grid2"
+                        <Grid item xs={6} md={2} className={subHeading !='Time'
+                                  ? "programHeading1Grid1"
+                                  :"programHeading1Grid3"
                                 }> 
-                        <Link to='#timeManage' style={{textDecoration: "none",color: "#000000",}}>
+                        <div className="tab">
+                        <img src={Time_management} className="img-class"/>
+                        <Link to='#timeManage' style={{textDecoration: "none",color: "#000000",}}  >
                         
-                            <Typography className="programHeading1"
+                            <Typography className="img-title"
                                 onClick={()=>{
                                         setSubHeading("Time")
                                     } 
@@ -163,18 +171,18 @@ const IndividualPrograms = ({history}) => {
                                 Time Management
                             </Typography>
                         </Link>
+                        </div>
                         </Grid>
 
-                        <Grid item xs={2} md={1}>
-                            <img src={Self_expression} className="dropDownIcons1" align="right" />
-                        </Grid>
-                        <Grid item xs={10} md={2} className={subHeading !='Self'
-                                  ? "programHeading1Grid"
-                                  :"programHeading1Grid2"
-                                }> 
-                        <Link to='#selfExpression' style={{textDecoration: "none",color: "#000000",}}>
+                        <Grid item xs={6} md={2} className={subHeading !='Self'
+                                  ? "programHeading1Grid1"
+                                  :"programHeading1Grid3"
+                                } > 
+                        <div className="tab">
+                        <img src={Self_expression} className="img-class"/>
+                        <Link to='#selfExpression' style={{textDecoration: "none",color: "#000000",}} >
                         
-                            <Typography className="programHeading1"
+                            <Typography className="img-title"
                                 onClick={()=>{
                                         setSubHeading("Self")
                                     } 
@@ -183,18 +191,18 @@ const IndividualPrograms = ({history}) => {
                                 Self-expression
                             </Typography>
                         </Link>
+                        </div>
                         </Grid>
 
-                        <Grid item xs={2} md={1}>
-                            <img src={Social_inhibitions} className="dropDownIcons1" align="right" />
-                        </Grid>
-                        <Grid item xs={10} md={2} className={subHeading !='Social'
-                                  ? "programHeading1Grid"
-                                  :"programHeading1Grid2"
+                        <Grid item xs={6} md={2} className={subHeading !='Social'
+                                  ? "programHeading1Grid1"
+                                  :"programHeading1Grid3"
                                 }> 
+                        <div className="tab">
+                        <img src={Social_inhibitions} className="img-class"/>
                         <Link to='#social' style={{textDecoration: "none",color: "#000000",}}>
                         
-                            <Typography className="programHeading1"
+                            <Typography className="img-title"
                                 onClick={()=>{
                                         setSubHeading("Social")
                                     } 
@@ -203,6 +211,7 @@ const IndividualPrograms = ({history}) => {
                                 Social Inhibitionsg
                             </Typography>
                         </Link>
+                        </div>
                         </Grid>
 
                        
@@ -232,7 +241,8 @@ const IndividualPrograms = ({history}) => {
                             <Grid item xs={12} md={12} className="corporateProDiv">
                     
                             </Grid>
-                            
+                    
+
                             <Grid item xs={12} md={12}>
                                 <Typography className="programscontent1" align='Left'>
                                     The Process incorporates peeling off the layers of years of 

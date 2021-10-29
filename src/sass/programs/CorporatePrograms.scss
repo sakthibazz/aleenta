@@ -8,10 +8,54 @@
     // padding-top: 1000px;
     background-color: #fffaf3;
 
+    .tab{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      .img-class{
+        width: 40px;
+        height: auto;
+      }
+      .img-title{
+        padding-left: 10px;
+      }
+      @media screen and (max-width: 768px) {
+        .img-class{
+          width: 30px;
+        }
+        .img-title{
+            font-size: 12px;
+        }
+      }
+    }
+
+    .tab1{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        .img-class{
+          width: 40px;
+          height: auto;
+        }
+        .img-title{
+          padding-left: 15px;
+        }
+        @media screen and (max-width: 768px) {
+          .img-class{
+            width: 30px;
+          }
+          .img-title{
+              font-size: 12px;
+          }
+        }
+      }
+  
+
     .topText{
         position:fixed;
         padding-top:2%;
         padding-bottom: 1%;
+        padding-left: 2%;
         font-size: 22px;
         // margin-bottom: 100%;
         // padding-top: 3%;
@@ -26,21 +70,21 @@
     }
 
     #mangallam{
-        margin-top: 7%;
+        margin-top: 5%;
         @media only screen and (max-width: 600px) {
-            margin-top: 40%;
+            margin-top: 30%;
         }
     }
     #nature{
-        margin-top: 10%;
+        margin-top: 5%;
         @media only screen and (max-width: 600px) {
-            margin-top: 55%;
+            margin-top: 35%;
         }
     }
     #happiness{
-        margin-top: 7%;
+        margin-top: 5%;
         @media only screen and (max-width: 600px) {
-            margin-top: 40%;
+            margin-top: 30%;
         }
     }
 
@@ -141,7 +185,7 @@
 
 
 
-
+// ========under line for corp and group=========
 
 .programHeading1Grid{
     position:relative;
@@ -151,16 +195,15 @@
 .programHeading1Grid::after{
     position:absolute;
     content: "";
-    background-color:#FFD741
-    ;
+    background-color:#FFD741;
     height: 3px;
     width: 0;
-    bottom: -20px;
-    left:15px;
+    bottom: -12px;
+    left:0px;
     transition: 0.3s;
 }
 .programHeading1Grid:hover::after{
-    width: 80%;
+    width: 60%;
     @media only screen and (max-width: 600px) {
         width: 0%;
     }
@@ -175,15 +218,62 @@
     content: "";
     background-color:#FFE481;
     height: 3px;
-    width: 80%;
-    bottom: -22px;
-    left:15px;
+    width: 60%;
+    bottom: -14px;
+    left:0px;
     transition: 0.1s;
     padding:0%;
     @media only screen and (max-width: 600px) {
         width: 0%;
     }
 }
+
+
+
+// ========under line for individual=========
+
+.programHeading1Grid1{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.programHeading1Grid1::after{
+    position:absolute;
+    content: "";
+    background-color:#FFD741;
+    height: 3px;
+    width: 0;
+    bottom: -12px;
+    left:0px;
+    transition: 0.3s;
+}
+.programHeading1Grid1:hover::after{
+    width: 90%;
+    @media only screen and (max-width: 600px) {
+        width: 0%;
+    }
+}
+.programHeading1Grid3{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.programHeading1Grid3::after{
+    position:absolute;
+    content: "";
+    background-color:#FFE481;
+    height: 3px;
+    width: 90%;
+    bottom: -12px;
+    left:0px;
+    transition: 0.1s;
+    padding:0%;
+    @media only screen and (max-width: 600px) {
+        width: 0%;
+    }
+}
+
+
 
 
 .programHeading1Grid {

@@ -365,7 +365,7 @@ const Welcome = ({
                         </Typography> 
 
                    
-                    {/* <ScrollAnimation> */}
+                    
                         <Typography className="overViewConetnt" varient="h3" align='center' style={{paddingBottom:"2%"}}>
                             Aleenta is an ancient Sanskrit word which means 
                             “A rewarding life”. At Aleenta, we design programs 

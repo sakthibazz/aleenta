@@ -560,9 +560,12 @@ import { withRouter, Link } from "react-router-dom";
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-import CorporateSmall from "../../images/programs/CorporateSmall.jpg";
-import IndividualSmall  from "../../images/programs/IndividualSmall.jpg";
-import GroupSmall  from "../../images/programs/GroupSmall.jpg";
+// import CorporateSmall from "../../images/programs/CorporateSmall.jpg";
+// import IndividualSmall  from "../../images/programs/IndividualSmall.jpg";
+// import GroupSmall  from "../../images/programs/GroupSmall.jpg";
+let CorporateSmall = 'https://dec4365vfd8ox.cloudfront.net/images/programs/CorporateSmall.jpg'
+let IndividualSmall = 'https://dec4365vfd8ox.cloudfront.net/images/programs/IndividualSmall.jpg'
+let GroupSmall = 'https://dec4365vfd8ox.cloudfront.net/images/programs/GroupSmall.jpg'
 
 //-----------------------Icons-----------------------
 // let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/cardImg1.jpg'

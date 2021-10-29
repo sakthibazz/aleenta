@@ -65,6 +65,15 @@ const useStyles = makeStyles(theme => ({
 
 const GroupPrograms = ({history}) => {
 
+    useEffect(() => {
+        const unlisten = history.listen(() => {
+          window.scrollTo(0, 0);
+        });
+        return () => {
+          unlisten();
+        }
+      }, []);
+
     const [subHeading, setSubHeading] = useState(null);
 
     const classes = useStyles();
@@ -84,7 +93,94 @@ const GroupPrograms = ({history}) => {
                 
                 <Grid item xs={12} md={12}>
                 < Grid container className="topText" >
-                        <Grid item xs={2} md={1} >
+
+                <Grid item xs={6} md={3} className={subHeading !='Happiness'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <div className="tab1">
+                        <img className="img-class" src={Group_happiness}/>
+                        <Link to='#happiness' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="img-title"
+                                onClick={()=>{
+                                        setSubHeading("Happiness")
+                                    } 
+                                }
+                            >
+                                Happiness coaching
+                            </Typography>
+                        </Link>
+                        </div>
+                        </Grid>
+
+                        <Grid item xs={6} md={3} className={subHeading !='Spiritual'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <div className="tab1">
+                        <img className="img-class" src={Group_spiritual}/>
+                        <Link to='#spritual' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="img-title"
+                                onClick={()=>{
+                                        setSubHeading("Spiritual")
+                                    } 
+                                }
+                            >
+                                Spiritual coaching
+                            </Typography>
+                        </Link>
+                        </div>
+                        </Grid>
+                       
+                        <Grid item xs={6} md={3} className={subHeading !='Relationship'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <div className="tab1">
+                        <img className="img-class" src={Group_relationships}/>
+                        <Link to='#relation' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="img-title"
+                                onClick={()=>{
+                                        setSubHeading("Relationship")
+                                    } 
+                                }
+                            >
+                                Relationship coaching
+                            </Typography>
+                        </Link>
+                        </div>
+                        </Grid>
+                        
+
+                        <Grid item xs={6} md={3} className={subHeading !='Wellness'
+                                  ? "programHeading1Grid"
+                                  :"programHeading1Grid2"
+                                }> 
+                        <div className="tab1">
+                        <img className="img-class" src={Group_wellness}/>
+                        <Link to='#wellness' style={{textDecoration: "none",color: "#000000",}}>
+                            <Typography className="img-title"
+                                onClick={()=>{
+                                        setSubHeading("Wellness")
+                                    } 
+                                }
+                            >
+                                Wellness coaching
+                            </Typography>
+                        </Link>
+                        </div>
+                        </Grid>
+
+
+
+
+
+
+
+
+
+
+                        {/* <Grid item xs={2} md={1} >
                             <img className="dropDownIcons1" src={Group_happiness} align="right" />
                         </Grid>
                         <Grid item xs={10} md={2} className={subHeading !='Happiness'
@@ -157,7 +253,7 @@ const GroupPrograms = ({history}) => {
                                 Wellness coaching
                             </Typography>
                         </Link>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
                 </Grid>
 
