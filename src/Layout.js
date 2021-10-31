@@ -258,11 +258,9 @@ const closeMenu = ()=>{
   };
 
   const closeOpenedMenu = () => {
-    console.log('closing');
-    if(appClassName==='expand'){
-      setAppTitle('')
-      setAppClassName("closed")
-    }
+    setAppTitle('')
+    setAppClassName("closed")
+  
   }
 
   return (
@@ -415,16 +413,9 @@ const closeMenu = ()=>{
                   <Link to='/blogs' className={classes.title}>
                     <Typography variant="h5"  noWrap 
                     className={classes.title}
-                    onClick={()=>{
-                                  setAppClassName("closed")
-                                  appTitle==='blogs'
-                                  ?setAppTitle("")
-                                  :setAppTitle("blogs")
-                                } 
-                              }>
+                    onClick={closeOpenedMenu}>
                       
                         Blog
-                        {appTitle === "blogs"?<ArrowDropUpIcon/>:<ArrowDropDownIcon/>} 
                       
                       
                     </Typography>
@@ -438,18 +429,9 @@ const closeMenu = ()=>{
                   <Link to='/contact' className={classes.title}>
                     <Typography variant="h5"  noWrap 
                     className={classes.title}
-                    onClick={()=>{
-                                  setAppClassName("closed")
-                                  
-                                  appTitle==='contact'
-                                  ?setAppTitle("")
-                                  :setAppTitle("contact")
-                                } 
-                              }>
+                    onClick={closeOpenedMenu}>
                       
-                        Contact 
-                        {appTitle === "contact"?<ArrowDropUpIcon/>:<ArrowDropDownIcon/>} 
-                      
+                        Contact                      
                       
                     </Typography>
                     </Link>
@@ -619,26 +601,29 @@ const closeMenu = ()=>{
             {/* <Grid item xs={12} md={12} className='lineGrid' >
             </Grid> */}
 
-            <Grid item xs={12} md={12}>
-              {appTitle==="about"
+            <Grid item xs={12} md={12} className={appTitle ? 'overlay-container' : null}>
+              {
+                appTitle==="about"
                 ? <About desktop={true}/>
-                :null
+                : appTitle == 'program' ? <Program setOpen={setOpen} open={open}/>
+                : appTitle == 'additionalServices' ? <AdditionalServices  setOpen={setOpen} open={open} />
+                : null
               }
             </Grid>
 
-            <Grid item xs={12} md={12}>
+            {/* <Grid item xs={12} md={12} className={appTitle != '' ? "overlay-container" : null}>
               {appTitle==="program"
                 ?<Program setOpen={setOpen} open={open}/>
                 :null
               }
             </Grid>
 
-            <Grid item xs={12} md={12}>
+            <Grid item xs={12} md={12} className={appTitle != '' ? "overlay-container" : null}>
               {appTitle==="additionalServices"
                 ?<AdditionalServices  setOpen={setOpen} open={open} />
                 :null
               }
-            </Grid>
+            </Grid> */}
 
           </Grid>
           </Toolbar>

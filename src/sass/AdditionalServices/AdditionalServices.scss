@@ -8,6 +8,11 @@
     // margin-top: 1%;
     background-color: white;
     color: black;
+    position:relative;
+
+    &.programs-section{
+      margin-top: 0;
+    }
 
     .topText{
         padding:3%;

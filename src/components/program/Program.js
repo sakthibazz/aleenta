@@ -587,7 +587,7 @@ const Program = ({history,setOpen=noop,open}) => {
 
     return ( 
         <>
-        <Grid container  className= "additionalServicesContainer" style={{marginTop:"5px"}}>
+        <Grid container className="additionalServicesContainer programs-section">
             <Grid item xs={12} md={12}>
                 <Typography className="topText">
                     Programs

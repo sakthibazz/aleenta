@@ -152,10 +152,6 @@ const Welcome = ({
                                                 <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
                                                     Nature COACHING 
                                                 </Typography> 
-                                                <div className="carousel-arrow-mobile-screen">
-                                                  <br/>
-                                                  <br/>
-                                                </div>
                                             </Grid>
                                             {/* <Grid item xs={12} md={8}>
                                                 <img class="d-block w-60 carouselImage" src={image1}  alt="First slide"/>
