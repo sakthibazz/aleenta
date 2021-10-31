@@ -120,7 +120,7 @@ const Welcome = ({
 
     return (
         // <Container maxWidth="lg" className="mainViewContainer">
-        <Container maxWidth="lg" className={`${classes.mainViewContainer} mainViewContainer`}>
+        <Container maxWidth="lg" className={`${classes.mainViewContainer} mainViewContainer welcome`}>
             {/* <hr/> */}
            <Grid container className={classes.imageGridContainer} style={{backgroundColor:"#fbf2de"}}>
                 <Grid item xs={12} md={12} >
