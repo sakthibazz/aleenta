@@ -10,15 +10,18 @@ import Footer from "../footer";
 
 // ------------------Icons------------------------
 
+    // import  Mangallam from "../../images/Mangallam.png"
+
     // import Mangallam from "../../images/dropDown/corporatePro/Mangallam.png"
     // import Happiness from "../../images/dropDown/corporatePro/Happiness.png"
     // import Meditation_sessions from "../../images/dropDown/corporatePro/Meditation_sessions.png"
     // import Personal_coaching from "../../images/dropDown/corporatePro/Personal_coaching.png"
 
-    let Mangallam = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/corporatePro/Mangallam.png";
-    let Happiness = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/corporatePro/Happiness.png";
-    let Meditation_sessions = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/corporatePro/Meditation_sessions.png";
-    let Personal_coaching = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/corporatePro/Personal_coaching.png";
+    let Mangallam = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Mangallam.png";
+    let Happiness = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Happiness.png";
+    let Meditation_sessions = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Meditation_sessions.png";
+    let Personal_coaching = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Personal_coaching.png";
+
 
 
 // -------------Images----------------------------
@@ -87,12 +90,16 @@ const CorporatePrograms = ({history}) => {
             <Grid container className="corporateContainer  corporateTitleContainer">
                 
                 <Grid item xs={12} md={12}>
-                    < Grid container className="topText" style={{paddingLeft: '18px'}}>
+                    < Grid container className="topText">
+                       
+                       <Grid item xs={12} md={12}>
+                           <Typography className="topTextHeading" align="center">
+                                Corporate Programs
+                           </Typography>
+                       </Grid>
                        
                        
-                       
-                       
-                    <Grid item xs={6} md={3} className={subHeading !='Mangallam'
+                    {/* <Grid item xs={6} md={3} className={subHeading !='Mangallam'
                                   ? "programHeading1Grid"
                                   :"programHeading1Grid2"
                                 }> 
@@ -167,7 +174,7 @@ const CorporatePrograms = ({history}) => {
                             </Typography>
                         </Link>
                         </div>
-                        </Grid>
+                        </Grid> */}
 
 
 
@@ -256,7 +263,7 @@ const CorporatePrograms = ({history}) => {
 
                 {/*------------------------ Mangalam------------------------------ */}
 
-                <Grid container id="mangallam" style={{backgroundColor:"#fbf2de"}}>
+                <Grid container id="mangallam" style={{backgroundColor:"#fbf2de",paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -266,9 +273,24 @@ const CorporatePrograms = ({history}) => {
                     <Grid item xs={12} md={6}>
                         <Grid container>
                             <Grid item xs={12} md={12}>
-                                <Typography className="programsHeading">
+
+                            <div className="tab1">
+                                <img className="img-class" src={Mangallam}/>
+                                {/* <Link to='#mangallam' style={{textDecoration: "none",color: "#000000",}}> */}
+                                    <Typography className="img-title programsHeading"
+                                        // onClick={()=>{
+                                        //         setSubHeading("Mangallam")
+                                        //     } 
+                                        // }
+                                    >
+                                        Mangallam
+                                    </Typography>
+                                {/* </Link> */}
+                            </div>
+                                {/* <img src={Mangallam}/> */}
+                                {/* <Typography className="programsHeading">
                                     Mangallam
-                                </Typography>
+                                </Typography> */}
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">
@@ -322,26 +344,34 @@ const CorporatePrograms = ({history}) => {
 
                 {/*------------------------ 	Happiness coaching ------------------------------ */}
 
-                <Grid container id="happiness" style={{backgroundColor:"white"}}>
-                    <Grid item xs={12} md={6}>
+                {/* <Grid container id="happiness" style={{backgroundColor:"white"}}> */}
+                    <Grid item xs={12} md={6} style={{backgroundColor:"white"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
                         <img 
                             className="mangallamImg"
                             src={happinessIndividual}
                         />
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} style={{backgroundColor:"white"}}>
                         <Grid container>
                             <Grid item xs={12} md={12}>
-                                <Typography className="programsHeading shortContent">
+
+                            <div className="tab1 shortContent">
+                                <img className="img-class" src={Happiness}/>
+                                    <Typography className="img-title programsHeading" >
+                                        Happiness coaching
+                                    </Typography>
+                            </div>
+
+                                {/* <Typography className="programsHeading shortContent">
                                     Happiness coaching
-                                </Typography>
+                                </Typography> */}
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">
                     
                             </Grid>
                             
-                            <Grid item xs={12} md={12}>
+                            <Grid item xs={12} md={12} style={{paddingTop:"2%",paddingBottom:"2%"}}>
 
                                 <Typography className="programscontent1" align='Left' style={{fontStyle:"italic",fontWeight:"600"}}>
                                     Happiness is when what you think, what you say, and what you do are in harmony. -- Mahatma Gandhi
@@ -385,7 +415,7 @@ const CorporatePrograms = ({history}) => {
                             src={divider}
                         />
                     </Grid> */}
-                </Grid>
+                {/* </Grid> */}
                 
                 
 
@@ -393,7 +423,7 @@ const CorporatePrograms = ({history}) => {
             {/*------------------------ Meditation sessions  ------------------------------ */}
 
 
-            <Grid container id="meditation" style={{backgroundColor:"#fbf2de"}}>
+            <Grid container id="meditation" style={{backgroundColor:"#fbf2de"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -403,9 +433,17 @@ const CorporatePrograms = ({history}) => {
                     <Grid item xs={12} md={6}>
                         <Grid container>
                             <Grid item xs={12} md={12}>
-                                <Typography className="programsHeading shortContent">
+
+                            <div className="tab1 shortContent">
+                                <img className="img-class" src={Meditation_sessions}/>
+                                    <Typography className="img-title programsHeading" >
+                                        Meditation sessions
+                                    </Typography>
+                            </div>
+
+                                {/* <Typography className="programsHeading shortContent">
                                     Meditation sessions 
-                                </Typography>
+                                </Typography> */}
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">
@@ -462,7 +500,7 @@ const CorporatePrograms = ({history}) => {
 
 
                  
-                <Grid container id="personal" style={{backgroundColor:"white"}}>
+                <Grid container id="personal" style={{backgroundColor:"white"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -472,9 +510,16 @@ const CorporatePrograms = ({history}) => {
                     <Grid item xs={12} md={6}>
                         <Grid container>
                             <Grid item xs={12} md={12}>
-                                <Typography className="programsHeading shortContent">
+
+                            <div className="tab1 shortContent">
+                                <img className="img-class" src={Personal_coaching}/>
+                                    <Typography className="img-title programsHeading" >
+                                        Personal Coaching
+                                    </Typography>
+                            </div>
+                                {/* <Typography className="programsHeading shortContent">
                                     Personal Coaching
-                                </Typography>
+                                </Typography> */}
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">

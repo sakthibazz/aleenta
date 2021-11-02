@@ -587,12 +587,15 @@ const Program = ({history,setOpen=noop,open}) => {
 
     return ( 
         <>
+            <Grid item className="hrTag" style={{marginTop:" 1px",marginBottom:" 1%"}}>
+
+            </Grid>
         <Grid container className="additionalServicesContainer programs-section">
-            <Grid item xs={12} md={12}>
+            {/* <Grid item xs={12} md={12}>
                 <Typography className="topText">
                     Programs
                 </Typography>
-            </Grid>  
+            </Grid>   */}
             <Grid container style={{backgroundColor:"#fbf2de"}}>
                 <Grid item xs={12} md={6}>               
                     <Typography className="additionalDrop_content">

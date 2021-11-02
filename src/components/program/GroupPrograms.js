@@ -15,10 +15,10 @@ import Footer from "../footer";
 // import Group_spiritual from "../../images/dropDown/groupPro/Group_spiritual.png"
 // import Group_wellness from "../../images/dropDown/groupPro/Group_wellness.png"
 
-let Group_happiness = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/Group_happiness.png";
-let Group_relationships = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/Group_relationships.png";
-let Group_spiritual = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/Group_spiritual.png";
-let Group_wellness = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/groupPro/Group_wellness.png";
+let Group_happiness = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Group_happiness.png";
+let Group_relationships = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Group_relationships.png";
+let Group_spiritual = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Group_spiritual.png";
+let Group_wellness = "https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Group_wellness.png";
 
 
 
@@ -94,7 +94,13 @@ const GroupPrograms = ({history}) => {
                 <Grid item xs={12} md={12}>
                 < Grid container className="topText" >
 
-                <Grid item xs={6} md={3} className={subHeading !='Happiness'
+                        <Grid item xs={12} md={12}>
+                           <Typography className="topTextHeading" align="center">
+                                Group Programs
+                           </Typography>
+                       </Grid>
+
+                {/* <Grid item xs={6} md={3} className={subHeading !='Happiness'
                                   ? "programHeading1Grid"
                                   :"programHeading1Grid2"
                                 }> 
@@ -169,7 +175,7 @@ const GroupPrograms = ({history}) => {
                             </Typography>
                         </Link>
                         </div>
-                        </Grid>
+                        </Grid> */}
 
 
 
@@ -259,7 +265,7 @@ const GroupPrograms = ({history}) => {
 
                 {/*------------------------ Happiness coaching ------------------------------ */}
 
-                <Grid container id="happiness" style={{backgroundColor:"#fbf2de"}}>
+                <Grid container id="happiness" style={{backgroundColor:"#fbf2de"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -269,9 +275,15 @@ const GroupPrograms = ({history}) => {
                     <Grid item xs={12} md={6}>
                         <Grid container>
                             <Grid item xs={12} md={12}>
-                                <Typography className="programsHeading shortContent">
+                                <div className="tab1 shortContent">
+                                    <img className="img-class" src={Group_happiness}/>
+                                        <Typography className="img-title programsHeading" >
+                                            Happiness coaching
+                                        </Typography>
+                                </div>
+                                {/* <Typography className="programsHeading shortContent">
                                     Happiness coaching
-                                </Typography>
+                                </Typography> */}
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">
@@ -325,7 +337,7 @@ const GroupPrograms = ({history}) => {
 
 
 
-                <Grid container id="spritual" style={{backgroundColor:"white"}}>
+                <Grid container id="spritual" style={{backgroundColor:"white"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -335,9 +347,15 @@ const GroupPrograms = ({history}) => {
                     <Grid item xs={12} md={6}>
                         <Grid container>
                             <Grid item xs={12} md={12}>
-                                <Typography className="programsHeading shortContent">
+                            <div className="tab1 shortContent">
+                                <img className="img-class" src={Group_spiritual}/>
+                                    <Typography className="img-title programsHeading" >
+                                        Spiritual coaching
+                                    </Typography>
+                            </div>
+                                {/* <Typography className="programsHeading shortContent">
                                     Spiritual coaching
-                                </Typography>
+                                </Typography> */}
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">
@@ -390,7 +408,7 @@ const GroupPrograms = ({history}) => {
 
             {/*------------------------ Relationship coaching   ------------------------------ */}
 
-            <Grid container id="relation" style={{backgroundColor:"#fbf2de"}}>
+            <Grid container id="relation" style={{backgroundColor:"#fbf2de"}}  style={{paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -400,9 +418,16 @@ const GroupPrograms = ({history}) => {
                     <Grid item xs={12} md={6}>
                         <Grid container>
                             <Grid item xs={12} md={12}>
-                                <Typography className="programsHeading">
+
+                            <div className="tab1">
+                                <img className="img-class" src={Group_relationships}/>
+                                    <Typography className="img-title programsHeading" >
+                                        Relationship coaching
+                                    </Typography>
+                            </div>
+                                {/* <Typography className="programsHeading">
                                     Relationship coaching
-                                </Typography>
+                                </Typography> */}
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">
@@ -453,7 +478,7 @@ const GroupPrograms = ({history}) => {
 
                  {/*------------------------ Wellness coaching    ------------------------------ */}
 
-                 <Grid container id="wellness" style={{backgroundColor:"white"}}>
+                 <Grid container id="wellness" style={{backgroundColor:"white"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg groupImg4"
@@ -463,9 +488,16 @@ const GroupPrograms = ({history}) => {
                     <Grid item xs={12} md={6}>
                         <Grid container>
                             <Grid item xs={12} md={12}>
-                                <Typography className="programsHeading">
+
+                            <div className="tab1">
+                                <img className="img-class" src={Group_wellness}/>
+                                    <Typography className="img-title programsHeading" >
+                                        Wellness coaching
+                                    </Typography>
+                            </div>
+                                {/* <Typography className="programsHeading">
                                     Wellness coaching
-                                </Typography>
+                                </Typography> */}
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">

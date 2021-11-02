@@ -42,12 +42,17 @@ const AdditionArtTherapy = ({history}) => {
         <>
             <Grid container  className= "additionalMeditationContainer">
                 <Grid item xs={12} md={12}>
-                    <Typography className="topText">
-                        Additional Services <ArrowRightIcon/>Art Therapy
-                    </Typography>
+                    < Grid container className="topText">
+                       
+                       <Grid item xs={12} md={12}>
+                           <Typography className="topTextHeading" align="center">
+                                Art Therapy
+                           </Typography>
+                       </Grid>
+                    </Grid>
                 </Grid>
                 <Grid container style={{backgroundColor:"#fbf2de"}} >
-                    <Grid item xs={12} md={12} >
+                    <Grid item xs={12} md={12} className="MeditationContentGrid"  >
                         <Typography className="meditationTitle1"  align="center">
                             Expressive Art Therapy is a practice used to rid unnecessary baggage and 
                             invoke a creative thought process through creative Visualization.

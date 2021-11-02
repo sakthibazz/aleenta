@@ -31,6 +31,7 @@ import CardContent from "@material-ui/core/CardContent";
 import About from './components/about/About';
 import Program from './components/program/Program';
 import AdditionalServices from "./components/AdditionalServices/AdditionalServices";
+import BlogsDropDown from "./components/Blogs/BlogsDropDown";
 
 import {
   Menu as MenuIcon,
@@ -241,6 +242,11 @@ const closeMenu = ()=>{
     setOpen(false)
   }
 
+  const handleBlogs =(event) => {
+    setAppTitle("blogs")
+    setOpen(false)
+  }
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -410,16 +416,27 @@ const closeMenu = ()=>{
                                   ?`${classes.menuContainer} menuContainer1`
                                   :`${classes.menuContainer} menuContainer2`
                                 }>
-                  <Link to='/blogs' className={classes.title}>
+                  {/* <Link to='/blogs' className={classes.title}> */}
                     <Typography variant="h5"  noWrap 
-                    className={classes.title}
-                    onClick={closeOpenedMenu}>
+                      className={classes.title}
+
+
+                      onClick={()=>{appClassName==='closed'
+                      ?setAppClassName("expand")
+                      :setAppClassName("closed")
+
+                      appTitle==='blogs'
+                      ?setAppTitle("")
+                      :handleBlogs()
+                    } 
+                  }
+                      >
                       
-                        Blog
+                          Blogs {appTitle === "blogs"?<ArrowDropUpIcon/>:<ArrowDropDownIcon/>}
                       
-                      
-                    </Typography>
-                    </Link>
+                      </Typography>
+                    
+                    {/* </Link> */}
                   </div>
 
                   <div className={appTitle !='contact'
@@ -528,9 +545,9 @@ const closeMenu = ()=>{
                         </Typography>
                       </MenuItem> */}
 
-                      <ListItem onClick={handleMobileMenuClose} component={Link} to="/blogs" className="mobile-link">
+                      <ListItem onClick={handleMobileMenuClose} component={Link} to="/blogsDropDown" className="mobile-link">
                         <Typography variant="h5" noWrap className={
-                              pathname === "/blogs"
+                              pathname === "/blogsDropDown"
                                 ? clsx(classes.mobileTitle, classes.titleActive)
                                 : classes.mobileTitle
                             }>
@@ -607,6 +624,7 @@ const closeMenu = ()=>{
                 ? <About desktop={true}/>
                 : appTitle == 'program' ? <Program setOpen={setOpen} open={open}/>
                 : appTitle == 'additionalServices' ? <AdditionalServices  setOpen={setOpen} open={open} />
+                : appTitle == 'blogs' ? <BlogsDropDown  setOpen={setOpen} open={open} />
                 : null
               }
             </Grid>

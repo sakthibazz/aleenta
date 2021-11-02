@@ -149,7 +149,7 @@ const Welcome = ({
                                                                                         {/* <img class="d-block w-60 carouselImage" src={image1}  alt="First slide"/> */}
                                             </Grid>
                                             <Grid item xs={12} md={12}>
-                                                <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
+                                                <Typography className="imageSideText1" align="center" style={{color:"#0F0F0F"}}>
                                                     Nature COACHING 
                                                 </Typography> 
                                             </Grid>
@@ -179,7 +179,7 @@ const Welcome = ({
                                                 <img class="d-block w-60 carouselImage" src={image2} alt="First slide"/>
                                             </Grid>
                                             <Grid item xs={12} md={12}>
-                                                <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
+                                                <Typography className="imageSideText1" align="center" style={{color:"#181877"}}>
                                                     CREATIVE COACHING
                                                 </Typography> 
                                             </Grid>
@@ -238,7 +238,7 @@ const Welcome = ({
                                                 <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
                                             </Grid>
                                             <Grid item xs={12} md={12}>
-                                                <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
+                                                <Typography className="imageSideText1" align="center" style={{color:"#AA3138"}}>
                                                     WELLBEING COACHING
                                                 </Typography> 
                                             </Grid>

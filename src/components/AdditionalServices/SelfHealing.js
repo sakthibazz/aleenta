@@ -40,12 +40,18 @@ const AdditionSelfHealing = ({history}) => {
         <>
             <Grid container  className= "additionalMeditationContainer">
                 <Grid item xs={12} md={12}>
-                    <Typography className="topText">
-                        Additional Services <ArrowRightIcon/> Self-healing techniques
-                    </Typography>
+
+                    < Grid container className="topText">
+                       
+                       <Grid item xs={12} md={12}>
+                           <Typography className="topTextHeading" align="center">
+                                Self-healing techniques
+                           </Typography>
+                       </Grid>
+                    </Grid>
                 </Grid>
                 <Grid container style={{backgroundColor:"#fbf2de"}} >
-                    <Grid item xs={12} md={12} >
+                    <Grid item xs={12} md={12} className="MeditationContentGrid" >
                         <Typography className="meditationTitle1"  align="center">
                             Inhale and exhale. Repeat. This is what we do normally; 
                             the length of either depends on our 

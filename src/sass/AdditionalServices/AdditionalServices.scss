@@ -4,7 +4,7 @@
     margin-top: 1000px;
     padding-left: 0%;
     padding-right: 0%;
-    padding-bottom: 2%;
+    // padding-bottom: 2%;
     // margin-top: 1%;
     background-color: white;
     color: black;
@@ -48,7 +48,7 @@
     .additionalDrop_content{
         padding-top: 1%;
         padding-left: 6%;
-        padding-right: 2%;
+        // padding-right: 2%;
         font-size: 24px;
         // font-weight: 60;
         @media only screen and (max-width: 600px) {
@@ -95,19 +95,50 @@
     background-color: white;
     color: black;
 
+    // .topText{
+    //     padding:3%;
+    //     font-size: medium;
+    //     padding-top: 2%;
+    //     padding-bottom: 2%;
+    //     background-color: white;
+    //     border-bottom: #C8E6CC solid 2px;
+    //     // font-size: 22px;
+    //     @media only screen and (max-width: 600px) {
+    //         font-size: 14px;
+    //         border-bottom: #C8E6CC solid 2px;
+    //     }
+    // }
+
     .topText{
-        padding:3%;
-        font-size: medium;
-        padding-top: 2%;
-        padding-bottom: 2%;
+        position:fixed;
+        padding-top:2%;
+        padding-bottom: 1%;
+        padding-left: 2%;
+        font-size: 22px;
+        // margin-bottom: 100%;
+        // padding-top: 3%;
+        // padding-bottom: 2%;
         background-color: white;
         border-bottom: #C8E6CC solid 2px;
         // font-size: 22px;
         @media only screen and (max-width: 600px) {
+            margin-top: -2%;
             font-size: 14px;
             border-bottom: #C8E6CC solid 2px;
         }
     }
+
+    .topTextHeading{
+        font-size: 26px ;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @media only screen and (max-width: 600px) {
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+    }
+
+
     .meditationTitle{
         align-items: center;
         font-size: 22px;
@@ -122,12 +153,18 @@
             font-size: 16px;
         }
     }
+    .MeditationContentGrid{
+        margin-top: 4%;
+        @media only screen and (max-width: 600px) {
+            margin-top: 8%;
+        }
+    }
     .meditationTitle1{
         align-items: center;
         font-size: 22px;
         padding-top: 3%;
         padding-left: 18%;
-        padding-right: 18%;
+        padding-right: 16%;
         padding-bottom: 0%;
         // font-family: 'Tenor Sans', sans-serif !important;
         @media only screen and (max-width: 600px) {

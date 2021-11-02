@@ -36,13 +36,20 @@ const AdditionMeditation = ({history}) => {
     return ( 
         <>
             <Grid container  className= "additionalMeditationContainer">
+
+
                 <Grid item xs={12} md={12}>
-                    <Typography className="topText">
-                        Additional Services <ArrowRightIcon/> Meditation
-                    </Typography>
+                    < Grid container className="topText">
+                       
+                       <Grid item xs={12} md={12}>
+                           <Typography className="topTextHeading" align="center">
+                                Meditation
+                           </Typography>
+                       </Grid>
+                    </Grid>
                 </Grid>
                 <Grid container style={{backgroundColor:"#fbf2de"}} >
-                    <Grid item xs={12} md={12} >
+                    <Grid item xs={12} md={12} className="MeditationContentGrid" >
                         <Typography className="meditationTitle"  align="center">
                             Why are people looking for ways to destress – Is meditation the way?
                         </Typography>

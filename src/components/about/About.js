@@ -11,10 +11,10 @@ import { AccordionDetails, AccordionSummary, Grid, Typography,  Accordion} from 
 import { makeStyles } from "@material-ui/core/styles";
 
 //-----------------------Icons-----------------------
-let icon13 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/aboutDD/What_is_wellbeing.png'
-let icon15 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/aboutDD/Who_needs_wellbeing.png'
-let icon12 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/aboutDD/Why_Aleenta.png'
-let icon1 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/aboutDD/The_coach.png'
+let icon13 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/What_is_wellbeing.png'
+let icon15 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Why_Aleenta.png'
+let icon12 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/Who_needs_wellbeing.png'
+let icon1 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/The_coach.png'
 
 
 
@@ -96,18 +96,18 @@ const Coach = () => {
   </>
 }
 
-const whatIsWBTitle = <Typography className="aboutDropDown_heading1" variant='h6'>
+const whatIsWBTitle = <Typography className="aboutDropDown_heading1" >
                             What is Well-being ?
                         </Typography>
-const whyAleentaTitle = <Typography className="aboutDropDown_heading1" variant='h6'>
+const whyAleentaTitle = <Typography className="aboutDropDown_heading1" >
                         Why Aleenta ?
                       </Typography>
 
-const whoNeedsWBTitle = <Typography className="aboutDropDown_heading1" variant='h6'>
+const whoNeedsWBTitle = <Typography className="aboutDropDown_heading1" >
                           Who needs Well-being ?
                         </Typography>
 
-const coachTitle = <Typography className="aboutDropDown_heading1" variant='h6'>
+const coachTitle = <Typography className="aboutDropDown_heading1" >
                     The Coach
                   </Typography>
 

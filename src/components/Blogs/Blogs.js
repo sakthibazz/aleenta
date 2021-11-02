@@ -49,6 +49,26 @@ const Blogs = () => {
                     
                 </Grid>
                 <Grid item xs={12} md={12} >
+
+                    <Typography className="blogcontent1" align='center' style={{fontStyle:"italic",fontWeight:"600"}}>
+                        “Who looks outside, dreams. Who looks inside, awakes.”
+                                                                – Carl Jung
+                    </Typography>
+
+                    <Typography className="blogcontent1" align='Left'>
+                        Our life is an adventure. We do not know what it has planned for us. 
+                        From when we are born, in every stage of our life, we experience surprises, 
+                        shocks, moments of joy, pleasure, fulfilment, disappointments etc. 
+                        Although we change courses to create a better life, 
+                        we fail to understand that these are meant to be. That, the struggles, 
+                        the suffering and the discomfort are a part of an evolving process that leads to 
+                        self-transformation.
+                    </Typography>
+
+                    <Typography className="blogcontent1" align='Left'>
+                        The trick, is in welcoming this inner metamorphosis!
+                    </Typography>
+
                     <Typography className="blogcontent1" align='Left'>
                     A dreamer and a nature lover as a child, 
                     I grew up extremely independant. I changed schools 

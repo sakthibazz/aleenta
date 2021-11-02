@@ -42,12 +42,18 @@ const AdditionCounseling = ({history}) => {
         <>
             <Grid container  className= "additionalMeditationContainer">
                 <Grid item xs={12} md={12}>
-                    <Typography className="topText">
-                        Additional Services <ArrowRightIcon/> Counseling
-                    </Typography>
+
+                    < Grid container className="topText">
+                       
+                       <Grid item xs={12} md={12}>
+                           <Typography className="topTextHeading" align="center">
+                                counselling
+                           </Typography>
+                       </Grid>
+                    </Grid>
                 </Grid>
                 <Grid container style={{backgroundColor:"#fbf2de"}} >
-                    <Grid item xs={12} md={12} >
+                    <Grid item xs={12} md={12} className="MeditationContentGrid" >
                         <Typography className="meditationTitle1"  align="center">
                             We offer counselling services for people who are unable to identify 
                             the root cause of their problems 

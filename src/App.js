@@ -18,6 +18,8 @@ import CorporatePrograms from "./components/program/corporatePrograms"
 import IndividualPrograms from "./components/program/individualPrograms"
 import GroupPrograms from "./components/program/GroupPrograms"
 
+import BlogsDropDown from "./components/Blogs/BlogsDropDown";
+
 //------------------ Addition Services--------------------------
 import AdditionalServices from "./components/AdditionalServices/AdditionalServices";
 import AdditionMeditation from "./components/AdditionalServices/meditation";
@@ -50,6 +52,7 @@ const App = () => {
         {/* --------------------Drop downs------------------ */}
         <Route exact path="/" component={Welcome} />
         <Route path="/about-us" component={About} />
+        <Route path="/blogsDropDown" component={BlogsDropDown} />
         <Route path="/blogs" component={Blogs} />
         <Route path="/program" component={Program} />
         <Route path="/contact" component={Contact} />
