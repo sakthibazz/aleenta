@@ -121,8 +121,10 @@ const Welcome = ({
     return (
         // <Container maxWidth="lg" className="mainViewContainer">
         <Container maxWidth="lg" className={`${classes.mainViewContainer} mainViewContainer welcome`}>
+            
             {/* <hr/> */}
            <Grid container className={classes.imageGridContainer} style={{backgroundColor:"#fbf2de"}}>
+
                 <Grid item xs={12} md={12} >
                     {/* <Carousel items={items} /> */}
                       <Grid id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" style={{paddingTop:"15px",marginTop:'-15px'}}> 
@@ -136,7 +138,7 @@ const Welcome = ({
                                     <div class="carousel-item active">
                                         <Grid container>
                                             <Grid item xs={12} md={12}>
-                                                <Typography className="imageSideText2">
+                                                <Typography className="imageSideText2" style={{color:"#0F0F0F"}}>
                                                     See What You Don't See
                                                 </Typography>
                                             </Grid>
@@ -149,9 +151,9 @@ const Welcome = ({
                                                                                         {/* <img class="d-block w-60 carouselImage" src={image1}  alt="First slide"/> */}
                                             </Grid>
                                             <Grid item xs={12} md={12}>
-                                                <Typography className="imageSideText1" align="center" style={{color:"#0F0F0F"}}>
+                                                {/* <Typography className="imageSideText1" align="center" style={{color:"#0F0F0F"}}>
                                                     Nature COACHING 
-                                                </Typography> 
+                                                </Typography>  */}
                                             </Grid>
                                             {/* <Grid item xs={12} md={8}>
                                                 <img class="d-block w-60 carouselImage" src={image1}  alt="First slide"/>
@@ -171,18 +173,18 @@ const Welcome = ({
                                     <div class="carousel-item">
                                     <Grid container>
                                         <Grid item xs={12} md={12}>
-                                                <Typography className="imageSideText2">
+                                                <Typography className="imageSideText2" style={{color:"#181877"}}>
                                                     Tap Into Your Creative Potential
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={12} md={12} align="center">
                                                 <img class="d-block w-60 carouselImage" src={image2} alt="First slide"/>
                                             </Grid>
-                                            <Grid item xs={12} md={12}>
+                                            {/* <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#181877"}}>
                                                     CREATIVE COACHING
                                                 </Typography> 
-                                            </Grid>
+                                            </Grid> */}
                                             {/* <Grid item xs={12} md={8}>
                                                 <img class="d-block w-60 carouselImage" src={image3} alt="First slide"/>
                                                 <Typography className="imageSideText1"  align="center" style={{color:"#4B2F5E"}}>
@@ -200,18 +202,18 @@ const Welcome = ({
                                     <div class="carousel-item">
                                         <Grid container>
                                             <Grid item xs={12} md={12}>
-                                                <Typography className="imageSideText2">
+                                                <Typography className="imageSideText2" style={{color:"#97581E"}}>
                                                     Increase Your Happiness Quotient
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={12} md={12} align="center">
                                                 <img class="d-block w-60 carouselImage" src={image3} alt="First slide"/>
                                             </Grid>
-                                            <Grid item xs={12} md={12}>
+                                            {/* <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
                                                     HAPPINESS COACHING
                                                 </Typography> 
-                                            </Grid>
+                                            </Grid> */}
                                             {/* <Grid item xs={12} md={8}>
                                                 <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#C99C1A"}}>
@@ -230,18 +232,18 @@ const Welcome = ({
                                     <div class="carousel-item">
                                     <Grid container>
                                         <Grid item xs={12} md={12}>
-                                                <Typography className="imageSideText2">
+                                                <Typography className="imageSideText2" style={{color:"#AA3138"}} >
                                                     Find The Key To Your Wellbeing
                                                 </Typography>
                                             </Grid>
                                             <Grid item xs={12} md={12} align="center">
                                                 <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
                                             </Grid>
-                                            <Grid item xs={12} md={12}>
+                                            {/* <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#AA3138"}}>
                                                     WELLBEING COACHING
                                                 </Typography> 
-                                            </Grid>
+                                            </Grid> */}
                                             {/* <Grid item xs={12} md={8}>
                                                 <img class="d-block w-60 carouselImage" src={image2} alt="First slide"/>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#BA0110"}}>

@@ -34,7 +34,9 @@ const WhatIsWB = () => {
   return <>
     <Typography className="aboutDropDown_subContent" >
         According to Oxford dictionary Well-being means – 
-        A state of being comfortable, healthy, or happy. 
+        It's the state in which your physical, mental, and 
+        spiritual health are in balance, 
+        unlocking your body's natural healing abilities. 
         Our program fits every human being who wishes to 
         be in charge of their lives, who wants to fulfil 
         their major goals and have an awareness and an 
@@ -232,9 +234,11 @@ const About = ({desktop = false}) => {
             <Grid item xs={12} md={4}>
                 <Typography className='abotTitle'>
                     <span className="span1" style={{color:"#97581E",fontWeight:"600",fontStyle: "italic"}}>Aleenta</span > is an ancient Sanskrit word which means " A rewarding life".
-                    At Aleenta, we design a personalised holistic approach for an all-round wellbeing of our Clients 
-                    because every person is unique in his/her own way - in thought, emotion and in action.
-                    The outcome of our programs are Self discovery and Self awareness in a healthy and successful way.
+                      At Aleenta Wellbeing, we provide a space and motivation for 
+                      the client to explore venues/methods/techniques to overcome 
+                      challenges that are on the way to succeeding in their endeavours. 
+                      We guide and support our clients on finding a harmonious balance between the mind, 
+                      \body and spirit that contributes to his/her total well-being. 
                 </Typography>
             </Grid>
             {

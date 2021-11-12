@@ -35,11 +35,11 @@ const AdditionalServices = ({history,setOpen=noop,open}) => {
                 </Typography>
             </Grid>   */}
             <Grid container style={{backgroundColor:"#fbf2de"}}>
-                <Grid item xs={12} md={6}>               
+                {/* <Grid item xs={12} md={6}>               
                     <Typography className="additionalDrop_content">
                         Come have a practical experience of Silence at Aleenta Wellbeing!
                     </Typography>
-                </Grid>
+                </Grid> */}
 
 {/* ----------------------------card-1----------------------------------- */}
                 <Grid item xs={12} md={12}>

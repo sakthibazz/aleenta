@@ -597,8 +597,8 @@ const Program = ({history,setOpen=noop,open}) => {
                 </Typography>
             </Grid>   */}
             <Grid container style={{backgroundColor:"#fbf2de"}}>
-                <Grid item xs={12} md={6}>               
-                    <Typography className="additionalDrop_content">
+                <Grid item xs={12} md={12} >               
+                    <Typography className="additionalDrop_content" >
                         Our programs are tailored to our client's 
                         needs – be it Corporate, Individual or Group.
                     </Typography>

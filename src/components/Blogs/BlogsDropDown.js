@@ -41,8 +41,9 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
             <Grid container style={{backgroundColor:"#fbf2de"}}>
                 <Grid item xs={12} md={6}>               
                     <Typography className="additionalDrop_content">
-                        “Transformation means literally going beyond your form.”          
-                                                                    - Wayne Dyer
+                    Inner Metamorphosis
+                        {/* “Transformation means literally going beyond your form.”          
+                                                                    - Wayne Dyer */}
                     </Typography>
                 </Grid>
 
@@ -51,7 +52,7 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                     <Grid container align="center">
                         <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/blogs" style={{textDecoration:"none"}}>
-                                <Card className="articalCard" style={{width:"90%",height:"80%"}} 
+                                <Card className="articalCard" style={{width:"90%",height:"90%"}} 
                                     onClick={()=>
                                         setOpen(true)}
                                 >
@@ -59,8 +60,10 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                                         <img src={BlogDropDownImg1}  style={{width:"100%",height:"100%"}}/>
                                     </Card>
                                     <Card container  style={{height:"20%"}}>
-                                        <Typography className="additionalDrop_articles">
-                                            Inner Metamorphosis
+                                        <Typography className="additionalDrop_articles1">
+                                            {/* Inner Metamorphosis */}
+                                            “Transformation means literally going beyond your form.”          
+                                                                    - Wayne Dyer
                                         </Typography>
                                     </Card>
                                 </Card>

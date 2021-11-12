@@ -50,7 +50,7 @@ const Blogs = () => {
                 </Grid>
                 <Grid item xs={12} md={12} >
 
-                    <Typography className="blogcontent1" align='center' style={{fontStyle:"italic",fontWeight:"600"}}>
+                    <Typography className="blogcontent1" align='center' style={{fontStyle:"italic"}}>
                         “Who looks outside, dreams. Who looks inside, awakes.”
                                                                 – Carl Jung
                     </Typography>

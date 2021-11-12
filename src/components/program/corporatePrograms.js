@@ -299,7 +299,7 @@ const CorporatePrograms = ({history}) => {
                             
                             <Grid item xs={12} md={12}>
                                 
-                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic",fontWeight:"600"}}>
+                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic"}}>
                                     Health is not just the absence of a disease. It is an inner 
                                     joyfulness that should be ours all the time; a state of positive well-being. -- Deepak Chopra
                                 </Typography>
@@ -373,7 +373,7 @@ const CorporatePrograms = ({history}) => {
                             
                             <Grid item xs={12} md={12} style={{paddingTop:"2%",paddingBottom:"2%"}}>
 
-                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic",fontWeight:"600"}}>
+                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic"}}>
                                     Happiness is when what you think, what you say, and what you do are in harmony. -- Mahatma Gandhi
                                 </Typography>
 

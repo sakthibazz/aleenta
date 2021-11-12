@@ -62,6 +62,9 @@ const AdditionMeditation = ({history}) => {
                     </Grid>
                     <Grid item xs={12} md={12} className="bellowMeditationDiv">
                         <Typography className="meditationContent1" align='Left'>
+                            Come have a practical experience of Silence at Aleenta Wellbeing!
+                        </Typography>
+                        <Typography className="meditationContent1" align='Left'>
                             The world as we know it has become busier, louder, 
                             and more stressful in the age of Covid-19. That is why 
                             many people are looking for ways to escape the everyday hustle and bustle and turning to 
@@ -105,7 +108,8 @@ const AdditionMeditation = ({history}) => {
                             We offer the following techniques.
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} md={12}>
+
+                    {/* <Grid item xs={12} md={12}>
                         <Grid container align="center">
                             <Grid item xs={12} md={4}>
                                 <Card className="meditationTechnique">
@@ -136,14 +140,14 @@ const AdditionMeditation = ({history}) => {
                                     </Card>
                                 </Card>
                             </Grid>
-                        </Grid>
-                        
-                        
-                        
-                    </Grid>
+                        </Grid> 
+                    </Grid>*/}
+
+
                     <Grid item xs={12} md={12} style={{backgroundColor:"white"}}>
                         <Typography className="programsHeading">
                             Guided meditation
+                            <div className="underLine1"></div>
                         </Typography>
                         <Typography className="meditationContent2" align='Left'>
                             This process involves a trained practitioner or teacher 
@@ -161,6 +165,7 @@ const AdditionMeditation = ({history}) => {
 
                         <Typography className="programsHeading">
                             Mantra meditation
+                            <div className="underLine2"></div>
                         </Typography>
                         <Typography className="meditationContent2" align='Left'>
                             This type of meditation can be practised on a daily basis 
@@ -176,6 +181,7 @@ const AdditionMeditation = ({history}) => {
 
                         <Typography className="programsHeading">
                             Mindfulness meditation
+                            <div className="underLine3"></div>
                         </Typography>
                         <Typography className="meditationContent2" align='Left'>
                             This practice is about becoming more conscious of the present moment. 
