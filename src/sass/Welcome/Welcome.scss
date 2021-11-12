@@ -6,11 +6,22 @@
     padding-right: 0%;
     padding-bottom: 2%;
     background-color: #fffaf3;
+    &::before{
+      content:" ";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #C8E6CC;
+      // top: -8px;
+    }
     &.welcome{
       margin-top: 24px;
       @media screen and (max-width: 600px) {
         margin-top: 7px;
       }
+    }
+    .carousel-control-prev, .carousel-control-next{
+      top: 60px;
     }
     .topBorder{
       background-color: #C8E6CC ;
@@ -141,7 +152,7 @@
           max-height: 165px;
       }
       @media only screen and (max-width: 375px){
-       max-height: 149px; 
+       height: 149px; 
       }
     //   @media (min-width:330px) and (max-width: 600px) {
     //     height: 300px;

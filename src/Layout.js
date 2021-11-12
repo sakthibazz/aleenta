@@ -157,7 +157,7 @@ const useStyles = makeStyles((theme) => ({
   },
   paper: {
     height: 'auto',
-    width: '300px',
+    width: '225px',
     top: '56px',
     right: '0',
     maxHeight: 'calc(100% - 20%)',

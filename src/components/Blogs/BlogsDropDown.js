@@ -39,11 +39,9 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                 </Typography>
             </Grid>   */}
             <Grid container style={{backgroundColor:"#fbf2de"}}>
-                <Grid item xs={12} md={6}>               
-                    <Typography className="additionalDrop_content">
-                    Inner Metamorphosis
-                        {/* “Transformation means literally going beyond your form.”          
-                                                                    - Wayne Dyer */}
+                <Grid item xs={12} md={12} align="center">               
+                    <Typography className="additionalDrop_content" >
+                        Inner Metamorphosis
                     </Typography>
                 </Grid>
 
@@ -52,7 +50,7 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                     <Grid container align="center">
                         <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/blogs" style={{textDecoration:"none"}}>
-                                <Card className="articalCard" style={{width:"90%",height:"90%"}} 
+                                <Card className="articalCard" style={{width:"100%",height:"90%"}} 
                                     onClick={()=>
                                         setOpen(true)}
                                 >

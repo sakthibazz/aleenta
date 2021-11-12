@@ -81,10 +81,12 @@ const WhoNeedsWB = () => {
   </>
 }
 
+// 97581E
+// fontStyle: "italic"
 const Coach = () => {
   return <>
     <Typography className="aboutDropDown_subContent">
-        <span className="span2" style={{color:"#97581E",fontWeight:"600",fontStyle: "italic"}}>
+        <span className="span2" style={{color:"tomato",fontWeight:"600"}}>
             Mangala Narayan</span> is a Certified Wellbeing Coach,
         who has mastered coaching through her Life 
         experiences with children and people who wished to 
@@ -233,7 +235,7 @@ const About = ({desktop = false}) => {
         <Grid container className="aboutContainer aboutTitleContainer1" spacing={2}>
             <Grid item xs={12} md={4}>
                 <Typography className='abotTitle'>
-                    <span className="span1" style={{color:"#97581E",fontWeight:"600",fontStyle: "italic"}}>Aleenta</span > is an ancient Sanskrit word which means " A rewarding life".
+                    <span className="span1" style={{color:"tomato",fontWeight:"600",}}>Aleenta</span > is an ancient Sanskrit word which means " A rewarding life".
                       At Aleenta Wellbeing, we provide a space and motivation for 
                       the client to explore venues/methods/techniques to overcome 
                       challenges that are on the way to succeeding in their endeavours. 
