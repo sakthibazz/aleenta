@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { Container, Grid, Typography } from '@material-ui/core';
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -26,7 +26,16 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-const Blogs = () => {
+const BlogsPage1 = ({history}) => {
+
+    useEffect(() => {
+        const unlisten = history.listen(() => {
+          window.scrollTo(0, 0);
+        });
+        return () => {
+          unlisten();
+        }
+      }, []);
 
     const classes = useStyles();
 
@@ -229,4 +238,4 @@ const Blogs = () => {
      );
 }
  
-export default Blogs;
+export default BlogsPage1;

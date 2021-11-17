@@ -137,11 +137,6 @@ const Welcome = ({
                             <div class="carousel-inner" >
                                     <div class="carousel-item active">
                                         <Grid container>
-                                            <Grid item xs={12} md={12}>
-                                                <Typography className="imageSideText2" style={{color:"#0F0F0F"}}>
-                                                    See What You Don't See
-                                                </Typography>
-                                            </Grid>
                                             <Grid item xs={12} md={12} align="center">
                                                 <ProgressiveImage src={image1} placeholder="tiny-image.jpg">
                                                     {(src, loading) => (
@@ -150,6 +145,19 @@ const Welcome = ({
                                                 </ProgressiveImage>
                                                                                         {/* <img class="d-block w-60 carouselImage" src={image1}  alt="First slide"/> */}
                                             </Grid>
+                                            <Grid item xs={12} md={12}>
+                                                <Typography className="imageSideText2" style={{color:"#0F0F0F"}}>
+                                                    See What You Don't See
+                                                </Typography>
+                                            </Grid>
+                                            {/* <Grid item xs={12} md={12} align="center">
+                                                <ProgressiveImage src={image1} placeholder="tiny-image.jpg">
+                                                    {(src, loading) => (
+                                                        <img class="d-block w-60 carouselImage" src={src} alt="an image" />
+                                                    )}
+                                                </ProgressiveImage>
+                                                                                        {/* <img class="d-block w-60 carouselImage" src={image1}  alt="First slide"/> 
+                                            </Grid> */}
                                             <Grid item xs={12} md={12}>
                                                 {/* <Typography className="imageSideText1" align="center" style={{color:"#0F0F0F"}}>
                                                     Nature COACHING 
@@ -172,14 +180,17 @@ const Welcome = ({
 
                                     <div class="carousel-item">
                                     <Grid container>
-                                        <Grid item xs={12} md={12}>
+                                            <Grid item xs={12} md={12} align="center">
+                                                <img class="d-block w-60 carouselImage" src={image2} alt="First slide"/>
+                                            </Grid>
+                                            <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText2" style={{color:"#181877"}}>
                                                     Tap Into Your Creative Potential
                                                 </Typography>
                                             </Grid>
-                                            <Grid item xs={12} md={12} align="center">
+                                            {/* <Grid item xs={12} md={12} align="center">
                                                 <img class="d-block w-60 carouselImage" src={image2} alt="First slide"/>
-                                            </Grid>
+                                            </Grid> */}
                                             {/* <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#181877"}}>
                                                     CREATIVE COACHING
@@ -201,14 +212,17 @@ const Welcome = ({
 
                                     <div class="carousel-item">
                                         <Grid container>
+                                            <Grid item xs={12} md={12} align="center">
+                                                <img class="d-block w-60 carouselImage" src={image3} alt="First slide"/>
+                                            </Grid> 
                                             <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText2" style={{color:"#97581E"}}>
                                                     Increase Your Happiness Quotient
                                                 </Typography>
                                             </Grid>
-                                            <Grid item xs={12} md={12} align="center">
+                                            {/* <Grid item xs={12} md={12} align="center">
                                                 <img class="d-block w-60 carouselImage" src={image3} alt="First slide"/>
-                                            </Grid>
+                                            </Grid> */}
                                             {/* <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#97581E"}}>
                                                     HAPPINESS COACHING
@@ -231,14 +245,17 @@ const Welcome = ({
 
                                     <div class="carousel-item">
                                     <Grid container>
+                                    <Grid item xs={12} md={12} align="center">
+                                                <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
+                                            </Grid>
                                         <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText2" style={{color:"#AA3138"}} >
                                                     Find The Key To Your Wellbeing
                                                 </Typography>
                                             </Grid>
-                                            <Grid item xs={12} md={12} align="center">
+                                            {/* <Grid item xs={12} md={12} align="center">
                                                 <img class="d-block w-60 carouselImage" src={image4} alt="First slide"/>
-                                            </Grid>
+                                            </Grid> */}
                                             {/* <Grid item xs={12} md={12}>
                                                 <Typography className="imageSideText1" align="center" style={{color:"#AA3138"}}>
                                                     WELLBEING COACHING

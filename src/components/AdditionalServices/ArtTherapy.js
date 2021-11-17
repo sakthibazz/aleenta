@@ -46,7 +46,7 @@ const AdditionArtTherapy = ({history}) => {
                        
                        <Grid item xs={12} md={12}>
                            <Typography className="topTextHeading" align="center">
-                                Art Therapy
+                                Expressive Art Therapy
                            </Typography>
                        </Grid>
                     </Grid>
@@ -70,14 +70,14 @@ const AdditionArtTherapy = ({history}) => {
                             It brings about a beautiful transformation in the practitioner. 
                             It is also a healthy and an interesting medium to release negative emotions, 
                             experience heightened levels of positivity, increase playfulness and above all an 
-                            improved high Self esteem and high Self confidence that has been 
+                            improved high Self-esteem and high Self-confidence that has been 
                             either hindered or even lost while growing up as a child. 
                         </Typography>
                         <Typography className="meditationContent1" align='Left'>
-                                These sessions are designed based on participant's age, lifestyle and levels of Stress. 
-                                In my experience with creating Art for more than 20 years, 
+                                These sessions are designed based on the participant's age, lifestyle and levels of Stress. 
+                                {/* In my experience with creating Art for more than 20 years, 
                                 I believe and confirm that Art increases an individual's Happiness quotient resulting 
-                                in a stress free Life – be it in a child or an adult.
+                                in a stress free Life – be it in a child or an adult. */}
                         </Typography>
                     </Grid>
                     {/* <Grid item xs={12} md={12}>
@@ -120,18 +120,17 @@ const AdditionArtTherapy = ({history}) => {
                         <Grid item xs={12} md={12} className="bellowMeditationDiv">
                             <Typography className="meditationContent1" align='Left'>
                                 Art is an improvised mode of expression used to release inhibitions and to express oneself, 
-                                to collaborate with Confidence. Art therapy relieves stress and anxiety, boosts self 
-                                esteem and confidence, uplifts mood, helps one to become more self aware, 
+                                to collaborate with Confidence. Art therapy relieves stress and anxiety, boosts self-esteem and confidence, uplifts mood, helps one to become more self aware, 
                                 ability to process difficult emotions and supports mental health.
                             </Typography>
-                            <Typography className="meditationContent1" align='Left'>
+                            {/* <Typography className="meditationContent1" align='Left'>
                                 As a parent, an Art teacher and a Meditation teacher, 
                                 I have realised how true this quote is.    
                             </Typography>
                             <Typography className="meditationContent1" align='Left'>
                                 “It is the supreme art of the teacher to awaken joy in creative expression and knowledge.”
                                 – Albert Einstein 
-                            </Typography>
+                            </Typography> */}
                             <Typography className="meditationContent1" align='Left'>
                                 Get in touch with us at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to avail our Art therapy sessions for 
                                 all age groups starting from 5 years and above.

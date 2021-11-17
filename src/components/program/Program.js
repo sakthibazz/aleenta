@@ -613,16 +613,16 @@ const Program = ({history,setOpen=noop,open}) => {
                                     onClick={()=>
                                         setOpen(true)}
                                 >
-                                    <Card container className="articalCard1"  style={{height:"75%"}} >
+                                    <Card container className="articalCard1"  style={{height:"80%"}} >
                                         <img src={CorporateSmall}  style={{width:"100%"}}/>
                                     </Card>
-                                    <Card container  style={{height:"25%"}}>
+                                    <Card container  style={{height:"20%"}}>
                                         <Typography className="additionalDrop_articles">
                                             CORPORATE PROGRAMS
                                         </Typography>
-                                        <Typography className="additionalDrop_articles">
+                                        {/* <Typography className="additionalDrop_articles">
                                             (For Teams and Employees)
-                                        </Typography>
+                                        </Typography> */}
                                     </Card>
                                 </Card>
                             </Link>
@@ -636,16 +636,16 @@ const Program = ({history,setOpen=noop,open}) => {
                                     onClick={()=>
                                         setOpen(true)}
                                 >
-                                    <Card container className="articalCard1"  style={{height:"75%"}} >
+                                    <Card container className="articalCard1"  style={{height:"80%"}} >
                                         <img src={IndividualSmall}  style={{width:"100%"}}/>
                                     </Card>
-                                    <Card container  style={{height:"25%"}}>
+                                    <Card container  style={{height:"20%"}}>
                                         <Typography className="additionalDrop_articles">
-                                            INDIVIDUAL PROGRAMS
+                                            Personal Life Coaching programs
                                         </Typography>
-                                        <Typography className="additionalDrop_articles">
+                                        {/* <Typography className="additionalDrop_articles">
                                             (For You, Your Friends and Family)
-                                        </Typography>
+                                        </Typography> */}
                                     </Card>
                                 </Card>
                             </Link>
@@ -658,16 +658,16 @@ const Program = ({history,setOpen=noop,open}) => {
                                     onClick={()=>
                                         setOpen(true)}
                                 >
-                                    <Card container className="articalCard1"  style={{height:"75%"}} >
+                                    <Card container className="articalCard1"  style={{height:"80%"}} >
                                         <img src={GroupSmall}  style={{width:"100%"}}/>
                                     </Card>
-                                    <Card container  style={{height:"25%"}}>
+                                    <Card container  style={{height:"20%"}}>
                                         <Typography className="additionalDrop_articles">
-                                            GROUP PROGRAMS
+                                            One day workshops
                                         </Typography>
-                                        <Typography className="additionalDrop_articles">
+                                        {/* <Typography className="additionalDrop_articles">
                                             (For Friends and Family)
-                                        </Typography>
+                                        </Typography> */}
                                     </Card>
                                 </Card>
                             </Link>

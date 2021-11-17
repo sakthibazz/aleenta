@@ -68,14 +68,14 @@ const AdditionSelfHealing = ({history}) => {
                         <Typography className="meditationContent1" align='Left'>
                             Breathing in synchronisation with awareness brings multitude of health 
                             benefits to anyone who practices right breathing techniques on a daily basis. 
-                            Firstly, right breathing helps the mind to calm down and Rhythmic breathing increases 
-                            focus and concentration. When the rhythmic breathing technique is repeatedly used 
+                            Right breathing helps the mind to calm down and Rhythmic breathing increases 
+                            focus and concentration. When the rhythmic breathing technique is repeatedly practices 
                             along with hand mudras and an 
                             awareness of the movement of breath, many health ailments disappear. 
                         </Typography>
-                        <Typography className="meditationContent1" align='Left'>
+                        {/* <Typography className="meditationContent1" align='Left'>
                             That is the magic in the Right way of Breathing!
-                        </Typography>
+                        </Typography> */}
                         <Typography className="meditationContent1" align='Left'>
                             Self healing is an ancient technique used to cure diseases 
                             and to keep one's health at an optimum level. 
@@ -88,11 +88,12 @@ const AdditionSelfHealing = ({history}) => {
                         <Typography className="meditationContent1" align='Left'>
                                 Thought is the key here. Self-generated thoughts that are positive, 
                                 clear and crisp, communicate and gently command the cells of the pain area to self heal. 
-                                When one sees the progression and then the results, they are in awe of this 
-                                technique which they first thought may not completely produce required results. 
+                                {/* When one sees the progression and then the results, they are in awe of this 
+                                technique which they first thought may not completely produce required results.  */}
                             </Typography>
                             <Typography className="meditationContent1" align='Left'>
-                                Get in touch with us at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to avail our Self-healing sessions. 
+                                Get in touch with us at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to avail our 
+                                Self-healing sessions by our team of experienced counsellors at Aleenta Wellbeing. 
                             </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>

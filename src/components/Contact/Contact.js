@@ -35,26 +35,47 @@ const Contact = () => {
                         Contact Us
                     </Typography>
                 </Grid>
-                <Grid item xs={12} md={12} align='center'>
+                <Grid item xs={12} md={4} align='center' alignItems="flex-end">
+                        <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"black"}}>
+                            <Typography className="contactContent" align='center' style={{fontWeight:"600"}}>
+                                Whatsapp number: +916362925160
+                            </Typography>
+                        </a>
+                           
+                </Grid>
+                <Grid item xs={12} md={4} align='center'>
                     <img 
                         className="logoImg"
                         src={logoImg}
                     />
                 </Grid>
-                <Grid item xs={12} md={12} align='center' >
+                {/* <Grid item xs={12} md={0} align='center'>
+                        <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"black"}}>
+                            <Typography className="contactContent" align='center' style={{fontWeight:"600"}}>
+                                what's app: +916362925160
+                            </Typography>
+                        </a>
+                           
+                    </Grid> */}
+                <Grid item xs={12} md={4} align='center' alignItems="flex-end">
+                            <Typography className="contactContent" align='center'>
+                                <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a>
+                            </Typography>
+                        </Grid>
+                {/* <Grid item xs={12} md={12} align='center' >
                     <Grid container>
                         <Grid item xs={12} md={4} align='center'>
-                            <Typography className="contactContent" align='center'>
-                                Phone: +916362925160
+                            <Typography className="contactContent" align='center' style={{fontWeight:"600"}}>
+                                what's app: +916362925160
                             </Typography>
                         </Grid>
                         <Grid item xs={12} md={4} align='center'>
-                            <Typography className="contactContent" align='center'>
+                            {/* <Typography className="contactContent" align='center'>
                                 Address: 75, Phase 2, Classic Orchards,
                                 Bannerghatta Road,
                                 Bangalore 560076,
                                 Karnataka, India.
-                            </Typography>
+                            </Typography> 
                         </Grid>
                         <Grid item xs={12} md={4} align='center'>
                             <Typography className="contactContent" align='center'>
@@ -62,7 +83,7 @@ const Contact = () => {
                             </Typography>
                         </Grid>
                     </Grid>
-                </Grid>
+                </Grid> */}
             </Grid>
         </Container>
      );

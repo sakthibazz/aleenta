@@ -18,15 +18,20 @@
     }
     .logoImg{
         padding-top: 2%;
-        height: 350px;
-        width: 390px;
+        height:250px;
+        width: 280px;
         // height: 60%;
         @media only screen and (max-width: 600px) {
-            height: 200px;
-            width: 240px;
+            height: 160px;
+            width: 190px;
         }
     }
     .contactContent{
+        margin-top: 45%;
         padding: 3%;
+        @media only screen and (max-width: 960px) {
+            margin-top: 0%;
+            padding: 3%;
+        }
     }
 }

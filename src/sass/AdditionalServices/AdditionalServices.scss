@@ -34,6 +34,7 @@
         padding-top: 3%;
         padding-left: 10%;
         padding-right: 5%;
+        text-transform: uppercase;
         letter-spacing: 1px;
         // font-family: 'Tenor Sans', sans-serif !important;
         @media only screen and (max-width: 600px) {
@@ -46,15 +47,16 @@
 
     .additionalDrop_articles1{
         align-items: center;
-        font-size: 14px;
-        padding-top: 1%;
-        padding-left: 10%;
-        padding-right: 5%;
+        font-size: 16px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        // padding-left: 10%;
+        // padding-right: 5%;
         letter-spacing: 1px;
         // font-family: 'Tenor Sans', sans-serif !important;
         @media only screen and (max-width: 600px) {
-            padding-left: 5%;
-            padding-top: 2%;
+            // padding-left: 5%;
+            // padding-top: 2%;
             font-size: 14px;
         }
     }
@@ -72,6 +74,21 @@
             padding-right: 1.5%;
         }
     }
+    .additionalDrop_articles2{
+        align-items: center;
+        font-size: 14px;
+        padding-top: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        // text-transform: uppercase;
+        letter-spacing: 1px;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            padding-left: 5%;
+            padding-top: 1%;
+            font-size: 14px;
+        }
+    }
     .articalCardGrid{
         padding:2%
     }
@@ -83,6 +100,12 @@
     .articalCard1{
         border-radius: 5%;
         box-shadow: black;
+    }
+    .articalCardBlog{
+        border-radius: 5%;
+        box-shadow: black;
+        padding-left: 1%;
+        padding-right: 1%;
     }
     .articalCard {
         // margin-top: 35px;
@@ -230,6 +253,7 @@
         padding-left: 10%;
         padding-right: 5%;
         letter-spacing: 1px;
+        animation: glow;
         // font-family: 'Tenor Sans', sans-serif !important;
         @media only screen and (max-width: 600px) {
             padding-top: 2%;
@@ -237,30 +261,43 @@
         }
         // text-transform: uppercase;
     }
-    .underLine1{
-        background-color: #FFD741;
-        height: 2px;
-        width: 21%;
-        @media only screen and (max-width: 600px) {
-            width: 56%;
+
+
+    @keyframes glow {
+        0%, 100% {
+          color: #FFF;
+          text-shadow: 0 0 10px #0652DD, 0 0 50px #0652DD, 0 0 100px #0652DD;
         }
+        
+    //     10%, 90% {
+    //       color: #111;
+    //       text-shadow: none;
+    //     }
+    //   }
+    //   .text-container > span:nth-child(1) {
+    //       animation-delay: 1s;
+    //   }
+    //   .text-container > span:nth-child(2) {
+    //       animation-delay: 1.75s;
+    //   }
+      
+    //   .text-container > span:nth-child(3) {
+    //       animation-delay: 2.5s;
+    //   }
+      
+    //   .text-container > span:nth-child(4) {
+    //       animation-delay: 3.2s;
+    //   }
+    //   .text-container > span:nth-child(5) {
+    //       animation-delay: 3.75s;
+      }
+
+
+    .underLine{
+        border-bottom: 2px solid #FFD741;
+        display: inline-block;
     }
-    .underLine2{
-        background-color: #FFD741;
-        height: 2px;
-        width: 21%;
-        @media only screen and (max-width: 600px) {
-            width: 57%;
-        }
-    }
-    .underLine3{
-        background-color: #FFD741;
-        height: 2px;
-        width: 26%;
-        @media only screen and (max-width: 600px) {
-            width: 72%;
-        }
-    }
+ 
     .programsHeading1{
         text-transform: uppercase;
         font-size: 16px;

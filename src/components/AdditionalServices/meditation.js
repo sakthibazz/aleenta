@@ -51,7 +51,7 @@ const AdditionMeditation = ({history}) => {
                 <Grid container style={{backgroundColor:"#fbf2de"}} >
                     <Grid item xs={12} md={12} className="MeditationContentGrid" >
                         <Typography className="meditationTitle"  align="center">
-                            Why are people looking for ways to destress – Is meditation the way?
+                            Why are people looking for ways to destress?
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>
@@ -72,10 +72,10 @@ const AdditionMeditation = ({history}) => {
                         </Typography>
                         <Typography className="meditationContent1" align='Left'>
                             Meditation is known in all parts of the world and 
-                            people have different approach to meditate. Some are 
+                            people have different approachs to meditate. Some are 
                             related to faith, religion, culture etc...Nevertheless, 
                             meditation has less to do with faith and more to do with mindfulness, 
-                            in other words developing awareness: it targets 
+                            in other words, developing awareness. Benefits include:
                                 <Typography className="meditationContent3"> •	Alleviating stress</Typography>
                                 <Typography className="meditationContent3"> •	Directing attention</Typography>
                                 <Typography className="meditationContent3"> •	Clearing the mind</Typography>
@@ -146,8 +146,8 @@ const AdditionMeditation = ({history}) => {
 
                     <Grid item xs={12} md={12} style={{backgroundColor:"white"}}>
                         <Typography className="programsHeading">
-                            Guided meditation
-                            <div className="underLine1"></div>
+                        <span className="underLine">Guided meditation</span>
+                            
                         </Typography>
                         <Typography className="meditationContent2" align='Left'>
                             This process involves a trained practitioner or teacher 
@@ -164,8 +164,8 @@ const AdditionMeditation = ({history}) => {
                         </Typography>
 
                         <Typography className="programsHeading">
-                            Mantra meditation
-                            <div className="underLine2"></div>
+                            <span className="underLine">Mantra meditation</span>
+                          
                         </Typography>
                         <Typography className="meditationContent2" align='Left'>
                             This type of meditation can be practised on a daily basis 
@@ -173,15 +173,15 @@ const AdditionMeditation = ({history}) => {
                             It involves an attempt to experience a deeper level of awareness and stay 
                             in tune with the environment. It involves the repetitive production of a word, phrase, or 
                             combination of sounds in a voice that can be low or high in order to clear the head. One 
-                            famous meditation sound is “Om” which is also been scientifically proven as the Sound of the Universe. 
-                            Bhramari, Chakradhyana, Om, etc produces Vibrations inside the body that calms the nerves, sets the 
+                            famous meditation sound is “Om” which is also been scientifically proven as the Sound of the Universe. Sounds 
+                            Bhramari, Chakradhyana, Om, etc produce vibrations inside the body that calms the nerves and sets the 
                             imbalances that causes stress and disease in the body.
                         </Typography>
 
 
                         <Typography className="programsHeading">
-                            Mindfulness meditation
-                            <div className="underLine3"></div>
+                        <span className="underLine"> Mindfulness meditation</span>
+                            
                         </Typography>
                         <Typography className="meditationContent2" align='Left'>
                             This practice is about becoming more conscious of the present moment. 
@@ -190,7 +190,7 @@ const AdditionMeditation = ({history}) => {
                             with a high level of awareness. It is also useful in directing attention to an 
                             object or to one’s breathing while monitoring ideas, emotions, and/or bodily sensations. 
                             Its techniques, which stem from Buddhist teachings, help to control the emotions, relieve stress, 
-                            enhance resilience, develop creativity, and encourage positivity in all aspects of life. 
+                            enhance resilience, develop creativity and encourage positivity in all aspects of life. 
                             According to a study by Harvard University in the US, mindfulness is capable of altering 
                             depressed individuals’ brains.
                         </Typography>
@@ -204,8 +204,9 @@ const AdditionMeditation = ({history}) => {
                             <img className="dividerImgCorpProgram"src={divider} />
                         </Grid> */}
 
-                        <Typography className="programsHeading">
-                                Benefits
+                            <Typography className="programsHeading">
+                            <span className="underLine"> Benefits </span>
+                                
                             </Typography>
                             <Typography className="meditationContent1" align='Left'>
                                 Practising meditation and mindfulness for six to eight weeks can alleviate stress, 
@@ -213,10 +214,10 @@ const AdditionMeditation = ({history}) => {
                                 improve emotional well-being, and treat inflammation and hypertension.
                             </Typography>
 
-                            <Typography className="meditationContent1" align='Left'>
+                            {/* <Typography className="meditationContent1" align='Left'>
                                 Meditation practice increases one's Happiness quotient resulting in experiencing 
                                 Life to the fullest!   
-                            </Typography>
+                            </Typography> */}
                             <Typography className="meditationContent1" align='Left'>
                                 Get in touch with us at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a>to avail our one of a 
                                 kind Meditation sessions. 

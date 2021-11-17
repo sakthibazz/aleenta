@@ -102,7 +102,7 @@ const IndividualPrograms = ({history}) => {
 
                         <Grid item xs={12} md={12}>
                            <Typography className="topTextHeading" align="center">
-                                INDIVIDUAL Programs
+                                Personal Life Coaching programs
                            </Typography>
                        </Grid>
 
@@ -228,10 +228,20 @@ const IndividualPrograms = ({history}) => {
                     </Grid>
                 </Grid>
 
+                <Grid item xs={12} md={12} style={{backgroundColor:"#fbf2de",paddingTop:"2%"}} >
+                    <Typography className="programsPageHeading1" align="center">
+                        A 3-months or more one-on-one coaching Program where the Coach acts as a Mind, Body, 
+                        Spirit guide for her clients and offers a full spectrum of support. The Coach walks with the 
+                        Client closely to find ways to overcome the 
+                        obstacles/ challenges, identify action plans, to move forward and stay on 
+                        track to achieve the client's set goals successfully
+                    </Typography>
+                </Grid>
+
                 {/*------------------------ Nature ------------------------------ */}
 
 
-                <Grid container id="nature" style={{backgroundColor:"#fbf2de"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
+                <Grid container id="nature" style={{backgroundColor:"#fbf2de",paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -245,13 +255,9 @@ const IndividualPrograms = ({history}) => {
                                 <div className="tab1 shortContent">
                                     <img className="img-class" src={Individual_natureCoaching}/>
                                         <Typography className="img-title programsHeading" >
-                                            Nature coaching
+                                            Discover Yourself
                                         </Typography>
                                 </div>
-
-                                {/* <Typography className="programsHeading shortContent">
-                                    Nature coaching 
-                                </Typography> */}
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">
@@ -261,16 +267,16 @@ const IndividualPrograms = ({history}) => {
 
                             <Grid item xs={12} md={12}>
                                 <Typography className="programscontent1" align='Left'>
-                                    The Process incorporates peeling off the layers of years of 
-                                    conditioning and limiting beliefs which act as obstacles in the 
-                                    client's way of growth in their area of interest and achieving his/her major goals of life. 
-                                    Identifying Self Nature in their own ways by questioning and identifying one's small wins or 
-                                    invisible wins, failures and capabilities is a part of this process of Self discovery.  
+                                    The Process takes the Client through peeling off layers of years of conditioning 
+                                    and limiting beliefs that act as obstacles in the client's way of personal and professional growth. 
+                                    Discovering their true Nature in their own unique ways by identifying small wins/ invisible wins, 
+                                    failures and capabilities, is a part of this process of Self-discovery. 
+                                    In this journey, clients discover their passion and their major goals of life.  
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
-                                    In all our Individual and personal coaching programs, Honesty, Trust and Confidentiality 
-                                    are maintained throughout the coaching relationship.  
+                                    In all our Personal coaching programs; Honesty, Trust and 
+                                    Confidentiality are maintained throughout the coaching relationship. 
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
@@ -314,7 +320,7 @@ const IndividualPrograms = ({history}) => {
                                 <div className="tab1 ">
                                     <img className="img-class" src={Creative_coaching}/>
                                         <Typography className="img-title programsHeading" >
-                                            Creative coaching
+                                            Tap into your Creative Potential!
                                         </Typography>
                                 </div>
 
@@ -330,20 +336,20 @@ const IndividualPrograms = ({history}) => {
                             
                             <Grid item xs={12} md={12}>
                                 <Typography className="programscontent1" align='Left'>
-                                    Sometimes, an individual is unaware of their true potential, 
-                                    of their true creative nature. We tap into this area of the 
-                                    Client by brainstorming and questioning. We work together in 
-                                    discovering the client's inner creative potential that can be 
-                                    rightly applied in various scenarios – be it at work, family or social. 
-                                    We explore together various techniques to excel in identifying, 
-                                    assimilating and achieving the client's major goals of life. 
-                                    In partnership with the Client, we nurture the creativity 
-                                    and innovative side of the Client in this program.     
+                                    Sometimes, an individual is unaware of their inner creative nature. 
+                                    We tap into this area of the Client by brainstorming, 
+                                    questioning and applying few methodologies. 
+                                    We work together in discovering the client's inner creative potential 
+                                    that can be rightly applied in various scenarios – be it at work, 
+                                    family or social areas of their life. In partnership with the Client, 
+                                    we explore various techniques in identifying, assimilating and achieving the 
+                                    client's major goals of life. Our goal is to then nurture the 
+                                    creativity and innovative side of the Client in this program.    
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
-                                    In all our Individual and personal coaching programs, Honesty, Trust and Confidentiality 
-                                    are maintained throughout the coaching relationship.  
+                                    In all our Personal coaching programs; Honesty, Trust and Confidentiality are 
+                                    maintained throughout the coaching relationship.  
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
@@ -371,7 +377,7 @@ const IndividualPrograms = ({history}) => {
 
             {/*------------------------ Adolescent coaching (ages 11 to 20)   ------------------------------ */}
 
-                <Grid container id="adolescent" style={{backgroundColor:"#fbf2de"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
+                <Grid container id="adolescent" style={{backgroundColor:"#fbf2de",paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -385,7 +391,7 @@ const IndividualPrograms = ({history}) => {
                                 <div className="tab1 ">
                                     <img className="img-class" src={Adolescent}/>
                                         <Typography className="img-title programsHeading" >
-                                            Adolescent coaching (ages 12 to 20)
+                                            Adolescent coaching
                                         </Typography>
                                 </div>
 
@@ -400,49 +406,40 @@ const IndividualPrograms = ({history}) => {
                             
                             <Grid item xs={12} md={12}>
                                 <Typography className="programscontent1" align='Left'>
-                                    In this type of coaching, we work with teens/adolescents, who would want to explore their inner self and talents, 
-                                    tap into their creative potential to excel in studies and have a healthy personal and social life.
-                                    Social media which can take an individual in the best direction to achieve his/her goals, sometimes, 
-                                    can actually lead them in the opposite direction. In this direction, they experience insecurity, fear 
-                                    of failure/losing, broken 
-                                    relationships, peer pressure, low self-esteem and low self confidence. Our contribution at Aleenta
-                                    is to identify (in partnership with the adolescent client) these
-                                    external factors that affect one's inner strength and potential. We work together to overcome the 
-                                    negative aspects, identify action plans to move forward and to stay on track to achieve success and happiness! 
+                                    If you are a teen/ an Adolescent: In this one-on-one coaching, 
+                                    we work with teens/adolescents who would want to explore their inner self to have a 
+                                    healthy personal and social life. We work with Clients to tap into their creative potential and 
+                                    explore their talents in order to excel in studies and activities of their interest
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
-                                    Another reason to contact us; When do you know that you/your child needs coaching? 
-                                    When a teen/adolescent knows what to achieve but is not able to go forward with it due to some blocks – external, emotional and situational, which makes it even harder for them to go with the flow of life. At this point, the teen/adolescent needs an accountability partner who helps the client to identify these blocks and motivates them to move toward their goals with increased focus and zeal!
-
+                                    If you are a Parent: When you know that your teen/ adolescent wants to 
+                                    achieve a goal but is not able to go forward with it due to some blocks such as; external, 
+                                    emotional and situational, it means that your teen/adolescent may need Personal coaching. 
+                                    At this point, the teen/adolescent needs an accountability partner who helps the client to 
+                                    identify and overcome these blocks and motivates 
+                                    them to move toward their goals with increased focus and zeal!
                                 </Typography>
 
-                                {/* <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
-                                    In all our Individual and personal coaching programs, Honesty, Trust and Confidentiality 
-                                    are maintained throughout the coaching relationship.  
+                                <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
+                                    In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
-                                    Contact us with your requirements at programs@aleenta.in to know more.
+                                    Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
-                            </Grid>
-                            <Grid item xs={12} md={12} >
-                                <img 
-                                    className="dividerImgCorpProgram"
-                                    src={divider}
-                                />*/}
+
                             </Grid> 
                         </Grid>
                     </Grid>
                     <Grid item xs={12} md={12}>
-                        <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
-                            In all our Individual and personal coaching programs, Honesty, Trust and Confidentiality 
-                            are maintained throughout the coaching relationship.  
+                        {/* <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
+                            In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
                         </Typography>
 
                         <Typography className="programscontent" align='Left'>
                             Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
-                        </Typography>
+                        </Typography> */}
 {/*                             
                         <img 
                             className="dividerImgCorpProgram"
@@ -514,8 +511,7 @@ const IndividualPrograms = ({history}) => {
                     </Grid>
                     <Grid item xs={12} md={12}>
                         <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
-                            In all our Individual and personal coaching programs, Honesty, Trust and Confidentiality 
-                            are maintained throughout the coaching relationship.  
+                            In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
                         </Typography>
 
                         <Typography className="programscontent" align='Left'>
@@ -534,7 +530,7 @@ const IndividualPrograms = ({history}) => {
 
                   {/*------------------------ Self-expression ------------------------------ */}
 
-                  <Grid container id="selfExpression" style={{backgroundColor:"#fbf2de"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
+                  <Grid container id="selfExpression" style={{backgroundColor:"#fbf2de",paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -548,12 +544,10 @@ const IndividualPrograms = ({history}) => {
                                 <div className="tab1 shortContent">
                                     <img className="img-class" src={Self_expression}/>
                                         <Typography className="img-title programsHeading" >
-                                            Self-expression
+                                            Self-Expression
                                         </Typography>
                                 </div>
-                                {/* <Typography className="programsHeading shortContent">
-                                    Self-expression
-                                </Typography> */}
+
                             </Grid>
 
                             <Grid item xs={12} md={12} className="corporateProDiv">
@@ -561,32 +555,39 @@ const IndividualPrograms = ({history}) => {
                             </Grid>
                             
                             <Grid item xs={12} md={12}>
-                            <Typography className="programscontent1" align='Left'>
-                                In this program, we offer fun activities and excellent self 
-                                expression techniques to identify and clear the factors that 
-                                are hindering the growth of an adolescent in their physical, emotional and social areas. 
-                                Keeping an Art Journal, writing their personal story, narrating
-                                major incidents that have caused trauma or extreme joy in their lives are a 
-                                few methodologies we impart. Our Expresseive Art activites play a major role in 
-                                removal of hidden negative emotions to a great extent!
+
+                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic"}}>
+                                    The purpose of Life is Self-Expression – Oscar Wilde
+                                </Typography>
+
+                            <Typography className="programscontent" align='Left'>
+                                Inhibitions stagger Self-expression
                             </Typography>
 
-                    {/* <Typography className="programscontent1" align='Left'>
-                        A specially designed program that improves the Emotional 
-                        quotient of employees that inculcates positive attitude, 
-                        right communication and empathy. As Plato has been noted to 
-                        say: "All learning has an emotional base." Mangallam brings 
-                        more focus on this emotional foundation and its results on an 
-                        individual's behavioural pattern. A deep process of perceiving, 
-                        using, understanding and managing emotions clubbed with self awareness, 
-                        other's/organisational awareness results in improved 
-                        self management and improved relationship management. 
-                    </Typography> */}
+                            <Typography className="programscontent" align='Left'>
+                                Our contribution at Aleenta is to identify, in partnership with the client, the 
+                                external factors/influences that affect one's inner strength and self-confidence.
+                            </Typography>
 
-                        <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
-                            In all our Individual and personal coaching programs, Honesty, Trust and Confidentiality 
-                            are maintained throughout the coaching relationship.  
-                        </Typography>
+                            <Typography className="programscontent" align='Left'>
+                                In this program, we offer fun activities and excellent 
+                                self-expression techniques to identify and clear the factors that are 
+                                hindering the growth of an adolescent in their emotional and social areas. 
+                                Maintaining an Art journal, writing their personal story, narrating major 
+                                incidents that have caused trauma or extreme joy in their lives are a few methodologies we impart. 
+                                Our Expressive Art activity plays a 
+                                major role in removal of hidden negative emotions and inhibitions to a great extent!
+                            </Typography>
+
+                            <Typography className="programscontent" align='Left'>
+                                In this one-on-one coaching program, the client achieves a 
+                                state of Self-discovery and improved Self confidence.
+                            </Typography>
+                    
+                            <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
+                                In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
+                            </Typography>
+                        
 
                     <Typography className="programscontent" align='Left'>
                         Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
@@ -652,21 +653,8 @@ const IndividualPrograms = ({history}) => {
                                     achieving Self confidence in a short span of time. 
                                 </Typography>
 
-                                {/* <Typography className="programscontent1" align='Left'>
-                                    A specially designed program that improves the Emotional 
-                                    quotient of employees that inculcates positive attitude, 
-                                    right communication and empathy. As Plato has been noted to 
-                                    say: "All learning has an emotional base." Mangallam brings 
-                                    more focus on this emotional foundation and its results on an 
-                                    individual's behavioural pattern. A deep process of perceiving, 
-                                    using, understanding and managing emotions clubbed with self awareness, 
-                                    other's/organisational awareness results in improved 
-                                    self management and improved relationship management. 
-                                </Typography> */}
-
                                 <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
-                                    In all our Individual and personal coaching programs, Honesty, Trust and Confidentiality 
-                                    are maintained throughout the coaching relationship.  
+                                    In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>

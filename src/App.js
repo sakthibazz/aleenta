@@ -11,14 +11,17 @@ import Footer from "./components/footer";
 
 import Welcome from "./components/Welcome";
 import About from "./components/about/About";
-import Blogs from "./components/Blogs/Blogs";
 import Program from "./components/program/Program";
 import Contact from "./components/Contact/Contact"
 import CorporatePrograms from "./components/program/corporatePrograms"
 import IndividualPrograms from "./components/program/individualPrograms"
 import GroupPrograms from "./components/program/GroupPrograms"
 
+
+// ------------------Blogs----------------------------------
 import BlogsDropDown from "./components/Blogs/BlogsDropDown";
+import BlogsPage1 from "./components/Blogs/BlogsPage1";
+import BlogPage2 from "./components/Blogs/BlogPage2"
 
 //------------------ Addition Services--------------------------
 import AdditionalServices from "./components/AdditionalServices/AdditionalServices";
@@ -53,7 +56,8 @@ const App = () => {
         <Route exact path="/" component={Welcome} />
         <Route path="/about-us" component={About} />
         <Route path="/blogsDropDown" component={BlogsDropDown} />
-        <Route path="/blogs" component={Blogs} />
+        <Route path="/blogsPage1" component={BlogsPage1} />
+        <Route path="/blogPage2" component={BlogPage2} />
         <Route path="/program" component={Program} />
         <Route path="/contact" component={Contact} />
         <Route path="/additionalServices" component={AdditionalServices} />

@@ -96,7 +96,7 @@ const GroupPrograms = ({history}) => {
 
                         <Grid item xs={12} md={12}>
                            <Typography className="topTextHeading" align="center">
-                                Group Programs
+                                One day workshops
                            </Typography>
                        </Grid>
 
@@ -263,9 +263,15 @@ const GroupPrograms = ({history}) => {
                     </Grid>
                 </Grid>
 
+                <Grid item xs={12} md={12} style={{backgroundColor:"#fbf2de",paddingTop:"2%"}} >
+                    <Typography className="programsPageHeading" align="center">
+                        Family/ Educational Institutions/ Organisations/ Community/ Friends
+                    </Typography>
+                </Grid>
+
                 {/*------------------------ Happiness coaching ------------------------------ */}
 
-                <Grid container id="happiness" style={{backgroundColor:"#fbf2de"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
+                <Grid container id="happiness" style={{backgroundColor:"#fbf2de",paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -278,7 +284,7 @@ const GroupPrograms = ({history}) => {
                                 <div className="tab1 shortContent">
                                     <img className="img-class" src={Group_happiness}/>
                                         <Typography className="img-title programsHeading" >
-                                            Happiness coaching
+                                            Happiness program
                                         </Typography>
                                 </div>
                                 {/* <Typography className="programsHeading shortContent">
@@ -290,25 +296,22 @@ const GroupPrograms = ({history}) => {
                     
                             </Grid>
                             
+                            
                             <Grid item xs={12} md={12}>
-                                <Typography className="programscontent1" align='Left'>
-                                    One has to find his/her true sources of happiness in order to 
-                                    live a happy and successful life. Aleenta's Happiness program is 
-                                    the right choice for anybody who wishes to be happy at all times, make right decisions, 
-                                    maintain healthy relationships and inspire others to be happy! 
+
+                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic"}}>
+                                    Happiness is when what you think, what you say, and what you do are in harmony. -- Mahatma Gandhi
                                 </Typography>
 
-                                {/* <Typography className="programscontent1" align='Left'>
-                                    A specially designed program that improves the Emotional 
-                                    quotient of employees that inculcates positive attitude, 
-                                    right communication and empathy. As Plato has been noted to 
-                                    say: "All learning has an emotional base." Mangallam brings 
-                                    more focus on this emotional foundation and its results on an 
-                                    individual's behavioural pattern. A deep process of perceiving, 
-                                    using, understanding and managing emotions clubbed with self awareness, 
-                                    other's/organisational awareness results in improved 
-                                    self management and improved relationship management. 
-                                </Typography> */}
+
+                                <Typography className="programscontent" align='Left'>
+                                    One has to find his/her true sources of happiness in order to 
+                                    live a happy and successful life. This program increases an 
+                                    individual's potential to be more focused, more present and more 
+                                    productive because of increased sense of fulfilment. 
+                                    This is achieved by a deep process of identifying the client's passion and finding ways of 
+                                    pursuing it and perform to their highest potential.
+                                </Typography>
 
                                 <Typography className="programscontent" align='Left'>
                                     Contact us with your requirements at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
@@ -350,7 +353,7 @@ const GroupPrograms = ({history}) => {
                             <div className="tab1 shortContent">
                                 <img className="img-class" src={Group_spiritual}/>
                                     <Typography className="img-title programsHeading" >
-                                        Spiritual coaching
+                                        Self and Spirituality
                                     </Typography>
                             </div>
                                 {/* <Typography className="programsHeading shortContent">
@@ -363,24 +366,17 @@ const GroupPrograms = ({history}) => {
                             </Grid>
                             
                             <Grid item xs={12} md={12}>
-                                <Typography className="programscontent1" align='Left'>
-                                    Aleenta provides an excellent space for individuals 
-                                    who are in this path to seek their higher purpose, 
-                                    to experience and celebrate their achievements and finally attain a state of complete Well-being. This results in excellent health, better relationships and a high quality of life! 
-                                    The client will be able to see the true meaning of Life in this program.
+                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic"}}>
+                                    Peace is the inner nature of humankind. If you find it within yourself, you will then find it everywhere! - Ramana Maharshi.
                                 </Typography>
 
-                                {/* <Typography className="programscontent1" align='Left'>
-                                    A specially designed program that improves the Emotional 
-                                    quotient of employees that inculcates positive attitude, 
-                                    right communication and empathy. As Plato has been noted to 
-                                    say: "All learning has an emotional base." Mangallam brings 
-                                    more focus on this emotional foundation and its results on an 
-                                    individual's behavioural pattern. A deep process of perceiving, 
-                                    using, understanding and managing emotions clubbed with self awareness, 
-                                    other's/organisational awareness results in improved 
-                                    self management and improved relationship management. 
-                                </Typography> */}
+                                <Typography className="programscontent" align='Left'>
+                                    Aleenta provides an excellent space for individuals 
+                                    who are in a path to seek their higher purpose, to experience and 
+                                    celebrate their achievements and finally attain a state of complete Well-being. 
+                                    This results in excellent understanding of Self, better relationships and a high quality of life! 
+                                    The client will be able to see the true meaning of Life in this program.
+                                </Typography>
 
                                 <Typography className="programscontent" align='Left'>
                                     Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
@@ -408,7 +404,7 @@ const GroupPrograms = ({history}) => {
 
             {/*------------------------ Relationship coaching   ------------------------------ */}
 
-            <Grid container id="relation" style={{backgroundColor:"#fbf2de"}}  style={{paddingTop:"2%",paddingBottom:"2%"}}>
+            <Grid container id="relation" style={{backgroundColor:"#fbf2de",paddingTop:"2%",paddingBottom:"2%"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -422,7 +418,7 @@ const GroupPrograms = ({history}) => {
                             <div className="tab1">
                                 <img className="img-class" src={Group_relationships}/>
                                     <Typography className="img-title programsHeading" >
-                                        Relationship coaching
+                                        Life is Relationships
                                     </Typography>
                             </div>
                                 {/* <Typography className="programsHeading">
@@ -436,24 +432,17 @@ const GroupPrograms = ({history}) => {
                             
                             <Grid item xs={12} md={12}>
                                 <Typography className="programscontent1" align='Left'>
-                                    Relationship coaching creates ideas and insights on how to maintain existing 
-                                    relationships and create new healthy relationships. In this process of learning and discovering, 
-                                    the client as an individual will transform himself/herself for a better 
-                                    Self to maintain healthy relationships in every area of their life. 
+                                    This program creates ideas and insights on how to maintain existing 
+                                    relationships and create new healthy relationships. 
+                                    In this process of learning and discovering, the client as an individual transforms 
+                                    himself/herself into a human being who can maintain healthy relationships in every area of their 
+                                    life with ease. Once the awareness sets in, all the 
+                                    judgements and conditioning that have been ruling one's life and one's decisions, drop. 
+                                    This gives way to new experiences, 
+                                    fresh perspectives and new relationships.
                                 </Typography>
 
-                                {/* <Typography className="programscontent1" align='Left'>
-                                    A specially designed program that improves the Emotional 
-                                    quotient of employees that inculcates positive attitude, 
-                                    right communication and empathy. As Plato has been noted to 
-                                    say: "All learning has an emotional base." Mangallam brings 
-                                    more focus on this emotional foundation and its results on an 
-                                    individual's behavioural pattern. A deep process of perceiving, 
-                                    using, understanding and managing emotions clubbed with self awareness, 
-                                    other's/organisational awareness results in improved 
-                                    self management and improved relationship management. 
-                                </Typography> */}
-
+                               
                                 <Typography className="programscontent" align='Left'>
                                     Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
@@ -512,39 +501,19 @@ const GroupPrograms = ({history}) => {
                                     {/* (Add the Link for meditation in additional services) */}
                                 </Typography>
 
-                                {/* <Typography className="programscontent1" align='Left'>
-                                    A specially designed program that improves the Emotional 
-                                    quotient of employees that inculcates positive attitude, 
-                                    right communication and empathy. As Plato has been noted to 
-                                    say: "All learning has an emotional base." Mangallam brings 
-                                    more focus on this emotional foundation and its results on an 
-                                    individual's behavioural pattern. A deep process of perceiving, 
-                                    using, understanding and managing emotions clubbed with self awareness, 
-                                    other's/organisational awareness results in improved 
-                                    self management and improved relationship management. 
-                                </Typography> */}
-
                                 <Typography className="programscontent" align='Left'>
                                     Topics include :
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
-                                    {bull} how to stay positive and healthy in mind and body.
-                                </Typography>
-                                <Typography className="programscontent" align='Left'>
-                                    {bull} how to handle and overcome difficult situations.
-                                </Typography>
-                                <Typography className="programscontent" align='Left'>
-                                    {bull} how to maintain healthy relationships. 
-                                </Typography>
-                                <Typography className="programscontent" align='Left'>
-                                    {bull} how to transform obstacles into opportunities to grow in personal and professional areas.
-                                </Typography>
-                                <Typography className="programscontent" align='Left'>
-                                    {bull} how to perform well and excel in your roles at home, work and social environment. 
-                                </Typography>
-                                <Typography className="programscontent" align='Left'>
-                                    {bull} how to become an inspiration to others in their wellness story.
+                                    <ul>
+                                        <li>how to stay positive and healthy in mind and body.</li>
+                                        <li>how to handle and overcome difficult situations.</li>
+                                        <li>how to maintain healthy relationships.</li>
+                                        <li>how to transform obstacles into opportunities to grow in personal and professional areas.</li>
+                                        <li>how to perform well and excel in your roles at home, work and social environment.</li>
+                                        <li>how to become an inspiration to others in their wellness story.</li>
+                                    </ul>
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>

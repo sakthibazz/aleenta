@@ -63,20 +63,26 @@ const WhoNeedsWB = () => {
   const bull = <span className={classes.bullet}>•</span>;
   return <>
     <Typography className="aboutDropDown_subContent" >
-        {bull} Anyone who : Wants to seek Awareness on overall wellbeing to 
-        become a Healthy, Happy and a Successful person. 
-    </Typography>
-    <Typography className="aboutDropDown_subContent" >
-        {bull} Anyone who : Wishes to make lifestyle changes to become 
-        their best Self to lead a Happy, Healthy and a fulfilling Life. 
-    </Typography>
-    <Typography className="aboutDropDown_subContent">
-        {bull} Anyone who : Is thriving to adapt a positive Mindset 
-    </Typography>
-    <Typography className="aboutDropDown_subContent">
-        {bull} Anyone who : Wants to work on their Time management, 
-        Self confidence and Self esteem to strike a balance between personal, 
-        professional and social aspects of their lives.   
+        Anyone who : 
+        <ul>
+          <li>
+              wants to seek Awareness on overall wellbeing to 
+              become a Healthy, Happy and a Successful person. 
+          </li>
+          <li>
+              wishes to make lifestyle changes to become 
+              their best Self to lead a Happy, Healthy and a fulfilling Life.
+          </li>
+          <li>
+              is thriving to adapt a positive Mindset 
+          </li>
+          <li>
+              wants to work on their Time management, 
+              Self confidence and Self esteem to strike a balance between personal, 
+              professional and social aspects of their lives.
+          </li>
+        </ul>
+        
     </Typography>
   </>
 }
@@ -165,7 +171,7 @@ const DesktopAbout = () => {
 }
 
 const MobileAbout = () => {
-  const [expanded, setExpanded] = useState('panel1')
+  const [expanded, setExpanded] = useState('')
   
   const handleAccordion = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
@@ -240,7 +246,7 @@ const About = ({desktop = false}) => {
                       the client to explore venues/methods/techniques to overcome 
                       challenges that are on the way to succeeding in their endeavours. 
                       We guide and support our clients on finding a harmonious balance between the mind, 
-                      \body and spirit that contributes to his/her total well-being. 
+                      body and spirit that contributes to his/her total well-being. 
                 </Typography>
             </Grid>
             {

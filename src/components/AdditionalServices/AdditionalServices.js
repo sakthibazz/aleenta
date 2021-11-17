@@ -114,7 +114,7 @@ const AdditionalServices = ({history,setOpen=noop,open}) => {
                                     </Card>
                                     <Card container  style={{height:"20%"}}>
                                         <Typography className="additionalDrop_articles">
-                                            COUNSELING
+                                            COUNSELLING
                                         </Typography>
                                     </Card>
                                 </Card>
