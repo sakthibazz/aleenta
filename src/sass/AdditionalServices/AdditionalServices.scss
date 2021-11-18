@@ -101,12 +101,6 @@
         border-radius: 5%;
         box-shadow: black;
     }
-    .articalCardBlog{
-        border-radius: 5%;
-        box-shadow: black;
-        padding-left: 1%;
-        padding-right: 1%;
-    }
     .articalCard {
         // margin-top: 35px;
         // box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
@@ -118,6 +112,30 @@
         transform: scale(1.05);
         // color: #FFE481;
         // box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+
+    .articalCardBlog{
+        height:220px;
+        width: 220px;
+        border-radius: 5%;
+        margin: 2%;
+    }
+    .BlogDropDownImg1{
+        height: 200px;
+        width: 220px;
+        object-fit: cover;
+    }
+    .BlogDropDownImg2{
+        height: 195px;
+        width: 220px;
+        object-fit: cover;
+    }
+    .articalCardBlog {
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    }
+        
+    .articalCardBlog:hover{
+        transform: scale(1.05);       
     }
 }
 

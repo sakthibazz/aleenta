@@ -44,7 +44,7 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                     <Grid container align="center">
                         <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/blogsPage1" style={{textDecoration:"none"}}>
-                                <Card className="articalCard" style={{width:"80%",height:"80%"}} 
+                                <Card className="articalCardBlog"
                                     onClick={()=>
                                         setOpen(true)}
                                 >
@@ -52,8 +52,8 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                                             Inner Metamorphosis
                                         </Typography>
                                
-                                    <Card container className="articalCard1"  style={{height:"85%"}} >
-                                        <img src={BlogDropDownImg1}  style={{width:"100%",height:"100%"}}/>
+                                    <Card container className="articalCard1" >
+                                        <img src={BlogDropDownImg1} className="BlogDropDownImg1" style={{objectFit: "cover"}}/>
                                     </Card>
                                     {/* <Card container  style={{height:"34%"}}>
                                         <Typography className="additionalDrop_articles2" >
@@ -69,7 +69,7 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
 {/* ----------------------------card-2----------------------------------- */}
                         <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/blogPage2" style={{textDecoration:"none"}}>
-                                <Card className="articalCard" style={{width:"80%",height:"80%"}} 
+                                <Card className="articalCardBlog"  
                                     onClick={()=>
                                         setOpen(true)}
                                 >
@@ -77,8 +77,8 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                                             Key to Success!
                                         </Typography>
                                
-                                    <Card container className="articalCard1"  style={{height:"85%"}} >
-                                        <img src={BlogDropDownImg2}  style={{width:"100%",height:"100%"}}/>
+                                    <Card container className="articalCard1" >
+                                        <img src={BlogDropDownImg2} className="BlogDropDownImg2" style={{objectFit: "cover"}}/>
                                     </Card>
                                     {/* <Card container  style={{height:"34%"}}>
                                         <Typography className="additionalDrop_articles2" >

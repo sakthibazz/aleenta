@@ -262,7 +262,7 @@ const CorporatePrograms = ({history}) => {
                 </Grid>
 
                 <Grid item xs={12} md={12} style={{backgroundColor:"#fbf2de",paddingTop:"2%"}} >
-                    <Typography className="programsPageHeading" align="center" style={{fontStyle:"italic",fontWeight:"600"}}>
+                    <Typography className="programsPageHeading" align="center" style={{fontStyle:"italic"}}>
                         Health is not just the absence of a disease. It is an inner joyfulness that should be ours all the time; a state of positive well-being. -- Deepak Chopra
                     </Typography>
                     <Typography className="programsPageParagraph" align="center">
