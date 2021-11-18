@@ -299,7 +299,7 @@ const GroupPrograms = ({history}) => {
                             
                             <Grid item xs={12} md={12}>
 
-                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic"}}>
+                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic",fontWeight:"600"}}>
                                     Happiness is when what you think, what you say, and what you do are in harmony. -- Mahatma Gandhi
                                 </Typography>
 
@@ -313,7 +313,7 @@ const GroupPrograms = ({history}) => {
                                     pursuing it and perform to their highest potential.
                                 </Typography>
 
-                                <Typography className="programscontent" align='Left'>
+                                <Typography className="programscontent" align='Left' style={{paddingTop:"3%"}}>
                                     Contact us with your requirements at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>  
                             </Grid>
@@ -366,7 +366,7 @@ const GroupPrograms = ({history}) => {
                             </Grid>
                             
                             <Grid item xs={12} md={12}>
-                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic"}}>
+                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic",fontWeight:"600"}}>
                                     Peace is the inner nature of humankind. If you find it within yourself, you will then find it everywhere! - Ramana Maharshi.
                                 </Typography>
 
@@ -378,7 +378,7 @@ const GroupPrograms = ({history}) => {
                                     The client will be able to see the true meaning of Life in this program.
                                 </Typography>
 
-                                <Typography className="programscontent" align='Left'>
+                                <Typography className="programscontent" align='Left' style={{paddingTop:"3%"}}>
                                     Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
@@ -435,7 +435,7 @@ const GroupPrograms = ({history}) => {
                                     This program creates ideas and insights on how to maintain existing 
                                     relationships and create new healthy relationships. 
                                     In this process of learning and discovering, the client as an individual transforms 
-                                    himself/herself into a human being who can maintain healthy relationships in every area of their 
+                                    himself/herself to maintain healthy relationships in every area of their 
                                     life with ease. Once the awareness sets in, all the 
                                     judgements and conditioning that have been ruling one's life and one's decisions, drop. 
                                     This gives way to new experiences, 
@@ -443,7 +443,7 @@ const GroupPrograms = ({history}) => {
                                 </Typography>
 
                                
-                                <Typography className="programscontent" align='Left'>
+                                <Typography className="programscontent" align='Left' style={{paddingTop:"3%"}}>
                                     Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>

@@ -234,7 +234,7 @@ const IndividualPrograms = ({history}) => {
                         Spirit guide for her clients and offers a full spectrum of support. The Coach walks with the 
                         Client closely to find ways to overcome the 
                         obstacles/ challenges, identify action plans, to move forward and stay on 
-                        track to achieve the client's set goals successfully
+                        track to achieve the client's set goals successfully.
                     </Typography>
                 </Grid>
 
@@ -274,7 +274,7 @@ const IndividualPrograms = ({history}) => {
                                     In this journey, clients discover their passion and their major goals of life.  
                                 </Typography>
 
-                                <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
+                                <Typography className="programscontent" align='Left' style={{fontWeight:"600", paddingTop:"3%"}}>
                                     In all our Personal coaching programs; Honesty, Trust and 
                                     Confidentiality are maintained throughout the coaching relationship. 
                                 </Typography>
@@ -347,7 +347,7 @@ const IndividualPrograms = ({history}) => {
                                     creativity and innovative side of the Client in this program.    
                                 </Typography>
 
-                                <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
+                                <Typography className="programscontent" align='Left' style={{fontWeight:"600", paddingTop:"3%"}}>
                                     In all our Personal coaching programs; Honesty, Trust and Confidentiality are 
                                     maintained throughout the coaching relationship.  
                                 </Typography>
@@ -409,7 +409,7 @@ const IndividualPrograms = ({history}) => {
                                     If you are a teen/ an Adolescent: In this one-on-one coaching, 
                                     we work with teens/adolescents who would want to explore their inner self to have a 
                                     healthy personal and social life. We work with Clients to tap into their creative potential and 
-                                    explore their talents in order to excel in studies and activities of their interest
+                                    explore their talents in order to excel in studies and activities of their interest.
                                 </Typography>
 
                                 <Typography className="programscontent" align='Left'>
@@ -421,7 +421,7 @@ const IndividualPrograms = ({history}) => {
                                     them to move toward their goals with increased focus and zeal!
                                 </Typography>
 
-                                <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
+                                <Typography className="programscontent" align='Left' style={{fontWeight:"600", paddingTop:"3%"}}>
                                     In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
                                 </Typography>
 
@@ -491,6 +491,13 @@ const IndividualPrograms = ({history}) => {
                                 <Typography className="programscontent" align='Left'>
                                     Positive outcome of this program is that; Work gets done on time thereby increasing one's Self confidence and energy to take up more work. A calm and peaceful state of mind and good relationships are a few other results of this program. 
                                 </Typography>
+                                <Typography className="programscontent" align='Left' style={{fontWeight:"600", paddingTop:"3%"}}>
+                                    In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
+                                </Typography>
+
+                                <Typography className="programscontent" align='Left'>
+                                    Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
+                                </Typography>
 
                                 {/* <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
                                     In all our Individual and personal coaching programs, Honesty, Trust and Confidentiality 
@@ -510,13 +517,13 @@ const IndividualPrograms = ({history}) => {
                         </Grid>
                     </Grid>
                     <Grid item xs={12} md={12}>
-                        <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
+                        {/* <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
                             In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
                         </Typography>
 
                         <Typography className="programscontent" align='Left'>
                             Contact us with your requirements at  <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
-                        </Typography>
+                        </Typography> */}
 
                         {/* <img 
                             className="dividerImgCorpProgram"
@@ -541,7 +548,7 @@ const IndividualPrograms = ({history}) => {
                         <Grid container>
                             <Grid item xs={12} md={12}>
 
-                                <div className="tab1 shortContent">
+                                <div className="tab1">
                                     <img className="img-class" src={Self_expression}/>
                                         <Typography className="img-title programsHeading" >
                                             Self-Expression
@@ -556,12 +563,12 @@ const IndividualPrograms = ({history}) => {
                             
                             <Grid item xs={12} md={12}>
 
-                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic"}}>
+                                <Typography className="programscontent1" align='Left' style={{fontStyle:"italic",fontWeight:"600"}}>
                                     The purpose of Life is Self-Expression – Oscar Wilde
                                 </Typography>
 
-                            <Typography className="programscontent" align='Left'>
-                                Inhibitions stagger Self-expression
+                            <Typography className="programscontent" align='Left' style={{paddingTop:"3%"}}>
+                                Inhibitions stagger Self-expression.
                             </Typography>
 
                             <Typography className="programscontent" align='Left'>
@@ -584,7 +591,7 @@ const IndividualPrograms = ({history}) => {
                                 state of Self-discovery and improved Self confidence.
                             </Typography>
                     
-                            <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
+                            <Typography className="programscontent" align='Left' style={{fontWeight:"600", paddingTop:"3%"}}>
                                 In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
                             </Typography>
                         
@@ -653,7 +660,7 @@ const IndividualPrograms = ({history}) => {
                                     achieving Self confidence in a short span of time. 
                                 </Typography>
 
-                                <Typography className="programscontent" align='Left' style={{fontWeight:"600"}}>
+                                <Typography className="programscontent" align='Left' style={{fontWeight:"600", paddingTop:"3%"}}>
                                     In all our Personal coaching programs; Honesty, Trust and Confidentiality are maintained throughout the coaching relationship.  
                                 </Typography>
 

@@ -47,6 +47,10 @@ const BlogsPage1 = ({history}) => {
                     <Typography className='blogTitle' align='center'>
                         My journey from a day dreamer to a Life coach.
                     </Typography>
+                    <Typography className="blogcontent1" align='center' style={{paddingTop:"2%",paddingBottom:"2%",fontWeight:"600"}}>
+                        <span style={{fontStyle:"italic"}}> “Transformation means literally going beyond your form.” </span>        
+                                                                    - Wayne Dyer
+                    </Typography>
                 </Grid>
                 <Grid item xs={12} md={12}>
                     <img 
@@ -59,7 +63,7 @@ const BlogsPage1 = ({history}) => {
                 </Grid>
                 <Grid item xs={12} md={12} >
 
-                    <Typography className="blogcontent1" align='center' style={{fontStyle:"italic"}}>
+                    <Typography className="blogcontent1" align='center' style={{fontStyle:"italic",fontWeight:"600"}}>
                         “Who looks outside, dreams. Who looks inside, awakes.”
                                                                 – Carl Jung
                     </Typography>

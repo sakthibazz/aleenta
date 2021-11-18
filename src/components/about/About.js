@@ -241,7 +241,7 @@ const About = ({desktop = false}) => {
         <Grid container className="aboutContainer aboutTitleContainer1" spacing={2}>
             <Grid item xs={12} md={4}>
                 <Typography className='abotTitle'>
-                    <span className="span1" style={{color:"tomato",fontWeight:"600",}}>Aleenta</span > is an ancient Sanskrit word which means " A rewarding life".
+                    <span className="span1" style={{color:"tomato",fontWeight:"600",}}>Aleenta</span > is an ancient Sanskrit word which means "A rewarding life".
                       At Aleenta Wellbeing, we provide a space and motivation for 
                       the client to explore venues/methods/techniques to overcome 
                       challenges that are on the way to succeeding in their endeavours. 

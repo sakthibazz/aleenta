@@ -262,7 +262,7 @@ const CorporatePrograms = ({history}) => {
                 </Grid>
 
                 <Grid item xs={12} md={12} style={{backgroundColor:"#fbf2de",paddingTop:"2%"}} >
-                    <Typography className="programsPageHeading" align="center" style={{fontStyle:"italic"}}>
+                    <Typography className="programsPageHeading" align="center" style={{fontStyle:"italic",fontWeight:"600"}}>
                         Health is not just the absence of a disease. It is an inner joyfulness that should be ours all the time; a state of positive well-being. -- Deepak Chopra
                     </Typography>
                     <Typography className="programsPageParagraph" align="center">
@@ -359,7 +359,7 @@ const CorporatePrograms = ({history}) => {
                         <Grid container>
                             <Grid item xs={12} md={12}>
 
-                            <div className="tab1 shortContent">
+                            <div className="tab1 ">
                                 <img className="img-class" src={Happiness}/>
                                     <Typography className="img-title programsHeading" >
                                         Mangallam Online
@@ -383,7 +383,7 @@ const CorporatePrograms = ({history}) => {
                                     Organisation's Vision and achieve great success in their team projects.
                                 </Typography>
 
-                                <Typography className="programscontent" align='Left' style={{fontStyle:"italic"}}>
+                                <Typography className="programscontent" align='Left' style={{fontStyle:"italic",fontWeight:"600"}}>
                                     If you begin to understand what you are without trying to change it, then, 
                                     what you are undergoes a transformation.--Jiddu Krishnamurti
                                 </Typography>
@@ -406,7 +406,7 @@ const CorporatePrograms = ({history}) => {
                                     the Client/Organisation aims/hopes to transform.
                                 </Typography>
 
-                                <Typography className="programscontent" align='Left'>
+                                <Typography className="programscontent" align='Left' style={{paddingTop:"3%"}}>
                                     Contact us with your requirements at  <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
@@ -489,7 +489,7 @@ const CorporatePrograms = ({history}) => {
                                     </Typography>
                                 
 
-                                <Typography className="programscontent" align='Left'>
+                                <Typography className="programscontent" align='Left'style={{paddingTop:"3%"}}>
                                     Contact us with your requirements at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>
@@ -565,7 +565,7 @@ const CorporatePrograms = ({history}) => {
                                     self management and improved relationship management. 
                                 </Typography> */}
 
-                                <Typography className="programscontent" align='Left'>
+                                <Typography className="programscontent" align='Left' style={{paddingTop:"3%"}}>
                                     Contact us with your requirements at <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> to know more.
                                 </Typography>
                             </Grid>

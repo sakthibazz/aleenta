@@ -48,17 +48,22 @@ const BlogPage2 = ({history}) => {
         <Container maxWidth="lg" className={`${classes.mainViewContainer} mainViewContainerBlog`}>
             <Grid container>
                 <Grid item xs={12} md={12}  className={classes.mainGridContainer}>
-                    <Typography className='blogTitle' align='center'>
+                    <Typography className='blogTitle2' align='center'>
                         Key to Success!
                     </Typography>
 
-                    <Typography className="blogcontent1" align='Left'>
+                    <Typography className="blogcontent1" align='center' style={{paddingTop:"3%",paddingBottom:"0%",fontWeight:"600"}}>
+                        <span style={{fontStyle:"italic"}}> “Awareness is the key ingredient in Success. If you have it, teach it. If you lack it, seek it!.” </span>        
+                                                                    - Michael Kitson
+                    </Typography>
+
+                    <Typography className="blogcontent1" align='Left' style={{paddingTop:"3%"}}>
                         Why are we afraid when we think of our Success?. 
                     </Typography>
-                    <Typography className="blogcontent1" align='Left'>
+                    <Typography className="blogcontent2" align='Left'>
                         Why are we afraid of moments of extreme Happiness?. 
                     </Typography>
-                    <Typography className="blogcontent1" align='Left'>
+                    <Typography className="blogcontent2" align='Left'>
                         Why do we always say that we jinxed it when we are close to either?.
                     </Typography>
 
@@ -71,15 +76,15 @@ const BlogPage2 = ({history}) => {
                     </Typography>
 
                 </Grid>
-                <Grid item xs={12} md={12}>
+                {/* <Grid item xs={12} md={12}>
                     <img 
                         className="blog1Image1"
                         src={blog2Img1}
                     />
-                </Grid>
-                <Grid item xs={12} md={12} className="blogDiv">
+                </Grid> */}
+                {/* <Grid item xs={12} md={12} className="blogDiv">
                     
-                </Grid>
+                </Grid> */}
                 <Grid item xs={12} md={12} >
 
                     {/* <Typography className="blogcontent1" align='center' style={{fontStyle:"italic"}}>
@@ -95,13 +100,13 @@ const BlogPage2 = ({history}) => {
                     <Typography className="blogcontent1" align='Left'>
                         Fear of something bad may happen
                     </Typography>
-                    <Typography className="blogcontent1" align='Left'>
+                    <Typography className="blogcontent2" align='Left' style={{paddingtop:"0.5%"}}>
                         Fear of failures 
                     </Typography>
-                    <Typography className="blogcontent1" align='Left'>
+                    <Typography className="blogcontent2" align='Left' style={{paddingtop:"0.5%"}}>
                         Fear of losing something or someone 
                     </Typography>
-                    <Typography className="blogcontent1" align='Left'>
+                    <Typography className="blogcontent2" align='Left' style={{paddingtop:"0.5%"}}>
                         Fear of facing the harsh world once the moment of 
                         bliss of achievement expires and so on....
                     </Typography>
@@ -117,12 +122,14 @@ const BlogPage2 = ({history}) => {
                         Life as we know it, is like a mixed salad. It has all the 
                         tastes and textures that our tongue can sense – sweetness, 
                         bitterness, sour, spice, pungent, hot, cold, crispy, crunchy, sharpness, softness, acidic etc..
-                    </Typography>
-
-                    <Typography className="blogcontent1" align='Left'>
                         We must know in awareness that all of this is a part of our 
                         palatial satisfaction in order to identify and appreciate the dish as a whole.
                     </Typography>
+
+                    {/* <Typography className="blogcontent1" align='Left'>
+                        We must know in awareness that all of this is a part of our 
+                        palatial satisfaction in order to identify and appreciate the dish as a whole.
+                    </Typography> */}
 
                     <Typography className="blogcontent1" align='Left'>
                         Awareness is the key to your Success!
@@ -170,24 +177,31 @@ const BlogPage2 = ({history}) => {
                         Take inspiration from a soon to-be-toddler; 
                         how the baby falls over and over again inspite of getting back up on it's feet. 
                         The child never gives up. No one teaches him/her to walk. 
+                        This is the mindset we need to adapt at important crossroads in our 
+                        lives – an unwavering persistence of a child who is trying and trying 
+                        without any feeling of disappointment, without blaming anybody, 
+                        without giving up and worst of all, without having self-pity.
                     </Typography>
-                    <Typography className="blogcontent1" align='Left'>
+                    {/* <Typography className="blogcontent1" align='Left'>
                         This is the mindset we need to adapt at important crossroads in our 
                         lives – an unwavering persistence of a child who is trying and trying 
                         without any feeling of disappointment, without blaming anybody, 
                         without giving up and worst of all, without having self-pity. 
-                    </Typography>
+                    </Typography> */}
                     <Typography className="blogcontent1" align='Left'>
                         Your goals and dreams may seem to be beyond reach, 
-                        but believe in yourself as a whole – y our body, your mind, your spirit and each 
+                        but believe in yourself as a whole – your body, your mind, your spirit and each 
                         and every cell of your body. And of course, 
                         that entity for which we have different names; Nature, Universe, God, Brahman etc.. 
+                        When you have achieved the impossible, every moment and every day 
+                        is precious because you live it fully in awareness – an awareness of 
+                        Happiness and Success which resonates echoes of inspiration to people around you!
                     </Typography>
 
                    
                 </Grid>
 
-                <Grid item xs={12} md={12} >
+                {/* <Grid item xs={12} md={12} >
                     <img 
                         className="blog1Image3 blog2Image3"
                         src={blog2Img3}
@@ -195,14 +209,14 @@ const BlogPage2 = ({history}) => {
                 </Grid>
                 <Grid item xs={12} md={12} className="blogDiv">
                     
-                </Grid>
+                </Grid> */}
 
                 <Grid item xs={12} md={12} >
-                    <Typography className="blogcontent1" align='Left'>
+                    {/* <Typography className="blogcontent1" align='Left'>
                         When you have achieved the impossible, every moment and every day 
                         is precious because you live it fully in awareness – an awareness of 
                         Happiness and Success which resonates echoes of inspiration to people around you!
-                    </Typography>
+                    </Typography> */}
 
                     <Typography className="blogcontent1" align='Left'>
                         We humans have the greatest ability and every right to live 

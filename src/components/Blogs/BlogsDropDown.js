@@ -44,7 +44,7 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                     <Grid container align="center">
                         <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/blogsPage1" style={{textDecoration:"none"}}>
-                                <Card className="articalCard" style={{width:"90%",height:"90%"}} 
+                                <Card className="articalCard" style={{width:"80%",height:"80%"}} 
                                     onClick={()=>
                                         setOpen(true)}
                                 >
@@ -52,16 +52,16 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                                             Inner Metamorphosis
                                         </Typography>
                                
-                                    <Card container className="articalCard1"  style={{height:"70%"}} >
+                                    <Card container className="articalCard1"  style={{height:"85%"}} >
                                         <img src={BlogDropDownImg1}  style={{width:"100%",height:"100%"}}/>
                                     </Card>
-                                    <Card container  style={{height:"24%"}}>
+                                    {/* <Card container  style={{height:"34%"}}>
                                         <Typography className="additionalDrop_articles2" >
-                                            {/* Inner Metamorphosis */}
+                                            
                                             <span style={{fontStyle:"italic"}}> “Transformation means literally going beyond your form.” </span>        
                                                                     - Wayne Dyer
                                         </Typography>
-                                    </Card>
+                                    </Card> */}
                                 </Card>
                             </Link>
                         </Grid>
@@ -69,7 +69,7 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
 {/* ----------------------------card-2----------------------------------- */}
                         <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/blogPage2" style={{textDecoration:"none"}}>
-                                <Card className="articalCard" style={{width:"90%",height:"90%"}} 
+                                <Card className="articalCard" style={{width:"80%",height:"80%"}} 
                                     onClick={()=>
                                         setOpen(true)}
                                 >
@@ -77,16 +77,16 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                                             Key to Success!
                                         </Typography>
                                
-                                    <Card container className="articalCard1"  style={{height:"60%"}} >
+                                    <Card container className="articalCard1"  style={{height:"85%"}} >
                                         <img src={BlogDropDownImg2}  style={{width:"100%",height:"100%"}}/>
                                     </Card>
-                                    <Card container  style={{height:"34%"}}>
+                                    {/* <Card container  style={{height:"34%"}}>
                                         <Typography className="additionalDrop_articles2" >
-                                            {/* Inner Metamorphosis */}
+                                            
                                             <span style={{fontStyle:"italic"}}> “Awareness is the key ingredient in Success. If you have it, teach it. If you lack it, seek it!.” </span>        
                                                                     - Michael Kitson
                                         </Typography>
-                                    </Card>
+                                    </Card> */}
                                 </Card>
                             </Link>
                         </Grid>

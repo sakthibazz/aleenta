@@ -27,11 +27,23 @@
         }
     }
     .contactContent{
-        margin-top: 45%;
+        margin-top: 46%;
         padding: 3%;
         @media only screen and (max-width: 960px) {
             margin-top: 0%;
-            padding: 3%;
+            padding: 1%;
         }
+    }
+    .whatsapp{
+        @media only screen and (max-width: 960px) {
+            display: none;
+        }
+    }
+    .whatsapp1{
+        display: none;
+        @media only screen and (max-width: 960px) {
+            display: block;
+        }
+
     }
 }

@@ -35,7 +35,7 @@ const Contact = () => {
                         Contact Us
                     </Typography>
                 </Grid>
-                <Grid item xs={12} md={4} align='center' alignItems="flex-end">
+                <Grid item xs={0} sm={0} xl={0} md={4} align='center' className="whatsapp">
                         <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"black"}}>
                             <Typography className="contactContent" align='center' style={{fontWeight:"600"}}>
                                 Whatsapp number: +916362925160
@@ -49,19 +49,21 @@ const Contact = () => {
                         src={logoImg}
                     />
                 </Grid>
-                {/* <Grid item xs={12} md={0} align='center'>
+                <Grid item xs={12} sm={0} xl={0} md={0} lg={0} align='center' className="whatsapp1" >
                         <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"black"}}>
                             <Typography className="contactContent" align='center' style={{fontWeight:"600"}}>
-                                what's app: +916362925160
+                                Whatsapp number: +916362925160
                             </Typography>
                         </a>
                            
-                    </Grid> */}
+                </Grid>
                 <Grid item xs={12} md={4} align='center' alignItems="flex-end">
-                            <Typography className="contactContent" align='center'>
-                                <a href="mailto:programs@aleenta.in" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a>
+                        <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black"}}>
+                            <Typography className="contactContent" align='center' style={{fontWeight:"600"}}>
+                                 Programs@aleenta.in 
                             </Typography>
-                        </Grid>
+                        </a>
+                </Grid>
                 {/* <Grid item xs={12} md={12} align='center' >
                     <Grid container>
                         <Grid item xs={12} md={4} align='center'>
