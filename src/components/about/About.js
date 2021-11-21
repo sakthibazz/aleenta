@@ -34,7 +34,7 @@ const WhatIsWB = () => {
   return <>
     <Typography className="aboutDropDown_subContent" >
         According to Oxford dictionary Well-being means – 
-        It's the state in which your physical, mental, and 
+        a state in which your physical, mental, and 
         spiritual health are in balance, 
         unlocking your body's natural healing abilities. 
         Our program fits every human being who wishes to 

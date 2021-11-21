@@ -97,7 +97,7 @@ const Footer = () => {
                     <a href='https://www.linkedin.com/in/mangala-narayan-a6936b25' target="_blank">
                         <img src={linkedin} className="footersocoalMediaIcons footersocoalMediaIcons1" />
                     </a>
-                    <a href="https://www.instagram.com/invites/contact/?i=vyvw7tgs0jxi&utm_content=mkpdld81" target="_blank">
+                    <a href=" https://www.instagram.com/invites/contact/?i=1m15srqnglddr&utm_content=mkpdld8" target="_blank">
                         <img src={instagram} className="footersocoalMediaIcons footersocoalMediaIcons1" />
                     </a>
                     <a href="https://wa.me/916362925160" target="_blank">
