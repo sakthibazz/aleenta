@@ -87,7 +87,7 @@ const CorporatePrograms = ({history}) => {
 
     return ( 
         <>
-            <Grid container className="corporateContainer  corporateTitleContainer">
+            <Grid container className="corporateContainer  corporateTitleContainer" style={{backgroundColor:"white"}}>
                 
                 <Grid item xs={12} md={12}>
                     < Grid container className="topText">
@@ -349,7 +349,7 @@ const CorporatePrograms = ({history}) => {
                 {/*------------------------ 	Happiness coaching ------------------------------ */}
 
                 {/* <Grid container id="happiness" style={{backgroundColor:"white"}}> */}
-                    <Grid item xs={12} md={6} style={{backgroundColor:"white"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
+                    <Grid item xs={12} md={6} style={{paddingTop:"2%",paddingBottom:"2%",backgroundColor:"white"}}>
                         <img 
                             className="mangallamImg groupImg4"
                             src={happinessIndividual}
@@ -515,7 +515,7 @@ const CorporatePrograms = ({history}) => {
 
 
                  
-                <Grid container id="personal" style={{backgroundColor:"white"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
+                <Grid container id="personal" style={{paddingTop:"2%",paddingBottom:"2%",backgroundColor:"white"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -584,10 +584,10 @@ const CorporatePrograms = ({history}) => {
                         />
                     </Grid>
                 </Grid>
-
+                <Footer />
             </Grid>
 
-            <Footer />
+            
         </>
      );
 }

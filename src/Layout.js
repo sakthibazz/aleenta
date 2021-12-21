@@ -44,6 +44,7 @@ import {
 } from "@material-ui/icons";
 // import { logoutUser } from "./redux/actions/authActions";
 import { makeStyles } from "@material-ui/core/styles";
+import Logo1 from "./images/logo/aleenta1.png";
 import Logo from "./images/logo/aleenta.png";
 import clsx from "clsx";
 
@@ -282,6 +283,8 @@ const closeMenu = ()=>{
                 to="/"
               >
                 <img src={Logo} width="60px" height="50px" style={{ paddingTop: "0", alignSelf: "center"}} />
+                {/* <img src={Logo} width="120px" height="50px" style={{ paddingTop: "0", alignSelf: "center"}} /> */}
+
               </Link>
               <IconButton edge="end" style={{marginRight: '1%'}} onClick={handleMobileMenu}>
                 {
@@ -310,7 +313,9 @@ const closeMenu = ()=>{
                 >
                   <img  
                     onClick={closeOpenedMenu} 
-                    src={Logo} width="110px" height="80px" style={{paddingTop:"2px",paddingLeft:"20px"}} />
+                    // src={Logo} width="110px" height="80px" style={{paddingTop:"2px",paddingLeft:"20px"}} />
+                    src={Logo1} width="240px" height="80px" style={{paddingTop:"2px",paddingLeft:"20px"}} />
+
                 </Link>
               {/* </Grid> */}
               
@@ -621,7 +626,8 @@ const closeMenu = ()=>{
             <Grid item xs={12} md={12} className={appTitle ? 'overlay-container' : null}>
               {
                 appTitle==="about"
-                ? <About desktop={true}/>
+                // ? <About desktop={true}/>
+                ? <About setOpen={setOpen} open={open}/>
                 : appTitle == 'program' ? <Program setOpen={setOpen} open={open}/>
                 : appTitle == 'additionalServices' ? <AdditionalServices  setOpen={setOpen} open={open} />
                 : appTitle == 'blogs' ? <BlogsDropDown  setOpen={setOpen} open={open} />

@@ -118,16 +118,19 @@ const Welcome = ({
         }
     ]
 
+    
+
+
     return (
         // <Container maxWidth="lg" className="mainViewContainer">
         <Container maxWidth="lg" className={`${classes.mainViewContainer} mainViewContainer welcome`}>
             
             {/* <hr/> */}
-           <Grid container className={classes.imageGridContainer} style={{backgroundColor:"#fbf2de"}}>
+           <Grid container className={classes.imageGridContainer}  style={{backgroundColor:"#fbf2de"}}>
 
                 <Grid item xs={12} md={12} >
                     {/* <Carousel items={items} /> */}
-                      <Grid id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" style={{paddingTop:"15px",marginTop:'-15px'}}> 
+                      <Grid id="carouselExampleIndicators"  class="carousel slide" data-pause='false' data-ride="carousel" data-interval="3000" style={{paddingTop:"15px",marginTop:'-15px'}}> 
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

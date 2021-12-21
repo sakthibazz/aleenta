@@ -95,7 +95,7 @@ const IndividualPrograms = ({history}) => {
 
     return ( 
         <>
-            <Grid container className="corporateContainer  corporateTitleContainer">
+            <Grid container className="corporateContainer  corporateTitleContainer" style={{backgroundColor:"white"}}>
                 
                 <Grid item xs={12} md={12}>
                 < Grid container className="topText"  >
@@ -306,7 +306,7 @@ const IndividualPrograms = ({history}) => {
                 {/*------------------------ 	Creative coaching  ------------------------------ */}
 
 
-                <Grid container id="creative" style={{backgroundColor:"white"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
+                <Grid container id="creative" style={{paddingTop:"2%",paddingBottom:"2%",backgroundColor:"white"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -455,7 +455,7 @@ const IndividualPrograms = ({history}) => {
 
 
 
-                 <Grid container id="timeManage" style={{backgroundColor:"white"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
+                 <Grid container id="timeManage" style={{paddingTop:"2%",paddingBottom:"2%",backgroundColor:"white"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -623,7 +623,7 @@ const IndividualPrograms = ({history}) => {
 
 
 
-                  <Grid container id="social" style={{backgroundColor:"white"}} style={{paddingTop:"2%",paddingBottom:"2%"}}>
+                  <Grid container id="social" style={{paddingTop:"2%",paddingBottom:"2%",backgroundColor:"white"}}>
                     <Grid item xs={12} md={6}>
                         <img 
                             className="mangallamImg"
@@ -683,10 +683,10 @@ const IndividualPrograms = ({history}) => {
                         />
                     </Grid>
                 </Grid>
-
+                <Footer />
             </Grid>
             
-            <Footer />
+            
 
         </>
      );

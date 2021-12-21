@@ -11,6 +11,7 @@ import Footer from "./components/footer";
 
 import Welcome from "./components/Welcome";
 import About from "./components/about/About";
+import AboutDetails from "./components/about/aboutDetails"
 import Program from "./components/program/Program";
 import Contact from "./components/Contact/Contact"
 import CorporatePrograms from "./components/program/corporatePrograms"
@@ -55,6 +56,7 @@ const App = () => {
         {/* --------------------Drop downs------------------ */}
         <Route exact path="/" component={Welcome} />
         <Route path="/about-us" component={About} />
+        <Route path="/aboutDetails" component={AboutDetails} />
         <Route path="/blogsDropDown" component={BlogsDropDown} />
         <Route path="/blogsPage1" component={BlogsPage1} />
         <Route path="/blogPage2" component={BlogPage2} />
