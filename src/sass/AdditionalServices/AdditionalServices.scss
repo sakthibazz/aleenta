@@ -36,8 +36,14 @@
         padding-right: 5%;
         text-transform: uppercase;
         letter-spacing: 1px;
+        font-weight: 600;
         // font-family: 'Tenor Sans', sans-serif !important;
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 1250px) {
+            padding-left: 5%;
+            padding-top: 1%;
+            font-size: 10px;
+        }
+        @media only screen and (max-width: 950px) {
             padding-left: 5%;
             padding-top: 1%;
             font-size: 14px;
@@ -53,6 +59,7 @@
         // padding-left: 10%;
         // padding-right: 5%;
         letter-spacing: 1px;
+        font-weight: 600;
         // font-family: 'Tenor Sans', sans-serif !important;
         @media only screen and (max-width: 600px) {
             // padding-left: 5%;
