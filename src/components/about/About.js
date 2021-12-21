@@ -280,7 +280,7 @@ import { withRouter, Link } from "react-router-dom";
 let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/theCoach.jpeg'
 let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whyAleenta.jpeg'
 let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whatIsWellBeing.jpeg'
-let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/aboutDetails/whoNeedsWellBeing.jpeg'
+let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whoNeedsWellBeing.jpeg'
 
 let splitCircle = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/splitCircle.png'
 

@@ -45,9 +45,9 @@ let icon1 = 'https://dec4365vfd8ox.cloudfront.net/images/dropDown/icn/The_coach.
 let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/theCoach.jpeg'
 let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whyAleenta.jpeg'
 let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whatIsWellBeing.jpeg'
-let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/aboutDetails/whoNeedsWellBeing.jpeg'
+let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whoNeedsWellBeing.jpeg'
 
-let PiChart = 'https://dec4365vfd8ox.cloudfront.net/aboutDetails/PiChart.png'
+let PiChart = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/PiChart.png'
 
 
 
