@@ -72,7 +72,7 @@ const AdditionMeditation = ({history}) => {
                         </Typography>
                         <Typography className="meditationContent1" align='Left'>
                             Meditation is known in all parts of the world and 
-                            people have different approachs to meditate. Some are 
+                            people have different approaches to meditate. Some are 
                             related to faith, religion, culture etc...Nevertheless, 
                             meditation has less to do with faith and more to do with mindfulness, 
                             in other words, developing awareness. Benefits include:

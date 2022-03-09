@@ -79,7 +79,7 @@ const AdditionCounseling = ({history}) => {
                         </Typography>
                         <Typography className="meditationContent1" align='Left'>
                                 Client's happiness is our utmost priority, we thrive to bring back the smiles 
-                                and the joy of living in our client's life
+                                and the joy of living in our client's life.
                             </Typography>
                             <Typography className="meditationContent4" align='Left'>
                                 Identifying the client's inner strength and how to use it to bring about 

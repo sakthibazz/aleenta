@@ -103,6 +103,7 @@
         height:80%;
         border-radius: 5%;
         margin: 2%;
+        object-fit: cover;
     }
     .articalCard1{
         border-radius: 5%;
@@ -120,6 +121,7 @@
         // color: #FFE481;
         // box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     }
+
 
     .articalCardBlog{
         height:220px;
@@ -151,6 +153,9 @@
         // height:100%;
         border-radius: 5%;
         margin: 2%;
+        object-fit: cover;
+        height: 240px;
+        width: 260px;
         @media  screen and (max-width: 960px) {
             // width:90%;
             // height:220px;
@@ -161,6 +166,8 @@
     .aboutCard1{
         border-radius: 5%;
         box-shadow: black;
+        height: 205px;
+        width: 100%;  
     }
 
     .aboutCard {
@@ -168,6 +175,40 @@
     }
         
     .aboutCard:hover{
+        transform: scale(1.05);       
+    }
+// --------------------------------------------------------
+    .aboutCoachCard{
+        border-radius: 5%;
+        margin: 2%;
+        object-fit: cover;
+        height: 240px;
+        width: 260px;
+        @media  screen and (max-width: 960px) {
+            // width:90%;
+            // height:220px;
+            border-radius: 5%;
+            margin: 2%;
+        }
+    }
+    .aboutCoachCardImage{
+        height:100%;
+        width: 100%;
+        border-radius: 5%;
+    }
+
+    .aboutCoachCard1{
+        padding: 0%;
+        border-radius: 5%;
+        box-shadow: black;
+        height: 200px;
+        width: 260px;
+    }
+    .aboutCoachCard {
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    }
+        
+    .aboutCoachCard:hover{
         transform: scale(1.05);       
     }
 }

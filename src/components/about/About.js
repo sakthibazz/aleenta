@@ -265,19 +265,18 @@
 
 
 import React, { Component } from 'react';
-import { Grid, Typography,Card  } from '@material-ui/core';
+import { Grid, Typography, Card, CardContent } from '@material-ui/core';
 import { withRouter, Link } from "react-router-dom";
 
-;
 
-// import cardImg1 from "../../images/aboutDetails/theCoach.jpeg"
+// import cardImg1 from "../../images/aboutDetails/theCoachEdited.jpeg"
 // import cardImg2 from "../../images/aboutDetails/whyAleenta.jpeg"
 // import cardImg3 from "../../images/aboutDetails/whatIsWellBeing.jpeg"
 // import cardImg4 from "../../images/aboutDetails/whoNeedsWellBeing.jpeg"
 // import splitCircle from "../../images/aboutDetails/splitCircle.png"
 
 //-----------------------Icons-----------------------
-let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/theCoach.jpeg'
+let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/theCoachEdited.jpeg'
 let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whyAleenta.jpeg'
 let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whatIsWellBeing.jpeg'
 let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whoNeedsWellBeing.jpeg'
@@ -305,7 +304,7 @@ const About = ({history,setOpen=noop,open}) => {
                     Additional Services
                 </Typography>
             </Grid>   */}
-            <Grid container className='aboutDef'>
+            <Grid container>
                 <Grid item xs={12} md={10}>
                     <p className='abotTitle1'>
                             <span className="span1" style={{fontWeight:"600",}}>Aleenta </span > 
@@ -328,30 +327,49 @@ const About = ({history,setOpen=noop,open}) => {
 {/* ----------------------------card-1----------------------------------- */}
                 <Grid item xs={12} md={12}>
                     <Grid container align="center">
-                        <Grid item xs={12} md={3} className="articalCardGrid">
+                        {/* <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/aboutDetails#coach" style={{textDecoration:"none"}}>
-                                <Card className="aboutCard" style={{width:"90%",height:"70%"}}
+                                <Card className="aboutCoachCard" 
+                                // style={{width:"90%",height:"70%"}}
                                     onClick={()=>
                                         setOpen(true)}
                                 >
-                                    <Card container className="aboutCard1"  style={{height:"80%"}} >
-                                        <img src={cardImg1}   style={{width:"100%"}}/>
+                                    <Card container className="aboutCoachCard1"  >
+                                        <img src={cardImg1}   />
                                         
                                     </Card>
-                                    <Card container  style={{height:"20%"}}>
-                                        <Typography className="additionalDrop_articles" style={{fontWeight:"600"}}>
+                                    <Card container  >
+                                        <Typography className="additionalDrop_articles" >
                                             THE COACH
                                         </Typography>
                                     </Card>
                                 </Card>
                             </Link>
+                        </Grid> */}
+
+                        <Grid item xs={12} md={3} className="articalCardGrid">
+                        <Link to="/aboutDetails#coach" style={{textDecoration:"none"}}>
+
+
+                            <Card className='aboutCoachCard'>
+                                <CardContent className='aboutCoachCard1'>
+                                    <img className='aboutCoachCardImage' src={cardImg1}   />
+                                </CardContent>
+                                <Typography className="additionalDrop_articles" >
+                                    THE COACH
+                                </Typography>
+                            </Card>
+
+
+                        </Link>
                         </Grid>
 
 {/* ----------------------------card-2----------------------------------- */}
 
                         <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/aboutDetails#why" style={{textDecoration:"none"}}>
-                                <Card className="aboutCard" style={{width:"90%",height:"70%"}}
+                                <Card className="aboutCard" 
+                                // style={{width:"90%",height:"70%"}}
                                     onClick={()=>
                                         setOpen(true)}
                                 >
@@ -370,7 +388,8 @@ const About = ({history,setOpen=noop,open}) => {
 
                         <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/aboutDetails#what" style={{textDecoration:"none"}}>
-                                <Card className="aboutCard" style={{width:"90%",height:"70%"}}
+                                <Card className="aboutCard" 
+                                // style={{width:"90%",height:"70%"}}
                                 // style={{width:"90%",height:"226px"}} 
                                     onClick={()=>
                                         setOpen(true)}
@@ -391,7 +410,8 @@ const About = ({history,setOpen=noop,open}) => {
 
                         <Grid item xs={12} md={3} className="articalCardGrid">
                             <Link to="/aboutDetails#who" style={{textDecoration:"none"}}>
-                                <Card className="aboutCard"  style={{width:"90%",height:"70%"}}
+                                <Card className="aboutCard"  
+                                // style={{width:"90%",height:"70%"}}
                                     onClick={()=>
                                         setOpen(true)}
                                 >
