@@ -277,6 +277,8 @@ import { withRouter, Link } from "react-router-dom";
 
 //-----------------------Icons-----------------------
 let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/theCoachEdited.jpeg'
+// let cardImg1 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/theCoach.jpeg'
+
 let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whyAleenta.jpeg'
 let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whatIsWellBeing.jpeg'
 let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/whoNeedsWellBeing.jpeg'
@@ -353,7 +355,7 @@ const About = ({history,setOpen=noop,open}) => {
 
                             <Card className='aboutCoachCard'>
                                 <CardContent className='aboutCoachCard1'>
-                                    <img className='aboutCoachCardImage' src={cardImg1}   />
+                                    <img className='aboutCoachCardImage' src={cardImg1} style={{width:"100%",height:"100%", objectFit: "cover"}}   />
                                 </CardContent>
                                 <Typography className="additionalDrop_articles" >
                                     THE COACH
