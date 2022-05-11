@@ -353,7 +353,10 @@ const About = ({history,setOpen=noop,open}) => {
                         <Link to="/aboutDetails#coach" style={{textDecoration:"none"}}>
 
 
-                            <Card className='aboutCoachCard'>
+                            <Card className='aboutCoachCard'
+                                onClick={()=>
+                                    setOpen(true)}
+                            >
                                 <CardContent className='aboutCoachCard1'>
                                     <img className='aboutCoachCardImage' src={cardImg1} style={{width:"100%",height:"100%", objectFit: "cover"}}   />
                                 </CardContent>

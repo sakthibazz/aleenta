@@ -20,6 +20,8 @@ let cardImg2 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/a
 let cardImg3 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService03.jpg'
 let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/additionalService04.jpg'
 
+let meditationPageVideo1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/MeditationPageVideo1.MOV'
+
 
 const AdditionMeditation = ({history}) => {
 
@@ -49,13 +51,28 @@ const AdditionMeditation = ({history}) => {
                     </Grid>
                 </Grid>
                 <Grid container style={{backgroundColor:"#fbf2de"}} >
-                    <Grid item xs={12} md={12} className="MeditationContentGrid" >
+                    {/* <Grid item xs={12} md={12} className="MeditationContentGrid" >
                         <Typography className="meditationTitle"  align="center">
                             Why are people looking for ways to destress?
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={12}>
                         <img className="additionMeditationImg1" src={additionMeditationImg1} />
+                    </Grid> */}
+                    <Grid item xs={12} md={12} align="center" className="MeditationContentGrid" >
+
+                        {/* <video className='meditationPageVideo1Class' autoPlay loop >
+                            <source src={meditationPageVideo1} type="video/mp4" />
+                        </video> */}
+                        <video
+                            id="meditationPageVideo1Id"
+                            className='meditationPageVideo1Class'
+                            src={meditationPageVideo1} 
+                            autoPlay
+                            controls
+                            // muted
+                            loop
+                        />
                     </Grid>
                     <Grid item xs={12} md={12} className="meditationDiv">
                         
