@@ -61,6 +61,14 @@ const AdditionMeditation = ({history}) => {
                     </Grid> */}
                     <Grid item xs={12} md={12} align="center" className="MeditationContentGrid" >
 
+                        <Typography className="meditationVideoTitle" align="center">
+                            POORNAM 
+                        </Typography>
+
+                        <Typography className="meditationTitle1" style={{paddingTop:"1%"}} align="center">
+                        A one of a kind, one year-long Meditation program that transforms you to be a happy, healthy and a successful person.  
+                        </Typography>
+
                         {/* <video className='meditationPageVideo1Class' autoPlay loop >
                             <source src={meditationPageVideo1} type="video/mp4" />
                         </video> */}
@@ -74,10 +82,116 @@ const AdditionMeditation = ({history}) => {
                             loop
                         />
                     </Grid>
+                    <Grid item xs={12} md={12} className="bellowMeditationDiv">
+                    <Typography className="meditationContent1" align='center' style={{fontWeight:"600"}}>
+                            In the external intensity of the pandemic and it's shortcomings, 
+                            Poornam provides YOU a space to unwind, 
+                            retreat and renew for a whole year. 
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            Poornam commences on Monday, 16th May, 2022, on the auspicious day of 
+                            Buddha Poornima (Birthday of Buddha) at 7.15 am (Indian Standard Time) 
+                            and concludes on May 5th 2023 on the occasion of Buddha Poornima. 
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            The one year program consists of sessions every Saturday 
+                            from 7.15am to 8AM and includes the commencing(Monday, 16th may 2022) 
+                            and concluding(Friday, 5th May 2023) sessions. 
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            What we do: Breath, Sound/Silence and Meditation
+                            <ul>
+                                <li>
+                                    Pranayama
+                                </li>
+                                <li>
+                                    Mantra chanting / mental affirmations
+                                </li>
+                                <li>
+                                    Meditation
+                                </li>
+                            </ul>
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            What you get from the Program:
+                            <ul>
+                                <li>
+                                    Master human relationships 
+                                </li>
+                                <li>
+                                    Saying goodbye to past hurts and traumatic attachments 
+                                </li>
+                                <li>
+                                    Building new boundaries 
+                                </li>
+                                <li>
+                                    Practice Self regulation
+                                </li>
+                                <li>
+                                    Achieve freedom from fear, anxiety and panic attacks 
+                                </li>
+                                <li>
+                                    Open your heart to receive good health and Universal compassion and
+                                </li>
+                                <li>
+                                    A harmonious balance between Body, Mind and the inner Spirit
+                                </li>
+                            </ul>
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            Register by sending an email to <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> or 
+                            a whatsapp text on <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> +916362925160 </a>.
+                            Regular price of the Program: Rs.12,000/- . Contact the above number 
+                            for Corporate/Group discounts.
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            Other offers:
+                        </Typography>
+                        <Typography className="meditationPoornamContent1" align='Left'>
+                            Private Spiritual Mentoring:
+                            We provide private mentoring in meditation techniques, mantra instruction and building a personal 
+                            Sadhana or a Spiritual practice. Contact the above mentioned What's App number. 
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            Personal one-on-one Coaching: Check<Link to="/individualPrograms" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> Individual programs 
+                            </Link> under Programs Menu.
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            Personal Counselling: Check<Link to="/additionCounseling" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> Counselling 
+                            </Link> under Additional services Menu.
+                             
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            The commencing session on 16th May is a <span style={{fontWeight:"600"}}> Free introductory session</span>, 
+                            Register at <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> or send a text on 
+                            WhatsApp at <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> +916362925160 </a>.
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left'>
+                            Program schedule: 
+                        </Typography>
+                        <Typography className="meditationPoornamContent1" align='Left'>
+                            40 minutes session at 7.20 AM every Saturday, from 21st May, 2022 to 5th May, 2023. 
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='center' style={{fontWeight:"600"}}>
+                            Come, join us in this blissful journey of Self knowing, Self awareness and Self Transformation!
+                        </Typography>
+                    </Grid>
                     <Grid item xs={12} md={12} className="meditationDiv">
                         
                     </Grid>
                     <Grid item xs={12} md={12} className="bellowMeditationDiv">
+                        {/* ---------------old content------------------------ */}
                         <Typography className="meditationContent1" align='Left'>
                             Come have a practical experience of Silence at Aleenta Wellbeing!
                         </Typography>
