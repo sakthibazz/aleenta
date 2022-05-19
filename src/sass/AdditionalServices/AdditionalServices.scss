@@ -517,3 +517,24 @@
         padding-top: 2%;
     }
 }
+
+.meditationSpanTag{
+    position:relative;
+}
+
+.meditationSpanTag::after{
+    position:absolute;
+    content: "";
+    background-color:#FFE481;
+    height: 3px;
+    width: 100%;
+    bottom: -5px;
+    left: 0%;
+    @media only screen and (max-width: 600px) {
+        bottom: -3px;
+    }
+}
+.meditationRegisterButton{
+    // border: none;
+    border-radius: 25%;
+}

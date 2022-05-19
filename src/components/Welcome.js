@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 // import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Container, Grid, Typography } from '@material-ui/core';
@@ -12,6 +12,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ProgressiveImage from 'react-progressive-image';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight'
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft'
+import DialogModal from '../reusableComponents/DialogModal';
+import MeditationDialog from './AdditionalServices/MeditationDialog';
 
 // import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 
@@ -94,6 +96,8 @@ const Welcome = ({
     // }, [auth])
 
     const classes = useStyles();
+
+    const [open, setOpen] = useState(true);
 
     const items = [
         {
@@ -396,6 +400,12 @@ const Welcome = ({
                 </Grid>
             </Grid>
             <Footer />
+            <DialogModal
+                // title="POORNAM"
+                children={<MeditationDialog />}
+                openPopup={open}
+                setOpenPopup={setOpen}
+            />
         </Container>
 
     );

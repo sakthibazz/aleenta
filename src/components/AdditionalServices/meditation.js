@@ -1,10 +1,15 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 
-import { Grid, Typography,Card  } from '@material-ui/core';
+import { Grid, Typography, Card, Button,} from '@material-ui/core';
 import { withRouter, Link } from "react-router-dom";
 import divider from "../../images/divider2.png"
+import DialogModal from '../../reusableComponents/DialogModal'
+import MeditationDialog from './MeditationDialog';
+import CloseIcon from '@material-ui/icons/Close';
 
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+
+import { makeStyles } from "@material-ui/core/styles";
 
 //-----------------------Images-----------------------
 // import additionMeditationImg1 from "../../images/pgm_and_add_optimized_images/additionalServices/additionalService01.jpg"
@@ -23,7 +28,34 @@ let cardImg4 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/a
 let meditationPageVideo1 = 'https://dec4365vfd8ox.cloudfront.net/images/additionalServices/MeditationPageVideo1.MOV'
 
 
+
+
+
+const useStyles = makeStyles((theme) => ({
+
+    meditationRegisterButton: {
+        width:"20%",
+        height:'60px',
+        background: "#FFE481",
+        borderRadius: 25,
+        color: "black",
+        fontWeight: "600",
+        fontSize: "35px",
+        "@media only screen and (max-width: 600px)": {
+            height:'40px',
+            width:"50%",
+        },
+        "&:hover": {
+          background: "#FFE481",
+        },
+      },
+}));
+
+
+
 const AdditionMeditation = ({history}) => {
+
+    const [open, setOpen] = useState(true);
 
     useEffect(() => {
         const unlisten = history.listen(() => {
@@ -34,6 +66,11 @@ const AdditionMeditation = ({history}) => {
         }
       }, []);
 
+    //   useEffect(() => {
+    //     setOpen(true)
+    //   }, []);
+
+      const classes = useStyles();
 
     return ( 
         <>
@@ -83,7 +120,7 @@ const AdditionMeditation = ({history}) => {
                         />
                     </Grid>
                     <Grid item xs={12} md={12} className="bellowMeditationDiv">
-                    <Typography className="meditationContent1" align='center' style={{fontWeight:"600"}}>
+                    <Typography className="meditationContent1" align='center' style={{fontWeight:"600",color:"#363535"}}>
                             In the external intensity of the pandemic and it's shortcomings, 
                             Poornam provides YOU a space to unwind, 
                             retreat and renew for a whole year. 
@@ -144,8 +181,8 @@ const AdditionMeditation = ({history}) => {
                         </Typography>
 
                         <Typography className="meditationContent1" align='Left'>
-                            Register by sending an email to <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> or 
-                            a whatsapp text on <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> +916362925160 </a>.
+                            Register by sending an email to <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black"}}> programs@aleenta.in </a> or 
+                            a whatsapp text on <a href="https://wa.me/916362925160" target="_blank"  style={{textDecoration:"none",color:"black"}} > +916362925160 </a>.
                             Regular price of the Program: Rs.12,000/- . Contact the above number 
                             for Corporate/Group discounts.
                         </Typography>
@@ -160,20 +197,20 @@ const AdditionMeditation = ({history}) => {
                         </Typography>
 
                         <Typography className="meditationContent1" align='Left'>
-                            Personal one-on-one Coaching: Check<Link to="/individualPrograms" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> Individual programs 
+                            Personal one-on-one Coaching: Check<Link to="/individualPrograms" style={{textDecoration:"none",color:"#ec9e31"}}> Individual programs 
                             </Link> under Programs Menu.
                         </Typography>
 
                         <Typography className="meditationContent1" align='Left'>
-                            Personal Counselling: Check<Link to="/additionCounseling" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> Counselling 
+                            Personal Counselling: Check <Link to="/additionCounseling" style={{textDecoration:"none",color:"#ec9e31"}}> Counselling 
                             </Link> under Additional services Menu.
                              
                         </Typography>
 
                         <Typography className="meditationContent1" align='Left'>
-                            The commencing session on 16th May is a <span style={{fontWeight:"600"}}> Free introductory session</span>, 
-                            Register at <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> programs@aleenta.in </a> or send a text on 
-                            WhatsApp at <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}> +916362925160 </a>.
+                            The commencing session on 16th May is a <span style={{fontWeight:"600",color:"#454443"}}> Free introductory session</span>, 
+                            Register at <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"#ec9e31"}}> programs@aleenta.in </a> or send a text on 
+                            WhatsApp at <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"#ec9e31"}}> +916362925160 </a>.
                         </Typography>
 
                         <Typography className="meditationContent1" align='Left'>
@@ -183,9 +220,41 @@ const AdditionMeditation = ({history}) => {
                             40 minutes session at 7.20 AM every Saturday, from 21st May, 2022 to 5th May, 2023. 
                         </Typography>
 
-                        <Typography className="meditationContent1" align='center' style={{fontWeight:"600"}}>
+                        <Typography className="meditationContent1" align='center' style={{fontWeight:"600",color:"#363535"}}>
                             Come, join us in this blissful journey of Self knowing, Self awareness and Self Transformation!
                         </Typography>
+                        {/* <Grid item xs={12} md={12} align='center' style={{marginTop:"4%"}}>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdv9WCV9Dp6wx0xEKvE7KlJyUS-y511l36jIXwZmjf9KvwOdA/viewform" target="_blank" style={{textDecoration:"none",color:"black"}}>
+                                <Button className='meditationRegisterButton'>Register Now</Button>
+                            </a>
+                        </Grid>  */}
+
+
+
+
+
+
+
+                        <Grid item xs={12} md={12} align='center' style={{marginTop:"2%"}}>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdv9WCV9Dp6wx0xEKvE7KlJyUS-y511l36jIXwZmjf9KvwOdA/viewform" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}>
+                                <Button
+                                    variant="contained"
+                                    className={classes.meditationRegisterButton}
+                                >
+                                    <Typography style={{fontSize:"18px",textTransform:"capitalize",fontWeight:"600"}}>
+                                        Register Now
+                                    </Typography>
+                                </Button>
+                            </a>
+                        </Grid>
+
+
+
+
+
+
+
+
                     </Grid>
                     <Grid item xs={12} md={12} className="meditationDiv">
                         
@@ -476,6 +545,12 @@ const AdditionMeditation = ({history}) => {
                     </Grid>
                 </Grid>
             </Grid>
+            <DialogModal
+                // title="POORNAM"
+                children={<MeditationDialog />}
+                openPopup={open}
+                setOpenPopup={setOpen}
+            />
         </>
      );
 }

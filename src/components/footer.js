@@ -110,6 +110,13 @@ const Footer = () => {
                         <CopyrightIcon/>2021 - Aleenta Wellbeing. All Rights Reserved. The certification names are the trademarks of their respective owners.
                     </p>
                 </Grid>
+                <Grid item xs={12} md={12} className="footerContentContainer"  align="center">
+                    <Link to="/tearmsAndConditions" style={{textDecoration:"none"}}>
+                        <p className="footerContent1" style={{fontWeight:"600",color:"#ec9e31"}}>
+                            Tearms & Conditions
+                        </p>
+                    </Link>
+                </Grid>
                 
             </Grid>
         </>

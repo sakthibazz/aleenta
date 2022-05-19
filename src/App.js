@@ -10,6 +10,7 @@ import Footer from "./components/footer";
 // import Header from "./headerBar";
 
 import Welcome from "./components/Welcome";
+import TearmsAndConditions from "./components/TearmsAndConditions";
 import About from "./components/about/About";
 import AboutDetails from "./components/about/aboutDetails"
 import Program from "./components/program/Program";
@@ -79,6 +80,8 @@ const App = () => {
 
         {/* ------------------Footer---------------------------------------- */}
         <Route path="/footer" component={Footer} />
+        <Route path="/tearmsAndConditions" component={TearmsAndConditions} />
+
 
         {/*<Route path="/paymentProcess/:programId" component={PaymentProcess} /> */}
       </Layout>
