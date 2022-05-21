@@ -676,7 +676,7 @@ const Program = ({history,setOpen=noop,open}) => {
 {/* ----------------------------card-4----------------------------------- */}
 
                         {/* <Grid item xs={12} md={4} className="articalCardGrid">
-                            <Link to="/additionCounseling" style={{textDecoration:"none"}}>
+                            <Link to="/counseling" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}} 
                                     onClick={()=>
                                         setOpen(true)}

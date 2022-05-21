@@ -111,9 +111,9 @@ const Footer = () => {
                     </p>
                 </Grid>
                 <Grid item xs={12} md={12} className="footerContentContainer"  align="center">
-                    <Link to="/tearmsAndConditions" style={{textDecoration:"none"}}>
+                    <Link to="/termsAndConditions" style={{textDecoration:"none"}}>
                         <p className="footerContent1" style={{fontWeight:"600",color:"#ec9e31"}}>
-                            Tearms & Conditions
+                            Terms & Conditions
                         </p>
                     </Link>
                 </Grid>

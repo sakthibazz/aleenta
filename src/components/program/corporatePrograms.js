@@ -485,7 +485,7 @@ const CorporatePrograms = ({history}) => {
                                 </Typography>
                                 
                                     <Typography className="programscontent" align='Left'>
-                                        Click <Link to="/additionMeditation" style={{textDecoration:"none",color:"black",fontWeight:"600"}}>here </Link> to Know more about Meditation
+                                        Click <Link to="/meditation" style={{textDecoration:"none",color:"black",fontWeight:"600"}}>here </Link> to Know more about Meditation
                                     </Typography>
                                 
 

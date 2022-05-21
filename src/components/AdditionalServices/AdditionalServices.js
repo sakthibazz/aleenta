@@ -45,7 +45,7 @@ const AdditionalServices = ({history,setOpen=noop,open}) => {
                 <Grid item xs={12} md={12}>
                     <Grid container align="center">
                         <Grid item xs={12} md={3} className="articalCardGrid">
-                            <Link to="/additionMeditation" style={{textDecoration:"none"}}>
+                            <Link to="/meditation" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}} 
                                     onClick={()=>
                                         setOpen(true)}
@@ -65,7 +65,7 @@ const AdditionalServices = ({history,setOpen=noop,open}) => {
 {/* ----------------------------card-2----------------------------------- */}
 
                         <Grid item xs={12} md={3} className="articalCardGrid">
-                            <Link to="/additionArtTherapy" style={{textDecoration:"none"}}>
+                            <Link to="/artTherapy" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}}
                                     onClick={()=>
                                         setOpen(true)}
@@ -84,7 +84,7 @@ const AdditionalServices = ({history,setOpen=noop,open}) => {
 {/* ----------------------------card-3----------------------------------- */}
 
                         <Grid item xs={12} md={3} className="articalCardGrid">
-                            <Link to="/additionSelfHealing" style={{textDecoration:"none"}}>
+                            <Link to="/selfHealing" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}} 
                                     onClick={()=>
                                         setOpen(true)}
@@ -104,7 +104,7 @@ const AdditionalServices = ({history,setOpen=noop,open}) => {
 {/* ----------------------------card-4----------------------------------- */}
 
                         <Grid item xs={12} md={3} className="articalCardGrid">
-                            <Link to="/additionCounseling" style={{textDecoration:"none"}}>
+                            <Link to="/counseling" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}} 
                                     onClick={()=>
                                         setOpen(true)}

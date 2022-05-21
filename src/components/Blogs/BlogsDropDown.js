@@ -92,7 +92,7 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
                         </Grid>
 
                         {/* <Grid item xs={12} md={3} className="articalCardGrid">
-                            <Link to="/additionArtTherapy" style={{textDecoration:"none"}}>
+                            <Link to="/artTherapy" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}}
                                     onClick={()=>
                                         setOpen(true)}
@@ -111,7 +111,7 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
 {/* ----------------------------card-3----------------------------------- */}
 
                         {/* <Grid item xs={12} md={3} className="articalCardGrid">
-                            <Link to="/additionSelfHealing" style={{textDecoration:"none"}}>
+                            <Link to="/selfHealing" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}} 
                                     onClick={()=>
                                         setOpen(true)}
@@ -131,7 +131,7 @@ const BlogsDropDown = ({history,setOpen=noop,open}) => {
 {/* ----------------------------card-4----------------------------------- */}
 
                         {/* <Grid item xs={12} md={3} className="articalCardGrid">
-                            <Link to="/additionCounseling" style={{textDecoration:"none"}}>
+                            <Link to="/counseling" style={{textDecoration:"none"}}>
                                 <Card className="articalCard" style={{width:"90%",height:"80%"}} 
                                     onClick={()=>
                                         setOpen(true)}

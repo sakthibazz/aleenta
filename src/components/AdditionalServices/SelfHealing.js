@@ -138,7 +138,7 @@ const AdditionSelfHealing = ({history}) => {
                         <Grid item xs={12} md={12} >
                             <Grid container align="center" >
                                 <Grid item xs={12} md={4} className="articalCardGrid">
-                                    <Link to="/additionMeditation" style={{textDecoration:"none"}}>
+                                    <Link to="/meditation" style={{textDecoration:"none"}}>
                                         <Card className="articalCard" style={{width:"80%",height:"80%"}} >
                                             <Card container className="articalCard1"  style={{height:"80%"}} >
                                                 <img src={cardImg1}  style={{width:"100%"}}/>
@@ -153,7 +153,7 @@ const AdditionSelfHealing = ({history}) => {
                                 </Grid>
 
                                 <Grid item xs={12} md={4} className="articalCardGrid">
-                                    <Link to="/additionArtTherapy" style={{textDecoration:"none"}}>
+                                    <Link to="/artTherapy" style={{textDecoration:"none"}}>
                                         <Card className="articalCard" style={{width:"80%",height:"80%"}} >
                                             <Card container className="articalCard1"  style={{height:"80%"}} >
                                                 <img src={cardImg2}  style={{width:"100%"}}/>
@@ -168,7 +168,7 @@ const AdditionSelfHealing = ({history}) => {
                                 </Grid>
 
                                 <Grid item xs={12} md={4} className="articalCardGrid">
-                                    <Link to="/additionCounseling" style={{textDecoration:"none"}}>
+                                    <Link to="/counseling" style={{textDecoration:"none"}}>
                                         <Card className="articalCard" style={{width:"80%",height:"80%"}} >
                                             <Card container className="articalCard1"  style={{height:"80%"}} >
                                                 <img src={cardImg4}  style={{width:"100%"}}/>

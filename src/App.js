@@ -71,16 +71,16 @@ const App = () => {
         <Route path="/groupPrograms" component={GroupPrograms} />
 
         {/* --------------------Addition Services-------------------------- */}
-        <Route path="/additionMeditation" component={AdditionMeditation} />
-        <Route path="/additionArtTherapy" component={AdditionArtTherapy} />
-        <Route path="/additionSelfHealing" component={AdditionSelfHealing} />
-        <Route path="/additionCounseling" component={AdditionCounseling} />
+        <Route path="/meditation" component={AdditionMeditation} />
+        <Route path="/artTherapy" component={AdditionArtTherapy} />
+        <Route path="/selfHealing" component={AdditionSelfHealing} />
+        <Route path="/counseling" component={AdditionCounseling} />
 
 
 
         {/* ------------------Footer---------------------------------------- */}
         <Route path="/footer" component={Footer} />
-        <Route path="/tearmsAndConditions" component={TearmsAndConditions} />
+        <Route path="/termsAndConditions" component={TearmsAndConditions} />
 
 
         {/*<Route path="/paymentProcess/:programId" component={PaymentProcess} /> */}
