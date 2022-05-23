@@ -34,7 +34,7 @@ let meditationPageVideo1 = 'https://dec4365vfd8ox.cloudfront.net/images/addition
 const useStyles = makeStyles((theme) => ({
 
     meditationRegisterButton: {
-        width:"20%",
+        width:"14%",
         height:'60px',
         background: "#FFE481",
         borderRadius: 25,
@@ -241,7 +241,7 @@ const AdditionMeditation = ({history}) => {
                                     variant="contained"
                                     className={classes.meditationRegisterButton}
                                 >
-                                    <Typography style={{fontSize:"18px",textTransform:"capitalize",fontWeight:"600"}}>
+                                    <Typography align='center'  style={{fontSize:"18px",textTransform:"capitalize",fontWeight:"600"}}>
                                         Register Now
                                     </Typography>
                                 </Button>

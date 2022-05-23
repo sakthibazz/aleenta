@@ -8,7 +8,7 @@ import { SettingsInputComponent } from '@material-ui/icons';
 const useStyles = makeStyles((theme) => ({
 
     meditationRegisterButton: {
-        width:"20%",
+        width:"14%",
         height:'60px',
         background: "#FFE481",
         borderRadius: 25,

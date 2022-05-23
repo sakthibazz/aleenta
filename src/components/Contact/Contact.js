@@ -3,6 +3,7 @@ import { Container, Grid, Typography } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 
 let logoImg = "https://dec4365vfd8ox.cloudfront.net/images/logo/aleenta.png";
+let coach = "https://dec4365vfd8ox.cloudfront.net/images/aboutDetails/theCoach.jpeg"
 
 const useStyles = makeStyles(theme => ({
     mainViewContainer: {
@@ -48,6 +49,11 @@ const Contact = () => {
                         className="logoImg"
                         src={logoImg}
                     />
+                    <p align='center' style={{fontWeight:"600",padding:"2% 20% 0% 20%"}}>
+                        Near Meenakshi temple 
+                        Bannerghatta Road 
+                        Bangalore-560076
+                    </p>
                 </Grid>
                 <Grid item xs={12} sm={0} xl={0} md={0} lg={0} align='center' className="whatsapp1" >
                         <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"black"}}>
@@ -87,6 +93,21 @@ const Contact = () => {
                     </Grid>
                 </Grid> */}
             </Grid>
+
+
+            {/* <Grid container>
+                <Grid item xs={12} md={12} align='center' >
+                    <p className="askTheCoach" >
+                        Ask the Coach
+                    </p>
+                </Grid>
+                <Grid item xs={12} md={6} >
+                    <img src={coach} className="askTheCoachImg" />
+                </Grid>
+                <Grid item xs={12} md={6} >
+                    
+                </Grid>
+            </Grid> */}
         </Container>
      );
 }

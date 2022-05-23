@@ -284,7 +284,11 @@ const TearmsAndConditions = () => {
                                     Aleenta Well-Being Help and Support page at: programs@aleenta.in
                                 </p>
                                 <p>
-                                    India Aleenta Well-Being Bangalore.
+                                    No: 75,
+                                    Phase 2
+                                    Classic orchards 
+                                    Bannerghatta Road 
+                                    Bangalore - 560076.
                                 </p>
                             </Grid>
                         </Grid>
@@ -292,53 +296,34 @@ const TearmsAndConditions = () => {
                     </Accordion>
 
 
-                    <Accordion style={{width:"80%",marginTop:"0%"}}>
+                    <Accordion style={{width:"80%"}}>
                         <AccordionSummary
                             className={classes.accordionSummary}
                             expandIcon={<ExpandMoreIcon style={{ color: "Black" }} />}
                         >
-                            <Typography>Refund Policy</Typography>
+                            <Typography>Refund & Cancellation Policy</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Grid container>
                             <Grid item xs={12} md={12} >
                                 <h4 style={{paddingTop:"1%"}}>
-                                    REFUNDS
+                                    REFUNDS 
                                 </h4>
                                 <p style={{paddingTop:"1%"}}>
-                                    Our policy lasts 30 days. If 30 days have gone by since your registration, 
-                                    unfortunately we can’t offer you a refund or exchange.
-                                </p>
-                                <p>
+                                    Our refund policy lasts 15 days. If you are not satisfied with our services 
+                                    kindly send an email to 
+                                    <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"#ec9e31"}}> programs@aleenta.in </a> within 15 working days. 
+                                    The refund amount is 50 percent of the payment made. It will be given 
+                                    back to you within 15 working days. If it is requested after 15 working days since your 
+                                    registration, unfortunately we cannot offer you a refund. 
                                     To complete your refund, we require a receipt or proof of registration.
                                 </p>
-
+                               
                                 <h4 style={{paddingTop:"1%"}}>
-                                    REFUNDS (IF APPLICABLE)
+                                    CANCELLATION
                                 </h4>
                                 <p style={{paddingTop:"1%"}}>
-                                    If you are approved as eligible for refund, then your 
-                                    refund will be processed, and a credit will automatically be applied to your credit card or 
-                                    original method of payment, within a certain amount of days.
-                                </p>
-
-                                <h4 style={{paddingTop:"1%"}}>
-                                    LATE OR MISSING REFUNDS (IF APPLICABLE)
-                                </h4>
-                                <p style={{paddingTop:"1%"}}>
-                                    If you haven’t received a refund yet, first 
-                                    check your bank account again.
-                                </p>
-                                <p>
-                                    Then contact your credit or debit card company, 
-                                    it may take some time before your refund is officially posted.
-                                </p>
-                                <p>
-                                    Next contact your bank. There is often some processing time before a refund is posted.
-                                </p>
-                                <p>
-                                    If you’ve done all of this and you still have not 
-                                    received your refund yet, please contact us at: programs@aleenta.in.
+                                    There is no cancellation policy.
                                 </p>
                             </Grid>
                         </Grid>
