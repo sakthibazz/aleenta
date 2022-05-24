@@ -46,10 +46,11 @@ const MeditationDialog = () => {
                 </p>
 
                 <p>
-                    Introductory offer for the entire program is at Rs.7,500/- (Regular price: Rs.12,000/-)
+                    Introductory offer if registered before 27th May 12 AM 
+                    after which the program fee will be at the Regular price of Rs.12,000/-.
                 </p>
 
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdv9WCV9Dp6wx0xEKvE7KlJyUS-y511l36jIXwZmjf9KvwOdA/viewform" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}>
+                <a href="https://rzp.io/l/aleenta_poornam" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}>
                     <Button
                         variant="contained"
                         className={classes.meditationRegisterButton}

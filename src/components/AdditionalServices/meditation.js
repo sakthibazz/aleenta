@@ -181,8 +181,9 @@ const AdditionMeditation = ({history}) => {
                         </Typography>
 
                         <Typography className="meditationContent1" align='Left'>
-                            Register by sending an email to <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black"}}> programs@aleenta.in </a> or 
+                            For Corporate/ group discounts, send an email to <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black"}}> programs@aleenta.in </a> or 
                             a whatsapp text on <a href="https://wa.me/916362925160" target="_blank"  style={{textDecoration:"none",color:"black"}} > +916362925160 </a>.
+                            with the number of participants/ employees.
                             Regular price of the Program: Rs.12,000/- . Contact the above number 
                             for Corporate/Group discounts.
                         </Typography>
@@ -236,7 +237,7 @@ const AdditionMeditation = ({history}) => {
 
 
                         <Grid item xs={12} md={12} align='center' style={{marginTop:"2%"}}>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdv9WCV9Dp6wx0xEKvE7KlJyUS-y511l36jIXwZmjf9KvwOdA/viewform" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}>
+                            <a href="https://rzp.io/l/aleenta_poornam" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}>
                                 <Button
                                     variant="contained"
                                     className={classes.meditationRegisterButton}
