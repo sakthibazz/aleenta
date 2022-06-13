@@ -46,8 +46,10 @@ const MeditationDialog = () => {
                 </p>
 
                 <p>
-                    Introductory offer if registered before 27th May 12 AM 
-                    after which the program fee will be at the Regular price of Rs.12,000/-.
+                    Introductory offer of Rs 7,500/- per person is 
+                    available only if registered before 12:00am of 17th 
+                    June 2022 after which the program 
+                    fee will be at the regular price of Rs.12,000/- per person.
                 </p>
 
                 <a href="https://rzp.io/l/aleenta_poornam" target="_blank" style={{textDecoration:"none",color:"black",fontWeight:"600"}}>
