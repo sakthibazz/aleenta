@@ -47,7 +47,7 @@ const MeditationDialog = () => {
 
                 <p>
                     Introductory offer of Rs 7,500/- per person is 
-                    available only if registered before 12:00am of 17th 
+                    available only if registered before 12:00 am of 17th 
                     June 2022 after which the program 
                     fee will be at the regular price of Rs.12,000/- per person.
                 </p>
