@@ -5,9 +5,16 @@ import { Close as CloseIcon } from '@material-ui/icons';
 
 const useStyles = makeStyles(theme => ({
     dialogWrapper: {
+        padding:"0%",
         // padding: theme.spacing(2),
         position: 'absolute',
-        top: theme.spacing(5)
+        top: theme.spacing(5),
+        width:"96%",
+        height:"",
+        "@media only screen and (max-width: 960px)": {
+            height:'',
+            width:"85%",
+        },
     }
 }))
 
@@ -16,9 +23,10 @@ const styles = (theme) => ({
         margin: 0,
         // padding: theme.spacing(2),
         // paddingRight: '0px',
-        width:"1000px",
+        width:"100px",
         // width:"1250px"
         // width:"95%"
+        padding:"0%",
         "@media only screen and (max-width: 1040px)": {
             width:"500px",
         },
@@ -39,7 +47,7 @@ const styles = (theme) => ({
 const DialogTitle = withStyles(styles)((props) => {
     const { children, classes, onClose, ...other } = props;
     return (
-        <MuiDialogTitle disableTypography className={classes.root} {...other}>
+        <MuiDialogTitle disableTypography style={{padding:"0%"}} className={classes.root} {...other}>
         <Typography variant="h6">{children}</Typography>
         {onClose ? (
             <IconButton aria-label="close" className={classes.closeButton} onClick={onClose}>
@@ -52,7 +60,7 @@ const DialogTitle = withStyles(styles)((props) => {
   
 const DialogContent = withStyles((theme) => ({
     root: {
-        // padding: theme.spacing(2),
+        padding: "0%",
     },
 }))(MuiDialogContent);
   
@@ -79,6 +87,7 @@ export default function DialogModal({
                     aria-labelledby="customized-dialog-title" 
                     open={openPopup}
                     maxWidth="lg" 
+                    style={{padding:"0%"}}
                     classes={{ paper: classes.dialogWrapper }}
                 >
                     <DialogTitle 
@@ -87,7 +96,7 @@ export default function DialogModal({
                     >
                         { title }
                     </DialogTitle>
-                    <DialogContent style={{padding:"2%"}}>
+                    <DialogContent >
                         { children }
                     </DialogContent>
                 </Dialog>

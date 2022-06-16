@@ -468,3 +468,75 @@ li {
 //       left: -400%;
 //     }
 //   }
+
+
+.popUpImgGrid{
+  @media only screen and (max-width: 600px) {
+    display: none;
+    // height: 100%;
+    // width: 100%;
+  }
+}
+
+.popUpContantGrid{
+  padding:10% 10% 0% 5%;
+  @media only screen and (max-width: 1310px) {
+    // padding:10% 10% 0% 5%;
+    padding: 4% 4% 0% 2%;
+  }
+  @media only screen and (max-width: 650px) {
+    // padding:10% 10% 0% 5%;
+    padding: 5% 0% 0% 0%;
+  }
+}
+.popUpContantText{
+  font-size: 18px;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  @media only screen and (max-width: 1190px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 650px) {
+    // padding:10% 10% 0% 5%;
+    padding-top: 6%;
+    padding-left: 5%;
+  }
+}
+.popUpContentPoints{
+  color:#57AEF3;
+  font-size: 16px;
+  padding-top: 0%;
+  margin-top: 0%;
+  @media only screen and (max-width: 1175px) {
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+.popUpContentList{
+  color:#57AEF3;
+  display: none;
+  @media only screen and (max-width: 600px) {
+    font-size: 12px;
+    display: block;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: 14px;
+    // padding:10% 10% 0% 5%;
+    padding-top: 8%;
+    margin-left: -12%;
+  }
+}
+.popUpSemiCircle1{
+  width:20%;
+  @media only screen and (max-width: 650px) {
+    width: 45%;
+  }
+}
+.popUpStar1{
+  width: 7%;
+  @media only screen and (max-width: 650px) {
+    width:22%;
+  }
+}

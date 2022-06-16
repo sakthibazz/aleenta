@@ -127,7 +127,7 @@ const AdditionMeditation = ({history}) => {
                         </Typography>
 
                         <Typography className="meditationContent1" align='Left'>
-                            Poornam commences on Monday, 16th May, 2022, on the auspicious day of 
+                            Poornam commenced on Monday, 16th May, 2022, on the auspicious day of 
                             Buddha Poornima (Birthday of Buddha) at 7.15 am (Indian Standard Time) 
                             and concludes on May 5th 2023 on the occasion of Buddha Poornima. 
                         </Typography>
