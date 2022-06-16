@@ -138,8 +138,15 @@ const AdditionMeditation = ({history}) => {
                             and concluding(Friday, 5th May 2023) sessions. 
                         </Typography>
 
+                        <Typography className="meditationContent1" align='Left' style={{fontWeight:"600"}}>
+                            Program schedule: 
+                        </Typography>
+                        <Typography className="meditationPoornamContent1" align='Left'>
+                            40 minutes session at 7.20 AM every Saturday, from 21st May, 2022 to 5th May, 2023. 
+                        </Typography>
+
                         <Typography className="meditationContent1" align='Left'>
-                            What we do: Breath, Sound/Silence and Meditation
+                            <span style={{fontWeight:"600"}}>What we do:</span> Breath, Sound/Silence and Meditation
                             <ul>
                                 <li>
                                     Pranayama
@@ -154,7 +161,7 @@ const AdditionMeditation = ({history}) => {
                         </Typography>
 
                         <Typography className="meditationContent1" align='Left'>
-                            What you get from the Program:
+                        <span style={{fontWeight:"600"}}>What you get from the Program:</span>
                             <ul>
                                 <li>
                                     Master human relationships 
@@ -184,12 +191,16 @@ const AdditionMeditation = ({history}) => {
                             For Corporate/ group discounts, send an email to <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"black"}}> programs@aleenta.in </a> or 
                             a whatsapp text on <a href="https://wa.me/916362925160" target="_blank"  style={{textDecoration:"none",color:"black"}} > +916362925160 </a>.
                             with the number of participants/ employees.
-                            Regular price of the Program: Rs.12,000/- . Contact the above number 
-                            for Corporate/Group discounts.
+                            Regular price of the Program: Rs.12,000/- .
                         </Typography>
 
                         <Typography className="meditationContent1" align='Left'>
-                            Other offers:
+                            <span style={{fontWeight:"600"}}>Register at <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"#ec9e31"}}> programs@aleenta.in </a> or send a text on 
+                            WhatsApp at</span> <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"#ec9e31"}}> +916362925160 </a>.
+                        </Typography>
+
+                        <Typography className="meditationContent1" align='Left' style={{fontWeight:"600"}}>
+                            Other services:
                         </Typography>
                         <Typography className="meditationPoornamContent1" align='Left'>
                             Private Spiritual Mentoring:
@@ -206,19 +217,6 @@ const AdditionMeditation = ({history}) => {
                             Personal Counselling: Check <Link to="/counseling" style={{textDecoration:"none",color:"#ec9e31"}}> Counselling 
                             </Link> under Additional services Menu.
                              
-                        </Typography>
-
-                        <Typography className="meditationContent1" align='Left'>
-                            The commencing session on 16th May is a <span style={{fontWeight:"600",color:"#454443"}}> Free introductory session</span>, 
-                            Register at <a href="mailto:programs@aleenta.in" target="_blank" style={{textDecoration:"none",color:"#ec9e31"}}> programs@aleenta.in </a> or send a text on 
-                            WhatsApp at <a href="https://wa.me/916362925160" target="_blank" style={{textDecoration:"none",color:"#ec9e31"}}> +916362925160 </a>.
-                        </Typography>
-
-                        <Typography className="meditationContent1" align='Left'>
-                            Program schedule: 
-                        </Typography>
-                        <Typography className="meditationPoornamContent1" align='Left'>
-                            40 minutes session at 7.20 AM every Saturday, from 21st May, 2022 to 5th May, 2023. 
                         </Typography>
 
                         <Typography className="meditationContent1" align='center' style={{fontWeight:"600",color:"#363535"}}>
