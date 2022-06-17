@@ -480,6 +480,12 @@ li {
 
 .popUpContantGrid{
   padding:10% 10% 0% 5%;
+  @media only screen and (max-width: 650px) {
+    background-image: url(../../images/welcome/popUpBackground.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+  }
   @media only screen and (max-width: 1310px) {
     // padding:10% 10% 0% 5%;
     padding: 4% 4% 0% 2%;
@@ -500,6 +506,7 @@ li {
     // padding:10% 10% 0% 5%;
     padding-top: 6%;
     padding-left: 5%;
+    padding-right: 2%;
   }
 }
 .popUpContentPoints{
@@ -530,13 +537,21 @@ li {
 }
 .popUpSemiCircle1{
   width:20%;
+  @media only screen and (max-width: 1000px) {
+    margin-top: -4%;
+  }
   @media only screen and (max-width: 650px) {
-    width: 45%;
+    // width: 45%;
+    display: none;
   }
 }
 .popUpStar1{
   width: 7%;
+  @media only screen and (max-width: 1000px) {
+    margin-top: -10%;
+  }
   @media only screen and (max-width: 650px) {
-    width:22%;
+    // width:22%;
+    display: none;
   }
 }

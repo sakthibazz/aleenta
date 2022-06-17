@@ -88,7 +88,7 @@ const MeditationDialog = () => {
                 <Grid item xs={12}  sm={8} md={8}>
                     <Grid container className='popUpContantGrid'>
                         <Grid item xs={12} md={12}>
-                            <p className='popUpContantText'>
+                            <p className='popUpContantText' style={{color:"black"}}>
                                 <span style={{fontWeight:"600",color:"#C07752"}}>Poornam Meditation</span> is a one year program conducted by Mangala Narayan,
                                 a Wellbeing coach and a meditation Expert. Avail the introductory offer at Rs. 7500/-
                                 by registering before 12 noon, 30th june, 2022.
