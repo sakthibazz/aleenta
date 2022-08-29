@@ -12,7 +12,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ProgressiveImage from 'react-progressive-image';
 import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight'
 import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft'
-import DialogModal from '../reusableComponents/DialogModal';
+// import DialogModal from '../reusableComponents/DialogModal';
 import MeditationDialog from './AdditionalServices/MeditationDialog';
 
 // import '../../node_modules/bootstrap/dist/css/bootstrap.css'
@@ -97,7 +97,7 @@ const Welcome = ({
 
     const classes = useStyles();
 
-    const [open, setOpen] = useState(true);
+    // const [open, setOpen] = useState(true);
 
     const items = [
         {
@@ -400,12 +400,12 @@ const Welcome = ({
                 </Grid>
             </Grid>
             <Footer />
-            <DialogModal
+            {/* <DialogModal
                 // title="POORNAM"
                 children={<MeditationDialog />}
                 openPopup={open}
                 setOpenPopup={setOpen}
-            />
+            /> */}
         </Container>
 
     );

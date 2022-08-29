@@ -3,7 +3,7 @@ import React, { Component, useEffect, useState } from 'react';
 import { Grid, Typography, Card, Button,} from '@material-ui/core';
 import { withRouter, Link } from "react-router-dom";
 import divider from "../../images/divider2.png"
-import DialogModal from '../../reusableComponents/DialogModal'
+// import DialogModal from '../../reusableComponents/DialogModal'
 import MeditationDialog from './MeditationDialog';
 import CloseIcon from '@material-ui/icons/Close';
 
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
 
 const AdditionMeditation = ({history}) => {
 
-    const [open, setOpen] = useState(true);
+    // const [open, setOpen] = useState(true);
 
     useEffect(() => {
         const unlisten = history.listen(() => {
@@ -544,12 +544,12 @@ const AdditionMeditation = ({history}) => {
                     </Grid>
                 </Grid>
             </Grid>
-            <DialogModal
+            {/* <DialogModal
                 // title="POORNAM"
                 children={<MeditationDialog />}
                 openPopup={open}
                 setOpenPopup={setOpen}
-            />
+            /> */}
         </>
      );
 }
