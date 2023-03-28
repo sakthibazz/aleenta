@@ -1,0 +1,540 @@
+.additionalServicesContainer{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 1000px;
+    padding-left: 0%;
+    padding-right: 0%;
+    // padding-bottom: 2%;
+    // margin-top: 1%;
+    background-color: white;
+    color: black;
+    position:relative;
+
+    &.programs-section{
+      margin-top: 0;
+    }
+
+    .topText{
+        padding:3%;
+        font-size: medium;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background-color: white;
+        border-bottom: #C8E6CC solid 2px;
+        // font-size: 22px;
+        @media only screen and (max-width: 600px) {
+            font-size: 14px;
+            border-bottom: #C8E6CC solid 2px;
+        }
+    }
+
+    .additionalDrop_articles{
+        align-items: center;
+        font-size: 14px;
+        padding-top: 3%;
+        padding-left: 10%;
+        padding-right: 5%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 1250px) {
+            padding-left: 5%;
+            padding-top: 1%;
+            font-size: 10px;
+        }
+        @media only screen and (max-width: 950px) {
+            padding-left: 5%;
+            padding-top: 1%;
+            font-size: 14px;
+        }
+        // text-transform: uppercase;
+    }
+
+    .additionalDrop_articles1{
+        align-items: center;
+        font-size: 16px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        // padding-left: 10%;
+        // padding-right: 5%;
+        letter-spacing: 1px;
+        font-weight: 600;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            // padding-left: 5%;
+            // padding-top: 2%;
+            font-size: 14px;
+        }
+    }
+
+    
+    .additionalDrop_content{
+        padding-top: 1%;
+        padding-left: 4%;
+        // padding-right: 2%;
+        font-size: 24px;
+        // font-weight: 60;
+        @media only screen and (max-width: 600px) {
+            padding-left: 4%;
+            font-size: 16px;
+            padding-right: 1.5%;
+        }
+    }
+    .additionalDrop_articles2{
+        align-items: center;
+        font-size: 12px;
+        padding-top: 2%;
+        padding-left: 3%;
+        padding-right: 3%;
+        // text-transform: uppercase;
+        letter-spacing: 1px;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            padding-left: 5%;
+            padding-top: 1%;
+            font-size: 12px;
+        }
+    }
+    .articalCardGrid{
+        padding:2%
+    }
+    .articalCard{
+        height:80%;
+        border-radius: 5%;
+        margin: 2%;
+        object-fit: cover;
+    }
+    .articalCard1{
+        border-radius: 5%;
+        box-shadow: black;
+    }
+    .articalCard {
+        // margin-top: 35px;
+        // box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    }
+        
+    .articalCard:hover{
+        // margin-top: 35px;
+        transform: scale(1.05);
+        // color: #FFE481;
+        // box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+
+
+    .articalCardBlog{
+        height:220px;
+        width: 220px;
+        border-radius: 5%;
+        margin: 2%;
+    }
+    .BlogDropDownImg1{
+        height: 200px;
+        width: 220px;
+        object-fit: cover;
+    }
+    .BlogDropDownImg2{
+        height: 195px;
+        width: 220px;
+        object-fit: cover;
+    }
+    .articalCardBlog {
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    }
+        
+    .articalCardBlog:hover{
+        transform: scale(1.05);       
+    }
+
+
+    .aboutCard{
+        // width:"90%";
+        // height:100%;
+        border-radius: 5%;
+        margin: 2%;
+        object-fit: contain ;
+        height: 240px;
+        width: 260px;
+        @media  screen and (max-width: 960px) {
+            // width:90%;
+            // height:220px;
+            border-radius: 5%;
+            margin: 2%;
+        }
+    }
+    .aboutCard1{
+        border-radius: 5%;
+        box-shadow: black;
+        height: 205px;
+        width: 100%;  
+    }
+
+    .aboutCard {
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    }
+        
+    .aboutCard:hover{
+        transform: scale(1.05);       
+    }
+// --------------------------------------------------------
+    .aboutCoachCard{
+        border-radius: 5%;
+        margin: 2%;
+        object-fit: cover;
+        height: 240px;
+        width: 260px;
+        @media  screen and (max-width: 960px) {
+            // width:90%;
+            // height:220px;
+            border-radius: 5%;
+            margin: 2%;
+        }
+    }
+    .aboutCoachCardImage{
+        height:100%;
+        width: 100%;
+        border-radius: 5%;
+    }
+
+    .aboutCoachCard1{
+        padding: 0%;
+        border-radius: 5%;
+        box-shadow: black;
+        height: 200px;
+        width: 260px;
+    }
+    .aboutCoachCard {
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    }
+        
+    .aboutCoachCard:hover{
+        transform: scale(1.05);       
+    }
+}
+
+//--------------------- Meditation screen -----------------------------------------
+
+.additionalMeditationContainer{
+    margin-left: 0%;
+    margin-right: 0%;
+    // margin-top: 1000px;
+    padding-left: 0%;
+    padding-right: 0%;
+    // padding-bottom: 2%;
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+
+    // .topText{
+    //     padding:3%;
+    //     font-size: medium;
+    //     padding-top: 2%;
+    //     padding-bottom: 2%;
+    //     background-color: white;
+    //     border-bottom: #C8E6CC solid 2px;
+    //     // font-size: 22px;
+    //     @media only screen and (max-width: 600px) {
+    //         font-size: 14px;
+    //         border-bottom: #C8E6CC solid 2px;
+    //     }
+    // }
+
+    .topText{
+        position:fixed;
+        padding-top:1.5%;
+    
+        padding-left: 2%;
+        
+        background-color: white;
+        border-bottom: #C8E6CC solid 2px;
+        // font-size: 22px;
+        @media only screen and (max-width: 600px) {
+            margin-top: -2%;
+            border-bottom: #C8E6CC solid 2px;
+        }
+    }
+
+    .topTextHeading{
+        font-size: 22px ;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @media only screen and (max-width: 600px) {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    }
+
+
+    .meditationTitle{
+        align-items: center;
+        font-size: 22px;
+        padding-top: 3%;
+        padding-left: 32%;
+        padding-right: 32%;
+        padding-bottom: 0%;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            padding-left: 18%;
+            padding-right: 18%;
+            font-size: 16px;
+        }
+    }
+
+    .meditationVideoTitle{
+        align-items: center;
+        font-size: 22px;
+        padding-top: 3%;
+        padding-left: 34%;
+        padding-right: 32%;
+        padding-bottom: 0%;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            padding-left: 20%;
+            padding-right: 18%;
+            font-size: 16px;
+        }
+    }
+
+    .MeditationContentGrid{
+        margin-top: 4%;
+        @media only screen and (max-width: 600px) {
+            margin-top: 8%;
+        }
+    }
+    .meditationTitle1{
+        align-items: center;
+        font-size: 22px;
+        padding-top: 3%;
+        padding-left: 18%;
+        padding-right: 16%;
+        padding-bottom: 0%;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            padding-left: 6%;
+            padding-right: 6%;
+            font-size: 16px;
+        }
+    }
+    .additionMeditationImg1{
+        // margin-top: 2%;
+        // height:800px;
+
+        padding-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 100%;
+        width: 100%;
+        @media only screen and (max-width: 600px) {
+            height:100%;
+            width: 100%;
+        }
+    }
+    .meditationDiv{
+        margin-right:10%;
+        margin-left: 10%;
+        margin-top: 5%;
+        // padding-right: 100%;
+        content: "";
+        background-color: #FFD741;
+        height: 2px;
+        width:100%;
+        @media only screen and (max-width: 600px) {
+            height: 1px;
+        }
+    }
+    .meditationContent1{
+        padding-top: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 18px;
+        // font-weight: 60;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            font-size: 12px;
+        }
+    }
+    .meditationPoornamContent1{
+        padding-top: 1%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 18px;
+        // font-weight: 60;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            font-size: 12px;
+            padding-top: 1%;
+        }
+    }
+    .programsHeading{
+        align-items: center;
+        font-size: 26px;
+        padding-top: 2%;
+        padding-left: 10%;
+        padding-right: 5%;
+        letter-spacing: 1px;
+        animation: glow;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            padding-top: 2%;
+            font-size: 16px;
+        }
+        // text-transform: uppercase;
+    }
+
+
+    @keyframes glow {
+        0%, 100% {
+          color: #FFF;
+          text-shadow: 0 0 10px #0652DD, 0 0 50px #0652DD, 0 0 100px #0652DD;
+        }
+        
+    //     10%, 90% {
+    //       color: #111;
+    //       text-shadow: none;
+    //     }
+    //   }
+    //   .text-container > span:nth-child(1) {
+    //       animation-delay: 1s;
+    //   }
+    //   .text-container > span:nth-child(2) {
+    //       animation-delay: 1.75s;
+    //   }
+      
+    //   .text-container > span:nth-child(3) {
+    //       animation-delay: 2.5s;
+    //   }
+      
+    //   .text-container > span:nth-child(4) {
+    //       animation-delay: 3.2s;
+    //   }
+    //   .text-container > span:nth-child(5) {
+    //       animation-delay: 3.75s;
+      }
+
+
+    .underLine{
+        border-bottom: 2px solid #FFD741;
+        display: inline-block;
+    }
+ 
+    .programsHeading1{
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 8% 4%;
+        letter-spacing: 1px;
+        @media only screen and (max-width: 600px) {
+            // padding-top: 2%;
+            font-size: 12px;
+        }
+    }
+    .programsHeading2{
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 4% 4%;
+        letter-spacing: 1px;
+        @media only screen and (max-width: 600px) {
+            // padding-top: 2%;
+            font-size: 12px;
+        }
+    }
+    .meditationContent2{
+        padding-top: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 18px;
+        // font-weight: 60;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            font-size: 12px;
+        }
+    }
+    .meditationTechnique{
+        margin:5% 20%;
+        background-color: #fbf2de;
+        border-radius: 15% 15% 15% 15% / 50% 50% 50% 50% ;
+        @media only screen and (max-width:600px) {
+            margin: 5% 2%;
+        }
+    }
+    .meditationContent3{
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        font-size: 18px;
+        // font-weight: 60;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            font-size: 12px;
+        }
+    }
+    .meditationContent4{
+        // padding-top: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 18px;
+        // font-weight: 60;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            font-size: 12px;
+        }
+    }
+    .articalCardGrid{
+        padding:2%
+    }
+    .articalCard{
+        border-radius: 5%;
+    }
+    .articalCard1{
+        border-radius: 5%;
+        box-shadow: black;
+    }
+
+    .articalCard {
+        // margin-top: 35px;
+        // box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    }
+        
+    .articalCard:hover{
+        // margin-top: 35px;
+        transform: scale(1.05);
+        // color: #FFE481;
+        // box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+
+
+
+    .dividerImgCorpProgram{
+        padding-top: 2%;
+        padding-left: 10%;
+        padding-right: 10%;
+        // height: 100%;
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .bellowMeditationDiv{
+        padding-top: 2%;
+    }
+}
+
+.meditationSpanTag{
+    position:relative;
+}
+
+.meditationSpanTag::after{
+    position:absolute;
+    content: "";
+    background-color:#FFE481;
+    height: 3px;
+    width: 100%;
+    bottom: -5px;
+    left: 0%;
+    @media only screen and (max-width: 600px) {
+        bottom: -3px;
+    }
+}
+.meditationRegisterButton{
+    // border: none;
+    border-radius: 25%;
+}

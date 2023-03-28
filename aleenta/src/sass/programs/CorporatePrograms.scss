@@ -1,0 +1,369 @@
+.corporateContainer{
+    margin-left: 0%;
+    margin-right: 0%;
+    // margin-top: 1000px;
+    padding-left: 0%;
+    padding-right: 0%;
+    // padding-bottom: 2%;
+    // padding-top: 1000px;
+    background-color: #fffaf3;
+
+    .tab{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      .img-class{
+        width: 40px;
+        height: auto;
+      }
+      .img-title{
+        padding-left: 10px;
+      }
+      @media screen and (max-width: 768px) {
+        .img-class{
+          width: 30px;
+        }
+        .img-title{
+            font-size: 12px;
+        }
+      }
+    }
+
+    .tab1{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding-top: 6%;
+        padding-left: 6%;
+        // justify-self: center;
+        .img-class{
+          width: 40px;
+          height: auto;
+        }
+        .img-title{
+          padding-left: 15px;
+        }
+        @media screen and (max-width: 768px) {
+          .img-class{
+            width: 30px;
+          }
+          .img-title{
+              font-size: 16px;
+          }
+        }
+      }
+  
+
+    .topText{
+        position:fixed;
+        padding-top:1.5%;
+        // padding-bottom: 1%;
+        padding-left: 2%;
+        font-size: 22px;
+        // margin-bottom: 100%;
+        // padding-top: 3%;
+        // padding-bottom: 2%;
+        background-color: white;
+        border-bottom: #C8E6CC solid 2px;
+        // font-size: 22px;
+        @media only screen and (max-width: 600px) {
+            font-size: 14px;
+            border-bottom: #C8E6CC solid 2px;
+        }
+    }
+
+    .topTextHeading{
+        font-size: 22px ;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        @media only screen and (max-width: 600px) {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .programsPageHeading{
+        margin-top: 3%;
+        font-size: 20px;
+        padding-left: 3%;
+        padding-right:3%;
+        @media only screen and (max-width: 600px) {
+            margin-top: 5%;
+            padding-top: 4%;
+            font-size: 14px;
+            padding-left: 6%;
+            padding-right:6%;
+        }
+    }
+
+    .programsPageHeading1{
+        margin-top: 3%;
+        font-size: 18px;
+        padding-left: 3%;
+        padding-right:3%;
+        @media only screen and (max-width: 600px) {
+            margin-top: 5%;
+            padding-top: 4%;
+            font-size: 12px;
+            padding-left: 6%;
+            padding-right:6%;
+        }
+    }
+
+    .programsPageParagraph{
+        padding-top: 2%;
+        font-size: 18px;
+        padding-left: 3%;
+        padding-right:3%;
+        @media only screen and (max-width: 600px) {
+            padding-top: 5%;
+            font-size: 12px;
+            padding-left: 8%;
+            padding-right:8%; 
+        }
+    }
+
+
+    #mangallam{
+        // margin-top: 3%;
+        @media only screen and (max-width: 600px) {
+            // margin-top: 12%;
+        }
+    }
+    #nature{
+        // margin-top: 4%;
+        @media only screen and (max-width: 600px) {
+            // margin-top: 12%;
+        }
+    }
+    #happiness{
+        // margin-top: 4%;
+        @media only screen and (max-width: 600px) {
+            // margin-top: 12%;
+        }
+    }
+
+    .dropDownIcons1{
+        padding-top: 100%;
+        // padding-top: 5%;
+        padding-bottom: 1%;
+        height: auto;
+        width: 70%;
+    }
+    .programHeading1{
+        // padding-top: 5%;
+        padding-left: 10%;
+        @media only screen and (max-width: 600px) {
+            padding-top: 1%;
+            padding-left: 10%;;
+        }
+    }
+    
+    .programsHeading{
+        align-items: center;
+        font-size: 22px;
+        // padding-top: 9%;
+        padding-left: 5%;
+        padding-right: 5%;
+        letter-spacing: 1px;
+        // font-family: 'Tenor Sans', sans-serif !important;
+        @media only screen and (max-width: 600px) {
+            padding-top: 2%;
+            font-size: 0px;
+        }
+        // text-transform: uppercase;
+    }
+    .shortContent{
+        padding-top: 15%;
+        @media only screen and (max-width: 600px) {
+            padding-top: 2%;
+        }
+    }
+    .mangallamImg{
+        width: 100%;
+        padding-top:3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+    }
+    .corporateProDiv{
+        margin-right:5%;
+        margin-left: 5%;
+        margin-top: 3%;
+        content: "";
+        background-color: #FFD741;
+        height: 2px;
+        width:100%;
+        @media only screen and (max-width: 600px) {
+            height: 1px;
+        }
+    }
+    .groupImg4{
+        padding-top: 14%;
+        @media only screen and (max-width: 600px) {
+            padding-top: 3%;
+        }
+    }
+
+    .programscontent1{
+        padding-top: 3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 16px;
+        // font-weight: 60;
+        @media only screen and (max-width: 600px) {
+            font-size: 12px;
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+    }
+    .programscontent{
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 16px;
+        // font-weight: 60;
+        @media only screen and (max-width: 600px) {
+            font-size: 12px;
+            padding-left: 8%;
+            padding-right: 8%;
+        }
+    }
+    .dividerImgCorpProgram{
+        padding-top: 3%;
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}
+
+
+
+// ========under line for corp and group=========
+
+.programHeading1Grid{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.programHeading1Grid::after{
+    position:absolute;
+    content: "";
+    background-color:#FFD741;
+    height: 3px;
+    width: 0;
+    bottom: -12px;
+    left:0px;
+    transition: 0.3s;
+}
+.programHeading1Grid:hover::after{
+    width: 60%;
+    @media only screen and (max-width: 600px) {
+        width: 0%;
+    }
+}
+.programHeading1Grid2{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.programHeading1Grid2::after{
+    position:absolute;
+    content: "";
+    background-color:#FFE481;
+    height: 3px;
+    width: 60%;
+    bottom: -14px;
+    left:0px;
+    transition: 0.1s;
+    padding:0%;
+    @media only screen and (max-width: 600px) {
+        width: 0%;
+    }
+}
+
+
+
+// ========under line for individual=========
+
+.programHeading1Grid1{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.programHeading1Grid1::after{
+    position:absolute;
+    content: "";
+    background-color:#FFD741;
+    height: 3px;
+    width: 0;
+    bottom: -12px;
+    left:0px;
+    transition: 0.3s;
+}
+.programHeading1Grid1:hover::after{
+    width: 90%;
+    @media only screen and (max-width: 600px) {
+        width: 0%;
+    }
+}
+.programHeading1Grid3{
+    position:relative;
+    align-self: center;
+    // background-color: chartreuse;
+}
+.programHeading1Grid3::after{
+    position:absolute;
+    content: "";
+    background-color:#FFE481;
+    height: 3px;
+    width: 90%;
+    bottom: -12px;
+    left:0px;
+    transition: 0.1s;
+    padding:0%;
+    @media only screen and (max-width: 600px) {
+        width: 0%;
+    }
+}
+
+
+
+
+.programHeading1Grid {
+    // margin-top: 35px;
+    // box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+    
+.programHeading1Grid:hover{
+    // margin-top: 35px;
+    transform: scale(1.05);
+    // color: #FFE481;
+    // box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.meditationPageVideo1Class {
+    display: block;
+    // margin: 1em auto;
+    margin-top: 3%;
+    width: 90%;
+    height: calc(.5625 * 90vw);
+}
+
+// ------------------not used-----------------------------------
+
+
+.programsTitle{
+    padding-top: 1%;
+    padding-left: 16%;
+    padding-right: 16%;
+    font-size: 20px;
+    font-weight: 600px;
+    // text-transform: capitalize;
+    @media only screen and (max-width: 600px) {
+        font-size: 12px;
+    }
+}
