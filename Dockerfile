@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install --force
+RUN npm install --force --python="/usr/bin/python3"
 
 # Copy remaining project files to working directory
 COPY . .
