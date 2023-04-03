@@ -7,6 +7,8 @@ WORKDIR /app
 
 # Copy package.json and package-lock.json to working directory
 COPY package*.json ./
+#adding python path as environment variable
+RUN npm config set python /usr/bin/python3
 
 # Install dependencies
 RUN npm install --force --python="/usr/bin/python3"
