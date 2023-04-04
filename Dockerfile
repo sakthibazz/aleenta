@@ -5,7 +5,7 @@ FROM node:12.18.2-alpine3.9 AS builder
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json to working directory
+# Copy package.json and package-lock.json to working directorys
 COPY package*.json ./
 #adding python path as environment variable
 
