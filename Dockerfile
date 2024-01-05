@@ -17,7 +17,7 @@ RUN npm install
 COPY . .
 
 # Build production-ready app
-RUN npm run build
+RUN npm start
 
 #create the final image
 FROM nginx:1.19.8-alpine
