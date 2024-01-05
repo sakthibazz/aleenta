@@ -11,7 +11,7 @@ COPY package*.json ./
 
 
 # Install dependencies
-RUN npm install --force 
+RUN npm install
 
 # Copy remaining project files to working directory
 COPY . .
